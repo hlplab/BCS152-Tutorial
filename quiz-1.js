@@ -4,9 +4,23 @@ $(document).ready(function() {
 
   $('#results').on('click', function() {
 
-    if (! _.every(_.range(1, 11), function(i) {
+    var questions = [
+      { number: 1, answer: 'a'},
+      { number: 2, answer: 'b'},
+      { number: 3, answer: 'c'},
+      { number: 4, answer: 'd'},
+      { number: 5, answer: 'a'},
+      { number: 6, answer: 'b'},
+      { number: 7, answer: 'c'},
+      { number: 8, answer: 'd'},
+      { number: 9, answer: 'a'},
+      { number: 10, answer: 'b'}
+    ];
+
+    if (! _.every(_.pluck(questions, 'number'), function(i) {
           return $('input[name="q' + i + '"]:checked').val();
-        });) {
+        })
+        ) {
       alert("You're not done yet!");
   } else {
     var cat1name = '1';
@@ -40,7 +54,7 @@ $(document).ready(function() {
 //      [cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8, cat9, cat10, cat11],
 //      function(c) {return c;}
 //    );
-
+    var categories = [];
     if (cat1) { categories.push(cat1name) }
     if (cat2) { categories.push(cat2name) }
     if (cat3) { categories.push(cat3name) }
