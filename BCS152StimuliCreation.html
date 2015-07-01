@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="tutorial.css">
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+    <title> BCS 152 tutorial</title>
+
+  </head>
+  <body>
+    <nav>
+      <div>
+        <ul class="navigation">
+          <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Tutorial.html">Home</a></li><!--wtf is going on with my home navigation link... fix later-->
+          <li class="drop-down">
+            <a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Designs.html">Designs</a>
+              <!-- Come back to this<ul class="drop-nav">
+                <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152LSD.html">Latin Square Design</a></li>
+              </ul>
+            </li>-->
+          <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Methods.html">Methods</a></li>
+          <li>
+              <a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152ItemsandLists.html">Creating Stimuli</a></li>
+                <!--<ul>
+                  <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152ItemsandLists.html">Items and Lists</a></li>
+                  <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Fillers.html">Fillers</a></li>
+                  <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Resources.html">Resources</a></li>
+                </ul>-->
+          <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152SPR.html">Self-Paced Reading</a></li>
+          <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Analysis.html">Analysis</a></li>
+          <li><a href="file:///Users/ONikolayeva/Desktop/BCSTutorial/BCS152Glossary.html">Glossary</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<div><p>What your stimuli file should look like
+
+Creating lists for latin square design with a good mix of fillers between items can be done automatically. However, the format given to those scripts needs to follow a very specific format. Here is an example from a real experiment run in Professor Jaeger's lab on what your sheet should look like: ExampleLists.xlsx
+It's in the current Excel format (XLSX), although we can also handle the older (XLS) format, and the comma separated value (CSV) format. Excerpted below are the first few rows of from the example file:
+
+Experiment
+
+
+ItemName
+
+
+Condition
+
+
+Sentence
+
+
+Question
+
+
+Answer
+
+control
+
+
+1
+
+
+AMV
+
+
+The excited fans moved through the crowd and sauntered to front stage.
+
+
+Was the place empty?
+
+
+N
+
+control
+
+
+1
+
+
+ARC
+
+
+The excited fans moved through the crowd broke apart from Jane accidentally.
+
+
+Was the place empty?
+
+
+N
+
+control
+
+
+1
+
+
+UMV
+
+
+The excited fans flew through the crowd and sauntered to front stage.
+
+
+Was the place empty?
+
+
+N
+
+control
+
+
+1
+
+
+URC
+
+
+The excited fans that were moved through the crowd broke apart from Jane accidentally.
+
+
+Was the place empty?
+
+
+N
+
+control
+
+
+2
+
+
+AMV
+
+
+The aging professors phoned about the midterm and were surprised by the workload.
+
+
+Was somebody concerned about a homework set?
+
+
+N
+
+control
+
+
+2
+
+
+ARC
+
+
+The aging professors phoned about the midterm were surprised by all the questions.
+
+
+Was somebody concerned about a homework set?
+
+
+N
+
+...
+
+
+
+
+
+
+
+
+
+
+filler
+
+
+41
+
+
+-
+
+
+The parcel arrived too late to be of any use.
+
+
+Did the package arrive on time?
+
+
+N
+
+filler
+
+
+42
+
+
+-
+
+
+The espresso machine was broken for months before finally being fixed.
+
+
+Was the espresso machine fixed?
+
+
+Y
+
+...
+
+
+
+
+
+
+
+
+
+
+    There are six (6) required columns: Experiment, ItemName,Condition, Sentence, Question, and Answer. See the previous sections for important notes about each.
+
+    Experiment distinguishes between items from different sub-experiments being run in the same script. We won't be doing that (strictly speaking) but we will be using filler versus whatever you decide to call your experiment (in the example it is just called control).
+
+        ItemName is to identify an individual item within an experiment. This should be a number. For items this will be the same across all conditions (see the example file).
+
+        Condition is to identify which condition the item is in within the experiment. Condition names should not contain any spaces or special symbols, except for ".". It's common to use capitalized names. For example, for the example item given at the beginning of this page, we might call our conditions: HighPred.HighFreq, HighPred.LowFreq, LowPred.HighFreq, and LowPred.LowFreq. For filler items this should be "-". We will be randomizing the lists and each item will appear once in each list (with a different condition across lists) as specified in the latin square design above.
+
+        Sentence is the stimulus item that will be self-pace read.
+
+        Question is the comprehension question to ensure that subjects are actually paying attention and not just holding down the space bar. Within an item, you want the same question, or minimally different questions and they should lead to the same answer. For items, you often want to probe a specific part of the stimulus to make sure that that part was indeed processed correctly. Across all stimuli, however, it is advisable to probe different parts of the sentences to roughly equal extents. For example, if you only asked questions about the first word of all sentences, participants might pick up on that and stop paying attention to the remainder of sentences.
+
+    Answer is the correct answer for the comprehension question. Within an item, correct answers should be held constant. Across items and fillers, you should make sure to have equally many questions that are answered Y and questions that are answered N. This will reduce any bias and increase the likelihood of participants paying attention.
+
+    Important points about the format:
+
+        Condition names should only be upper and lowercase letters and periods (e.g. UNINF.HIGH, UNINF.LOW, INF.HIGH, INF.LOW). Do not include spaces, numbers or other characters.
+        Remove blank/empty rows between stimuli.
+
+        The sentences and questions will be displayed as-is so do not include extra characters unless you want those characters to be displayed. For example if your design uses a comma to disambiguate an ambiguous sentence make sure they are included, otherwise remove them.
+
+    Regions should be indicated with an @, multi-word regions with the words in curly brackets, e.g.
+        word@regionname
+        {several words here}@anotherregionname
+        {This sentence}@subject has@verb {multiple regions}@object
+
+Entering Items
+
+    Create a new Excel document (or clear out the example provided above)
+    Put the required and any optional headers you need in the first row of the sheet
+
+    Enter each of your items (make sure each item has a different ItemName and the same number of conditions, one per row)
+    Enter your fillers on the same sheet
+    n.b. the program that generates the lists for the applet based on your Excel sheet will ignore any column other than the ones described above, so feel free to have some extra columns if they help you when making your stimuli, but also keep in mind that if you screw up the spelling of your required columns they will be ignored too.
+    Save the file and send it to us. </p>
+    </div>
+    </html>
