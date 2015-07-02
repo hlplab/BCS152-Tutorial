@@ -1,5 +1,3 @@
-/* Code from http://www.hungrypiranha.org/make-a-website/html-quiz */
-/*Figure out how to reset this function*/
 $(document).ready(function() {
 
     _.templateSettings = {
