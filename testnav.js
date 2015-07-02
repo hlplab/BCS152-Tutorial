@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   $('.CloseBtn').on('click', function() {
     $(this).parent().hide(function() {
-      $(this).siblings('.popup').hide();
+      $(this).siblings('.overlay').hide();
     });
   });
 
