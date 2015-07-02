@@ -23,10 +23,13 @@ $(document).ready(function() {
       { number: 10, answer: 'b'}
     ];
 
-    if (! _.every(_.pluck(questions, 'number'), function(i) {
-          return $('input[name="q' + i + '"]:checked').val();
-        })
-        ) {
+    var all_answered = function() {
+      return _.every(_.pluck(questions, 'number'), function(i) {
+            return $('input[name="q' + i + '"]:checked').val();
+      });
+    };
+
+    if (! all_answered) {
       alert("You're not done yet!");
     } else {
       var incorrect = _.reject(questions, function(e) {
@@ -47,4 +50,5 @@ $(document).ready(function() {
         $('#categorylist').append(template(e));
       });
     }
+  });
 });
