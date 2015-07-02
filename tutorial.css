@@ -69,7 +69,7 @@ body{
     width: 180px;
 } */
 /* Pop up css */
-#overlay {
+.overlay {
    display:none;    /* This make it initially hidden */
    position:fixed;  /* This makes it so it says in a fixed position even if they scroll around */
    left:0px;        /* This positions the element to the left most position */
@@ -80,28 +80,28 @@ body{
    z-index:99999;   /* Change the z-index so it will be above everything else */
 }
 
-#popup {
-   display:none;
-     font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
+.popup {
+  display:none;
+  font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
    position:fixed;
-     word-wrap: break-word;
-   left:10%;            /* left and top here position top left page */
-     top: 75px;
-     padding-right:3000px;
-     text-align: right;
-   margin-top:-75px;   /* To get the popup to center correctly we need */
-   margin-left:-100px;   /* To displace the the top/left margins by half of the width/height */
-   border:2px solid #000;  /* And give it a border */
-   z-index:100000;      /* Set z-index to 1 more than that of the overlay so the popup is over the overlay */
+  word-wrap: break-word;
+  left:10%;            /* left and top here position top left page */
+  top: 75px;
+  padding-right:3000px;
+  text-align: right;
+  margin-top:-75px;   /* To get the popup to center correctly we need */
+  margin-left:-100px;   /* To displace the the top/left margins by half of the width/height */
+  border:2px solid #000;  /* And give it a border */
+  z-index:100000;      /* Set z-index to 1 more than that of the overlay so the popup is over the overlay */
 }
 
 .answers li {
-list-style: upper-alpha;
+  list-style: upper-alpha;
 }
 
 label {
-margin-left: 0.5em;
-cursor: pointer;
+  margin-left: 0.5em;
+  cursor: pointer;
 }
 
 #results {
@@ -126,10 +126,6 @@ cursor: pointer;
 
 #categorylist {
   margin-top: 6px;
-  display: none;
-}
-
-#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 {
   display: none;
 }
 

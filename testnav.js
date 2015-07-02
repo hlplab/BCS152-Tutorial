@@ -17,14 +17,15 @@ $('#nav').html(
 $(document).ready(function() {
 
   //Pop up JS
-  $('#LearnMoreBtn').on('click', function() {
-    $('#overlay').show();
-    $('#popup').show();
+  $('.LearnMoreBtn').on('click', function() {
+    $(this).siblings('.overlay').show();
+    $(this).siblings('.popup').show();
   });
 
-  $('#CloseBtn').on('click', function() {
-    $('#overlay').hide();
-    $('#popup').hide();
+  $('.CloseBtn').on('click', function() {
+    $(this).parent().hide(function() {
+      $(this).siblings('.popup').hide();
+    });
   });
 
   $('[data-toggle="tooltip"]').tooltip();
