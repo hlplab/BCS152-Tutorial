@@ -29,7 +29,7 @@ $(document).ready(function() {
       });
     };
 
-    if (! all_answered) {
+    if (! all_answered()) {
       alert("You're not done yet!");
     } else {
       var incorrect = _.reject(questions, function(e) {
