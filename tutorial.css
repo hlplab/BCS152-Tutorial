@@ -25,11 +25,15 @@ body {
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.jumbotron_ex {
-    background-color:#ecf0f1;
+
+.jumbotron {
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     margin: 50px 50px 50px 250px;
+}
+
+.jumbotron.ex {
+    background-color:#ecf0f1;
 }
 .jumbotron_ques {
     background-color:#ecf0f1;
@@ -49,7 +53,7 @@ body{
     padding: 20px 20px 20px 20px;
     margin: 50px 50px 50px 250px;
 }
-.jumbotron_ex h1 {
+.jumbotron.ex h1 {
     color: #e74c3c;
 }
 .jumbotron_ques h1 {
