@@ -27,39 +27,27 @@ body{
 }
 
 .jumbotron {
+    background-color:#ecf0f1;
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     margin: 50px 50px 50px 250px;
 }
 
-.jumbotron.ex {
-    background-color:#ecf0f1;
+.jumbotron p {
+  font-size: medium;
 }
-.jumbotron_ques {
-    background-color:#ecf0f1;
-    overflow-y: scroll;
-    padding: 20px 20px 20px 20px;
-    margin: 50px 50px 50px 250px;
+
+.jumbotron h1 {
+  font-size: xx-large;
 }
-.jumbotron_spr {
-    background-color:#ecf0f1;
-    overflow-y: scroll;
-    padding: 20px 20px 20px 20px;
-    margin: 50px 50px 50px 250px;
-}
-.jumbotron_next {
-    background-color:#ecf0f1;
-    overflow-y: scroll;
-    padding: 20px 20px 20px 20px;
-    margin: 50px 50px 50px 250px;
-}
+
 .jumbotron.ex h1 {
     color: #e74c3c;
 }
-.jumbotron_ques h1 {
+.jumbotron.ques h1 {
     color: #e67e22;
 }
-.jumbotron_spr h1 {
+.jumbotron.spr h1 {
     color: #f39c12;
 }
 
