@@ -1,14 +1,14 @@
 
 $('#nav').html(
-'<div>' +
+'<div class="collapse navbar-collapse">' +
   '<!-- Nav tabs -->' +
-  '<ul class="nav nav-tabs" role="tablist" style="padding: 45px 200px 25px 300px;">' +
-    '<li id="home" role="presentation"><a href="TestBCSFrontpage.html" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>' +
-    '<li id="design" role="presentation"><a href="TestBCSDesign.html" aria-controls="design" role="tab" data-toggle="tab">Design</a></li>' +
-    '<li id="method" role="presentation"><a href="#method" aria-controls="method" role="tab" data-toggle="tab">Method</a></li>' +
-    '<li id="createstim" role="presentation"><a href="#create" aria-controls="create" role="tab" data-toggle="tab">Creating Stimuli</a></li>' +
-    '<li id="spr" role="presentation"><a href="#spr" aria-controls="spr" role="tab" data-toggle="tab">Self-Paced Reading</a></li>' +
-    '<li id="analysis" role="presentation"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab">Stimuli Analysis</a></li>' +
+  '<ul class="nav navbar-nav">' +
+    '<li id="home" ><a href="TestBCSFrontpage.html">Home</a></li>' +
+    '<li id="design"><a href="TestBCSDesign.html">Design</a></li>' +
+    '<li id="method"><a href="#method">Method</a></li>' +
+    '<li id="createstim"><a href="#create">Creating Stimuli</a></li>' +
+    '<li id="spr"><a href="#spr">Self-Paced Reading</a></li>' +
+    '<li id="analysis" ><a href="#analysis">Stimuli Analysis</a></li>' +
   '</ul>' +
 '</div>');
 //reference to the parent frame to get to the daughter frames.
