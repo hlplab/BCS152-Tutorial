@@ -5,10 +5,10 @@ $('#nav').html(
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="TestBCSFrontpage.html">Home</a></li>' +
     '<li id="design"><a href="TestBCSDesign.html">Design</a></li>' +
-    '<li id="method"><a href="#method">Method</a></li>' +
-    '<li id="createstim"><a href="#create">Creating Stimuli</a></li>' +
-    '<li id="spr"><a href="#spr">Self-Paced Reading</a></li>' +
-    '<li id="analysis" ><a href="#analysis">Stimuli Analysis</a></li>' +
+    '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
+    '<li id="createstim"><a href="BCSStimuli.html">Creating Stimuli</a></li>' +
+    '<li id="spr"><a href="BCSSPR.html">Self-Paced Reading</a></li>' +
+    '<li id="analysis" ><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
   '</ul>' +
 '</div>');
 //reference to the parent frame to get to the daughter frames.
