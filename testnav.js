@@ -9,6 +9,7 @@ $('#nav').html(
     '<li id="createstim"><a href="BCSStimuli.html">Creating Stimuli</a></li>' +
     '<li id="spr"><a href="BCSSPR.html">Self-Paced Reading</a></li>' +
     '<li id="analysis" ><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
+    '<li id="resource" ><a href="BCSResources.html">Resources</a></li>' +
   '</ul>' +
 '</div>');
 //reference to the parent frame to get to the daughter frames.
