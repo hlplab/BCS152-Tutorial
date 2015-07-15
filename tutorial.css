@@ -1,28 +1,5 @@
-/*.navbar {
-    display: none;
-}
-*/
 body {
     background-color: white;
-
-}
-
-/*Latin Square Design drop down
-    nav ul ul {
-    display: none;
-}
-/*Latin Square Design drop down come back and work on this...
-    nav ul li:hover > ul {
-        display: block;
-    }
-
-.drop-down{
-    list-style: none;
-    position: relative;
-    display: inline-table;
-}
-*/
-body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -51,15 +28,6 @@ body{
     color: #f39c12;
 }
 
-/* not needed
-#scrolling-header {
-    color: #999;
-    font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
-    position: fixed;
-    top: 75px;
-    text-align: right;
-    width: 180px;
-} */
 /* Pop up css */
 .overlay {
    display:none;    /* This make it initially hidden */

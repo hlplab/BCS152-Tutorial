@@ -8,8 +8,8 @@ $('#nav').html(
     '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
     '<li id="createstim"><a href="BCSStimuli.html">Creating Stimuli</a></li>' +
     '<li id="spr"><a href="BCSSPR.html">Self-Paced Reading</a></li>' +
-    '<li id="analysis" ><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
-    '<li id="resource" ><a href="BCSResources.html">Resources</a></li>' +
+    '<li id="analysis"><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
+    '<li id="resource"><a href="BCSResources.html">Resources</a></li>' +
   '</ul>' +
 '</div>');
 //reference to the parent frame to get to the daughter frames.
@@ -33,14 +33,6 @@ $(document).ready(function() {
 });
 
 
-
-
-/* Can I use this in order to change the active class?
-<script>
-function newDoc() {
-    window.location.assign("http://www.w3schools.com")
-}
-</script>*/
 /* Just a cool script! No idea for a practical use yet
 <script>
 $(document).ready(function(){
@@ -51,12 +43,3 @@ $(document).ready(function(){
     });
 });
 </script> */
-/* I think this is the script to work with for my "active" class problem
-<script>
-$(document).ready(function(){
-    $("div").click(function(){
-        $("").addClass("active");
-    });
-});
-</script> */
-/* $( "a" ).trigger( "click" ); */
