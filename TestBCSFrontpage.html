@@ -12,6 +12,12 @@
 
   <body>
     <nav id="nav" class="navbar navbar-default"></nav>
+  <div>
+    <button type="button" class="btn btn-primary back" href="" data-toggle="tooltip" title="There is nothing to go back to">Back</button>
+    <button type="button" class="btn btn-warning back" href="" data-toggle="tooltip" title="There is nothing to go back to">Back</button>
+    <button type="button" class="btn btn-warning forward" href"" data-toggle="tooltip" title="Design">Next</button>
+    <button type="button" class="btn btn-primary forward" href"" data-toggle="tooltip" title="Design">Next</button>
+  </div>
 
     <div>
       <div class="jumbotron ex">
@@ -55,6 +61,9 @@ Example: gender, size, weight, grades.">variables</a> you want to test.</p>
         </p>
 
     </div>
+    <div class="jumbotron">
+      <a href="TestBCSDesign.html" class="btn btn-primary outline btn-xs">continue</a>
+    </div>
     <div class="jumbotron ques">
       <h1>Test Question</h1>
       <button class="btn LearnMoreBtn">Something else</button>
@@ -62,7 +71,8 @@ Example: gender, size, weight, grades.">variables</a> you want to test.</p>
       <div class="popup">
         Some other text
         <button class="btn CloseBtn">done</button>
-      </div> <!-- why isn't this working :( -->
+      </div>
+
       <p class="question">1. What is a hypothesis? How is it different from a question?</p>
       <ul class="answers">
         <li><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">A hypothesis is a prediction about how your variables interact with one another. A question simply asks what the interaction would be between the two variables. </label></li>
@@ -144,22 +154,17 @@ Example: gender, size, weight, grades.">variables</a> you want to test.</p>
       <div id="results">
         Check
       </div>
-      <div id="alerts"></div>
-      <!--  <script>  var r = confirm("Press a button");
-      if (r == true) {
-      x = "You pressed OK!";
-    } else {
-    x = "You pressed Cancel!";
-  } </script>-->
   </div>
+
   <div class="jumbotron spr">
     <h1>Self-Paced Reading Specific</h1>
-    <p>The final paragraph of each tutorial page will be aimed towards the paradigm called 
+    <p>The final paragraph of each tutorial page will be aimed towards the paradigm called
     self-paced reading. More will be explained as you go through.</p>
   </div>
-  <div class="jumbotron"> <!-- Is this needed b/c of the top navigation bar? -->
-    <a href="TestBCSDesign.html" class="btn btn-block btn-lg btn-success">continue</a>
+  <div class="jumbotron">
+    <button type="button" class="btn btn-danger" href"">Continue</button>
   </div>
+
 
   <!-- not needed yet, Will most likely use the popup<div style="opacity: 1; left: 50px;" id="scrolling-header">Test</div>-->
   </div>
