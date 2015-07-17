@@ -8,7 +8,7 @@ $('#nav').html(
     '<a class="dropdown-toggle" data-toggle="dropdown" href="TestBCSDesign.html">Design' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li><a href="BCSStimuli.html" style="color:#2980b9">Design</a></li>' +
+      '<li><a href="TestBCSDesign.html" style="color:#2980b9">Design</a></li>' +
       '<li><a href="#" style="color:#f39c12">Design : SPR</a></li>' +
       '</ul>' +
     '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
