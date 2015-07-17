@@ -80,14 +80,16 @@ body {
 .popup {
   display:none;
   font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
-  position:fixed;
-  left:10%;            /* left and top here position top left page */
-  top: 75px;
+  position: absolute;
+  /*left:10%;*/           /* left and top here position top left page */
+  /*top: 75px;*/
   word-wrap: break-word;
-  padding-right:3000px;
+  /*padding-right:3000px; */
+  padding: 1em;
   text-align: right;
   margin-top:-75px;   /* To get the popup to center correctly we need */
-  margin-left:-100px;   /* To displace the the top/left margins by half of the width/height */
+  margin-left:-225px;   /* To displace the the top/left margins by half of the width/height */
+  width: 200px;
   border:2px solid #000;  /* And give it a border */
   z-index:100000;      /* Set z-index to 1 more than that of the overlay so the popup is over the overlay */
 }
