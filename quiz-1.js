@@ -4,7 +4,7 @@ $(document).ready(function() {
       interpolate: /\{\{(.+?)\}\}/g
     };
     var template = _.template('<div class="alert alert-warning" role="alert">' +
-    '<strong>Question {{number}}:</strong> The correct answer is <strong>{{answer}}</strong>.</div>');
+    '<strong>Question {{number}}: </strong>{{tip}}</div>');
 
   $('#results').on('click', function() {
 
@@ -12,16 +12,16 @@ $(document).ready(function() {
     $('#alerts').empty();
 
     var questions = [
-      { number: 1, answer: 'a'},
-      { number: 2, answer: 'b'},
-      { number: 3, answer: 'c'},
-      { number: 4, answer: 'd'},
-      { number: 5, answer: 'a'},
-      { number: 6, answer: 'b'},
-      { number: 7, answer: 'c'},
-      { number: 8, answer: 'd'},
-      { number: 9, answer: 'a'},
-      { number: 10, answer: 'b'}
+      { number: 1, answer: 'a', tip: 'Be smarter!'},
+      { number: 2, answer: 'b', tip: 'Be smarter!'},
+      { number: 3, answer: 'c', tip: 'Be smarter!'},
+      { number: 4, answer: 'd', tip: 'Be smarter!'},
+      { number: 5, answer: 'a', tip: 'Be smarter!'},
+      { number: 6, answer: 'b', tip: 'Be smarter!'},
+      { number: 7, answer: 'c', tip: 'Be smarter!'},
+      { number: 8, answer: 'd', tip: 'Be smarter!'},
+      { number: 9, answer: 'a', tip: 'Be smarter!'},
+      { number: 10, answer: 'b', tip: 'Be smarter!'}
     ];
 
     var all_answered = function() {
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
       var catStr = '';
       if (incorrect.length === 0) {
-        $('#alerts').append('<div class="alert alert-success" role="alert">You got everything correct! Congrats</div>')
+        $('#alerts').append('<div class="alert alert-success" role="alert">You got everything correct! Congrats</div>');
         //catStr = 'You got everything correct! Congrats';
       } else {
         $('#alerts').append('<div class="alert alert-danger" role="alert">' +

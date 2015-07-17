@@ -33,14 +33,11 @@ $(document).ready(function() {
 
   //Pop up JS
   $('.LearnMoreBtn').on('click', function() {
-    $(this).siblings('.overlay').show();
     $(this).siblings('.popup').show();
   });
 
   $('.CloseBtn').on('click', function() {
-    $(this).parent().hide(function() {
-      $(this).siblings('.overlay').hide();
-    });
+    $(this).parent().hide();
   });
 
   $('[data-toggle="tooltip"]').tooltip();
