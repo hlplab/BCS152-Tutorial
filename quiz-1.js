@@ -39,7 +39,7 @@ $(document).ready(function() {
 
       var catStr = '';
       if (incorrect.length === 0) {
-        $('#alerts').append('<div class="alert alert-success" role="alert">You got everything correct! Congrats</div>')
+        $('#alerts').append('<div class="alert alert-success" role="alert">You got everything correct! Congrats</div>');
         //catStr = 'You got everything correct! Congrats';
       } else {
         $('#alerts').append('<div class="alert alert-danger" role="alert">' +
