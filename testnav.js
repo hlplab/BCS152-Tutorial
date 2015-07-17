@@ -6,7 +6,15 @@ $('#nav').html(
     '<li id="home" ><a href="TestBCSFrontpage.html">Home</a></li>' +
     '<li id="design"><a href="TestBCSDesign.html">Design</a></li>' +
     '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
-    '<li id="createstim"><a href="BCSStimuli.html">Creating Stimuli</a></li>' +
+    '<li class="dropdown" id="createstim">'+
+      '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSStimuli.html">Creating Stimuli' +
+      '<span class="caret"></span></a>' +
+      '<ul class="dropdown-menu">' +
+        '<li><a href="BCSStimuli.html">Page 1-1</a></li>' +
+        '<li><a href="#">Page 1-2</a></li>' +
+        '<li><a href="#">Page 1-3</a></li>' +
+        '</ul>' +
+    '</li>' +
     '<li id="spr"><a href="BCSSPR.html">Self-Paced Reading</a></li>' +
     '<li id="analysis"><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
     '<li id="resource"><a href="BCSResources.html">Resources</a></li>' +
