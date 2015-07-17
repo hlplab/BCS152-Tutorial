@@ -4,13 +4,19 @@ $('#nav').html(
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="TestBCSFrontpage.html">Home</a></li>' +
-    '<li id="design"><a href="TestBCSDesign.html">Design</a></li>' +
+    '<li class="dropdown" id="design">'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="TestBCSDesign.html">Design' +
+    '<span class="caret"></span></a>' +
+    '<ul class="dropdown-menu">' +
+      '<li><a href="BCSStimuli.html" style="color:#2980b9">Design</a></li>' +
+      '<li><a href="#" style="color:#f39c12">Design : SPR</a></li>' +
+      '</ul>' +
     '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
     '<li class="dropdown" id="createstim">'+
       '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSStimuli.html">Creating Stimuli' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="BCSStimuli.html">Page 1-1</a></li>' +
+        '<li><a href="BCSStimuli.html">Stimuli</a></li>' +
         '<li><a href="#">Page 1-2</a></li>' +
         '<li><a href="#">Page 1-3</a></li>' +
         '</ul>' +

@@ -1,3 +1,4 @@
+
 /*Changing the CSS of the buttons */
 .btn {
     padding: 14px 24px;
@@ -47,11 +48,7 @@
 
 /*Css for the back and forward buttons both general and spr*/
 .back {
-  position:left;
-}
-
-.forward{
-  position:right;
+  margin-left: 90px
 }
 /*Start to the css of the body */
 body {
