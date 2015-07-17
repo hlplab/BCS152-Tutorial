@@ -1,7 +1,6 @@
 
 /*Changing the CSS of the buttons */
 .btn {
-    padding: 14px 24px;
     border: 0 none;
     font-weight: 700;
     letter-spacing: 1px;
@@ -29,7 +28,6 @@
 /* make the button have an outline */
 .btn.outline {
     background: none;
-    padding: 12px 22px;
 }
 .btn-primary.outline {
     border: 2px solid #0099cc;
@@ -46,10 +44,6 @@
     box-shadow: none;
 }
 
-/*Css for the back and forward buttons both general and spr*/
-.back {
-  margin-left: 90px
-}
 /*Start to the css of the body */
 body {
     background-color: white;
