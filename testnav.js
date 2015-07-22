@@ -9,7 +9,7 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="TestBCSDesign.html" style="color:#2980b9">Design</a></li>' +
-      '<li><a href="#" style="color:#f39c12">Design : SPR</a></li>' +
+      '<li><a href="SPRBCSDesign.html" style="color:#f39c12">Design : SPR</a></li>' +
       '</ul>' +
     '</li>' +
     '<li id="method"><a href="BCSMethod.html">Method</a></li>' +
@@ -17,14 +17,11 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSStimuli.html">Creating Stimuli' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="BCSStimuli.html">Stimuli</a></li>' +
-        '<li><a href="#" style="color:#2980b9">Items</a></li>' +
-        '<li><a href="#" style="color:#2980b9">Lists</a></li>' +
+        '<li><a href="BCSItems.html" style="color:#2980b9">Items & Lists</a></li>' +
         '<li><a href="#" style="color:#2980b9">Crticial Items</a></li>' +
-        '<li><a href="#" style="color:#2980b9">Fillers</a></li>' +
-        '<li><a href="#" style="color:#f39c12">SPR : Items</a></li>' +
-        '<li><a href="#" style="color:#f39c12">SPR : Lists</a></li>' +
-        '<li><a href="#" style="color:#f39c12">SPR : Crticial Items</a></li>' +
+        '<li><a href="BCSFillers.html" style="color:#2980b9">Fillers</a></li>' +
+        '<li><a href="#" style="color:#f39c12">SPR : Items & Lists</a></li>' +
+        '<li><a href="BCSSPRCritical.html" style="color:#f39c12">SPR : Crticial Items</a></li>' +
         '<li><a href="#" style="color:#f39c12">SPR : Fillers</a></li>' +
         '</ul>' +
     '</li>' +
