@@ -28,6 +28,7 @@ $('#nav').html(
     '<li id="spr"><a href="BCSSPR.html">Self-Paced Reading</a></li>' +
     '<li id="analysis"><a href="BCSAnalysis.html">Stimuli Analysis</a></li>' +
     '<li id="resource"><a href="BCSResources.html">Resources</a></li>' +
+    '<li id="glossary"><a href="BCSGlossary.html">Glossary</a></li>' +
   '</ul>' +
 '</div>');
 //reference to the parent frame to get to the daughter frames.
