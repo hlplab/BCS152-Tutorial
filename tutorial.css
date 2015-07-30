@@ -112,10 +112,7 @@ body {
   display:none;
   font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
   position: absolute;
-  /*left:10%;*/           /* left and top here position top left page */
-  /*top: 75px;*/
   word-wrap: break-word;
-  /*padding-right:3000px; */
   padding: 1em;
   text-align: right;
   margin-top:-75px;   /* To get the popup to center correctly we need */
