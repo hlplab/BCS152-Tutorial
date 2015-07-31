@@ -3,7 +3,7 @@
   color:#ecf0f1;
   padding:20px;
   height:100px;
-  width:100px;"
+  width:100px;
 }
 
 .trial {
@@ -12,19 +12,6 @@
   padding:20px;
   height:100px;
   width:100px;
-}
-.trial.1 {
-  background-color:#1abc9c;
-}
-.trial.2 {
-  background-color:#2ecc71;
-
-}
-.trial.3 {
-  background-color:#16a085;
-}
-.trial.4 {
-  background-color:#27ae60;
 }
 
 .navspr{
