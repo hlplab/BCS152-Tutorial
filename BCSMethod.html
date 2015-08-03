@@ -77,11 +77,8 @@
     </div>
     <div class="jumbotron ques">
       <h1>Test Question</h1>
-      <button class="btn LearnMoreBtn">Something else</button>
-      <div class="popup">
-        Some other text
-        <button class="btn CloseBtn">done</button>
-      </div> <!-- why isn't this working :( -->
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Take the Quiz</button>
+        <div id="demo" class="collapse">
       <p class="question">1. What is the answer to this question?</p>
       <ul class="answers">
         <li><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label></li>
@@ -166,6 +163,7 @@
       <div id="alerts"></div>
 
   </div>
+</div>
 
 
 
