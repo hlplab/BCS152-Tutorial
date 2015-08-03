@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   //Pop up JS
   $('.LearnMoreBtn').on('click', function() {
-    $(this).siblings('.popup').show();
+    $(this).next('.popup').show();
   });
 
   $('.CloseBtn').on('click', function() {
