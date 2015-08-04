@@ -14,16 +14,7 @@
   <body>
     <nav id="nav" class="navbar navbar-default"></nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-2"><a class="btn btn-xs btn-primary" href="" data-toggle="tooltip" title="General">Back</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-warning" href="BCSSPR.html" data-toggle="tooltip" title="SPR">Back</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-warning" href="BCSSPR.html" data-toggle="tooltip" title="SPR : Design">Next</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-primary" href="TestBCSDesign.html" data-toggle="tooltip" title="General : Design">Next</a></div>
-      </div>
-    </div>
-    </div>
-    <div>
+
       <div class="jumbotron ex">
         <h1>Analysis</h1>
         <p>This guide will help you understand the SPR report you received with
@@ -74,7 +65,7 @@
           <img src="Analysis5.png"></img>
         </p>
     </div>
-    <div class ="jumbotron ex">
+    <div class ="jumbotron spr">
       <h1>Example Walkthrough</h1>
       <p><b>Exclusions</b> We always clean our data to remove points that might
         not be valid. The first thing we do is remove participants who have a low
@@ -183,12 +174,19 @@
           picture of your results. </p>
     </div>
     <div class="jumbotron">
-      <a href="TestBCSDesign.html" class="btn btn-block btn-lg btn-success">continue</a>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-2"><a class="btn btn-warning" href="BCSSPRParticipants.html">&larr;Participants</a></div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3"><a class="btn btn-primary" href="BCSGenAnalysis.html">General Analysis&uarr;</a></div>
+          <div class="col-md-4"><a class="btn btn-warning" href="BCSSPRAnnotation.html">Annotation &rarr;</a></div>
+        </div>
+      </div>
     </div>
-    <div class="jumbotron ques">
-      <h1>Test Question</h1>
-      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Take the Quiz</button>
+
+    <div class="jumbotron">
+      <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Quiz</button>
         <div id="demo" class="collapse">
       <p class="question">1. What is the answer to this question?</p>
       <ul class="answers">
@@ -273,9 +271,8 @@
       </div>
       <div id="alerts"></div>
 
-
-
-
+  </div>
+    </div>
   <!--[if lt IE 9]>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <![endif]-->

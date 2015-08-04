@@ -84,10 +84,10 @@ body {
 }
 
 .jumbotron.ex h1 {
-    color: #e74c3c;
+    color: #2980b9;
 }
 .jumbotron.ques h1 {
-    color: #2980b9;
+    color: #e74c3c;
 }
 .jumbotron.spr h1 {
     color: #f39c12;
