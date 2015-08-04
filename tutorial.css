@@ -93,6 +93,26 @@ body {
     color: #f39c12;
 }
 
+.jumbotron.R h1 {
+    color: #c0392b;
+}
+.jumbotron.A h1 {
+    color: #d35400;
+}
+.jumbotron.I h1 {
+    color: #f39c12;
+}
+.jumbotron.N h1 {
+    color: #27ae60;
+}
+.jumbotron.B h1 {
+    color: #2980b9;
+}
+.jumbotron.O h1 {
+    color: #9b59b6;
+}
+
+
 /* Pop up css */
 
 .popup {
