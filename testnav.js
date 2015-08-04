@@ -3,7 +3,7 @@ $('#nav').html(
 '<div class="collapse navbar-collapse">' +
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
-    '<li id="home" ><a href="TestBCSFrontpage.html">Home</a></li>' +
+    '<li id="home" ><a href="BCSFrontpage.html">Home</a></li>' +
     '<li><a href="#"></a></li>' +
     '<li id="start" ><a href="BCSHDIStart.html">How Do I Start?</a></li>' +
     '<li><a href="#"></a></li>' +
