@@ -14,184 +14,32 @@
   <body>
     <nav id="nav" class="navbar navbar-default"></nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-2"><a class="btn btn-xs btn-primary" href="" data-toggle="tooltip" title="General">Back</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-warning" href="BCSSPR.html" data-toggle="tooltip" title="SPR">Back</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-warning" href="BCSSPR.html" data-toggle="tooltip" title="SPR : Design">Next</a></div>
-        <div class="col-md-2"><a class="btn btn-xs btn-primary" href="TestBCSDesign.html" data-toggle="tooltip" title="General : Design">Next</a></div>
-      </div>
-    </div>
 
     <div>
       <div class="jumbotron ex">
         <h1>Items</h1>
-          <p>An item usually is a set of stimuli that only differ along the dimensions
-            that define the conditions of the experiment (manipulations). So,
-            in a 2 x 2 design, each item has 4 conditions (= four different versions).
-            There are between-item designs where this logic breaks down, but let's ignore
-            this for now. The stimuli within an item should only differ as defined
-            by the design. Everything else between them should be the same. E.g.,
-            here's an example item for a 2x2 design, crossing word frequency and
-            predictability, where the target word is in italics:
-          </p>
-          <p>
-            <ul>
-              <li>a) High predictability, high frequency: He ate some pizza.</li>
-              <li>b) High predictability, low frequency: He ate some kimchi.</li>
-              <li>c) Low predictability, high frequency: He saw some pizza.</li>
-              <li>d) Low predictability, low frequency: He saw some kimchi. </li>
-            </ul>
-          </p>
-          <p>
-            Note that the different stimuli aim to hold the context (he ate/saw
-            some) as constant as possible. We also generally aim to hold other
-            factors that might matter constant. For example, in the above example
-            item, all target words a bisyllabic (have two syllables) with stress
-            on the first syllable. Additionally, both ate and saw are mono-syllabic,
-            so that the target words is equally many syllables away both fro the
-            start and the end of the sentence.
-          </p>
-
-      <h4>How should the items and conditions be distributed across lists?</h4>
-        <p>Let's consider a 2 x 2 design, with the four conditions a1, b1, a2, and b2. The
-         minimum number of lists we will need is four. Let's say that we use 8-times
-         more items than condition (a.k.a. 8 items per condition) and that List1
-         looks like this (prior to sorting and prior to the inclusion of fillers,
-         more on that later): </p>
-
-
-      <p>  <div style="float: left; width: 50%;">
-          <ul>List1:
-              <li style=color:#c0392b>Item1 in condition a1</li>
-              <li style=color:#9b59b6>Item2 in condition b1</li>
-              <li style=color:#2980b9>Item3 in condition a2</li>
-              <li style=color:#e67e22>Item4 in condition b2</li>
-              <li style=color:#c0392b>Item5 in condition a1</li>
-              <li style=color:#9b59b6>Item6 in condition b1</li>
-              <li style=color:#2980b9>Item7 in condition a2</li>
-              <li style=color:#e67e22>Item8 in condition b2</li>
-              <li>...</li>
-              <li style=color:#c0392b>Item29 in condition a1</li>
-              <li style=color:#9b59b6>Item30 in condition b1</li>
-              <li style=color:#2980b9>Item31 in condition a2</li>
-              <li style=color:#e67e22>Item32 in condition b2</li>
-            </ul>
-          </div>
-          <div style="float: right; width: 50%;">
-            <ul style="inline-block">Example:
-                <li style=color:#c0392b>The apple is ripe for picking</li>
-                <li style=color:#9b59b6>The orange is perfect for juicing</li>
-                <li style=color:#2980b9>The kiwi is running away</li>
-                <li style=color:#e67e22>The potato is peeling</li>
-                <li style=color:#c0392b>The calendar is ripe for picking</li>
-                <li style=color:#9b59b6>The computer is perfect for juicing</li>
-                <li style=color:#2980b9>The monkey is running away</li>
-                <li style=color:#e67e22>The banana is peeling</li>
-                <li>...</li>
-                <li style=color:#c0392b>The gem is ripe for picking</li>
-                <li style=color:#9b59b6>The stone is perfect for juicing</li>
-                <li style=color:#2980b9>The limestone is running away</li>
-                <li style=color:#e67e22>The granite  is peeling</li>
-              </ul>
-            </div>
-      </p>
-    <p>So, List1 contains each item only once, and each condition (a1, b1, a2, b2) occurs equally often (8 times). Now we want a second list that fulfills these constraints and brings us closer to the third constraints stated above, that --across lists-- each item should be seen equally often in all its conditions. To achieve this, we construct List2 by simply shifting the condition one up. So the condition of Item1 in List2 will be the one of Item2 in List1, etc. The last item of List2 will occur in the same condition as the first item of List1
-
-    <div style="float: left; width: 50%;">
-      <ul>List2:
-          <li style=color:#9b59b6>Item1 in condition b1</li>
-          <li style=color:#2980b9>Item2 in condition a2</li>
-          <li style=color:#e67e22>Item3 in condition b2</li>
-          <li style=color:#c0392b>Item4 in condition a1</li>
-          <li style=color:#9b59b6>Item5 in condition b1</li>
-          <li style=color:#2980b9>Item6 in condition a2</li>
-          <li style=color:#e67e22>Item7 in condition b2</li>
-          <li style=color:#c0392b>Item8 in condition a1</li>
-          <li>...</li>
-          <li style=color:#9b59b6>Item29 in condition b1</li>
-          <li style=color:#2980b9>Item30 in condition a2</li>
-          <li style=color:#e67e22>Item31 in condition b2</li>
-          <li style=color:#c0392b>Item32 in condition a1</li>
-        </ul>
-      </div>
-      <div style="float: right; width: 50%;">
-        <ul>Example:
-            <li style=color:#9b59b6>The apple is perfect for juicing</li>
-            <li style=color:#2980b9>The orange is running away</li>
-            <li style=color:#e67e22>The kiwi is peeling</li>
-            <li style=color:#c0392b>The potato is ripe for picking</li>
-            <li style=color:#9b59b6>The calendar is perfect for juicing</li>
-            <li style=color:#2980b9>The computer is running away</li>
-            <li style=color:#e67e22>The monkey is peeling</li>
-            <li style=color:#c0392b>The banana is ripe for picking</li>
-            <li>...</li>
-            <li style=color:#9b59b6>The gem is perfect for juicing</li>
-            <li style=color:#2980b9>The stone is running away</li>
-            <li style=color:#e67e22>The limestone is peeling</li>
-            <li style=color:#c0392b>The granite is ripe for picking</li>
-          </ul>
-        </div></p>
-      <p><p>If we repeat this for <b>List3 and List4</b> (see below),
-        you will see that <b>across lists</b> each item occurs exactly once in each of its conditions, and --within lists-- each item occurs once and all conditions occur equally often across items. That's what we want. (Latin square designs are most powerful, if each item is seen equally often in each condition across all participants. That is, we want each list to be seen by equally many participants, but that is a matter to be kept track of later when we run the experiment)
-
-      <div style="float: left; width: 50%;">
-        <ul>List3:
-            <li style=color:#2980b9>Item1 in condition a2</li>
-            <li style=color:#e67e22>Item2 in condition b2</li>
-            <li style=color:#c0392b>Item3 in condition a1</li>
-            <li style=color:#9b59b6>Item4 in condition b1</li>
-            <li>...</li>
-            <li style=color:#2980b9>Item29 in condition a2</li>
-            <li style=color:#e67e22>Item30 in condition b2</li>
-            <li style=color:#c0392b>Item31 in condition a1</li>
-            <li style=color:#9b59b6>Item32 in condition b1</li>
-          </ul>
-        </div>
-        <div style="float: right; width: 50%;">
-          <ul>Example:
-              <li style=color:#2980b9>The apple is running away</li>
-              <li style=color:#e67e22>The orange is peeling</li>
-              <li style=color:#c0392b>The kiwi is ripe for picking</li>
-              <li style=color:#9b59b6>The potato is perfect for juicing</li>
-              <li>...</li>
-              <li style=color:#2980b9>The gem is running away</li>
-              <li style=color:#e67e22>The stone is peeling</li>
-              <li style=color:#c0392b>The limestone is ripe for picking</li>
-              <li style=color:#9b59b6>The granite is perfect for juicing</li>
-            </ul>
-          </div>
-        <p>Here is an example of stimuli from a 2x2 design with a box around the critical words:</p>
-        <img src="http://wiki.bcs.rochester.edu/HlpLab/BCS152SPRExperiment?action=AttachFile&do=get&target=SPRexample_condition_75.png"></img>
-        <p>In this design the experimenters are manipulating the verb ('saw', 'ate') and final noun ('apple', 'kiwi'). This is an example of one item with four conditions:
-          <ul>
-            <li>I saw the apple</li>
-            <li>I saw the kiwi</li>
-            <li>I ate the apple</li>
-            <li>I ate the kiwi </li>
-          </ul>
-          <p>
-            In a within-participant Latin square design (which is what you will be running),
-            participants see this item once in one and only one of its conditions.
-            The first manipulation is to make the verb either uninformative
-            unconstraining (e.g. 'saw'; you can see many things and it doesn't
-            cause you to generate any constraining expectations) or informative
-            constraining ('ate'; there is a much more constrained set of edible
-            things in the world, generating an expectation of an edible noun).
-            The second manipulation is to make the final noun either high frequency
-            (e.g. 'apple') or low frequency (e.g. 'kiwi'). In this design the experimenters
-            are interested in reading times of the final noun (RT = reading time); you can
-            have a different region of interest in your own study.
-          </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor
+          at metus vel pellentesque. Mauris vel eros in urna fringilla malesuada.
+          Aliquam vestibulum rhoncus felis commodo faucibus. Nunc at posuere ipsum.
+          Aenean commodo lorem feugiat leo efficitur, non gravida erat dapibus.
+          Proin varius est quis eros facilisis, sed imperdiet eros vestibulum.
+           Nunc eleifend turpis sapien, sed feugiat sapien consequat vitae. Donec
+           at quam in augue vestibulum ultrices eget ut urna. Maecenas velit orci,
+           semper eu ipsum quis, viverra tristique orci. Integer fermentum elit purus,
+           non scelerisque sem ultrices vitae. Morbi egestas odio quis ligula elementum
+           fermentum. Donec vel auctor nibh, blandit dictum felis. Sed ornare odio vitae
+           lectus blandit semper. Morbi ut porttitor augue, quis luctus risus. </p>
     </div>
     <div class="jumbotron">
       <div class="container">
         <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-2"><a class="btn btn-primary" href="BCSProcedure.html">&larr;Procedure</a></div>
-          <div class="col-md-1"></div>
-          <div class="col-md-3"><a class="btn btn-warning" href="BCSSPRItems.html">SPR Items and Lists&darr;</a></div>
-          <div class="col-md-4"><a class="btn btn-primary" href="BCSFillers.html">Fillers &rarr;</a></div>
+          <table>
+            <tr>
+              <td class="col-md-5"><div><a class="btn btn-primary" href="BCSProcedure.html">&larr;Procedure</a></div></td>
+              <td class="col-md-6"><div><a class="btn btn-warning" href="BCSSPRItems.html">SPR Items and Lists&darr;</a></div></td>
+              <td class="col-md-5"><div><a class="btn btn-primary" href="BCSFillers.html">Fillers &rarr;</a></div></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>

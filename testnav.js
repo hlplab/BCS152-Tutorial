@@ -30,8 +30,8 @@ $('#nav').html(
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
         '<li><a href="BCSItems.html" style="color:#2980b9">Items & Lists</a></li>' +
-        '<li><a href="BCSFiller.html" style="color:#2980b9">Fillers</a></li>' +
-        '<li><a href="#" style="color:#2980b9">Critical Items</a></li>' +
+        '<li><a href="BCSFillers.html" style="color:#2980b9">Fillers</a></li>' +
+        '<li><a href="BCSCritical.html" style="color:#2980b9">Critical Items</a></li>' +
         '<li><a href="SPRBCSItems.html" style="color:#f39c12">SPR Items & Lists</a></li>' +
         '<li><a href="BCSSPRFillers.html" style="color:#f39c12">SPR Fillers</a></li>' +
         '<li><a href="BCSSPRCritical.html" style="color:#f39c12">SPR Crticial Items</a></li>' +
