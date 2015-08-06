@@ -12,7 +12,9 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="BCSDesign.html" style="color:#2980b9">Design</a></li>' +
+      '<li><a href="BCSParticipants.html" style="color:#2980b9">Participants</a></li>' +
       '<li><a href="BCSSPRDesign.html" style="color:#f39c12">SPR Design</a></li>' +
+      '<li><a href="BCSSPRParticipants.html" style="color:#f39c12">SPR Participants</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -26,37 +28,28 @@ $('#nav').html(
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="createstim">'+
-      '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSItems.html">Creating Stimuli' +
+      '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSItems.html">Materials' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
         '<li><a href="BCSItems.html" style="color:#2980b9">Items & Lists</a></li>' +
         '<li><a href="BCSFillers.html" style="color:#2980b9">Fillers</a></li>' +
         '<li><a href="BCSCritical.html" style="color:#2980b9">Critical Items</a></li>' +
-        '<li><a href="SPRBCSItems.html" style="color:#f39c12">SPR Items & Lists</a></li>' +
+        '<li><a href="BCSSPRItems.html" style="color:#f39c12">SPR Items & Lists</a></li>' +
         '<li><a href="BCSSPRFillers.html" style="color:#f39c12">SPR Fillers</a></li>' +
         '<li><a href="BCSSPRCritical.html" style="color:#f39c12">SPR Crticial Items</a></li>' +
         '</ul>' +
-    '</li>' +
-    '<li><a href="#"></a></li>' +
-    '<li class="dropdown" id="particpants">'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSParticipants.html">Participants' +
-    '<span class="caret"></span></a>' +
-    '<ul class="dropdown-menu">' +
-      '<li><a href="BCSParticipants.html" style="color:#2980b9">Participants</a></li>' +
-      '<li><a href="BCSSPRParticipants.html" style="color:#f39c12">SPR Participants</a></li>' +
-      '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="analysis">'+
       '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSAnalysis.html">Analysis' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="BCSGenAnalysis.html" style="color:#2980b9">General</a></li>' +
+        '<li><a href="BCSGenAnalysis.html" style="color:#2980b9">Overview</a></li>' +
         '<li><a href="BCSAnnotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
         '<li><a href="BCSExclusion.html" style="color:#2980b9">Exclusion</a></li>' +
         '<li><a href="BCSResults.html" style="color:#2980b9">Results</a></li>' +
         '<li><a href="BCSVSReport.html" style="color:#2980b9">Visual Report</a></li>' +
-        '<li><a href="BCSSPRAnalysis.html" style="color:#f39c12">SPR General</a></li>' +
+        '<li><a href="BCSSPRAnalysis.html" style="color:#f39c12">SPR Overview</a></li>' +
         '<li><a href="BCSSPRAnnotation.html" style="color:#f39c12">SPR Annotation & Scoring</a></li>' +
         '<li><a href="BCSSPRExclusion.html" style="color:#f39c12">SPR Exclusion</a></li>' +
         '<li><a href="BCSSPRResults.html" style="color:#f39c12">SPR Results</a></li>' +
