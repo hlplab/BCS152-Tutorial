@@ -179,6 +179,11 @@ body {
   font-size: medium;
 }
 
+.jumbotron ul {
+  font-size: medium;
+  font-weight: 200;
+}
+
 .jumbotron h1 {
   font-size: xx-large;
 }
