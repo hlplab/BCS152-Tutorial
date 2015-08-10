@@ -1,151 +1,233 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="utf-8">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BCS 152 Tutorial</title>
-
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="tutorial-whatwhatwhat.css">
     <link rel="stylesheet" type="text/css" href="tutorial.css">
   </head>
-
   <body>
     <nav id="nav" class="navbar navbar-default"></nav>
-
-
     <div>
       <div class="jumbotron ex">
-        <h1>Items</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor
-          at metus vel pellentesque. Mauris vel eros in urna fringilla malesuada.
-          Aliquam vestibulum rhoncus felis commodo faucibus. Nunc at posuere ipsum.
-          Aenean commodo lorem feugiat leo efficitur, non gravida erat dapibus.
-          Proin varius est quis eros facilisis, sed imperdiet eros vestibulum.
-           Nunc eleifend turpis sapien, sed feugiat sapien consequat vitae. Donec
-           at quam in augue vestibulum ultrices eget ut urna. Maecenas velit orci,
-           semper eu ipsum quis, viverra tristique orci. Integer fermentum elit purus,
-           non scelerisque sem ultrices vitae. Morbi egestas odio quis ligula elementum
-           fermentum. Donec vel auctor nibh, blandit dictum felis. Sed ornare odio vitae
-           lectus blandit semper. Morbi ut porttitor augue, quis luctus risus. </p>
-    </div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <table>
-            <tr>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="BCSSPRProcedure.html">&larr;SPR Procedure</a></div></td>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="BCSSPRItems.html">SPR Items and Lists &rarr;</a></div></td>
-            </tr>
-          </table>
+        <h1>Items and Lists</h1>
+        <p>How should the items and conditions be distributed across lists?
+          Let's consider a 2 x 2 design, with the four conditions A1, B1, A2,
+          and B2. The minimum number of lists we will need is four. Let's say
+          that we use 8-times more items than condition (a.k.a. 8 items per
+          condition) and that List1 looks like this (prior to sorting and prior
+          to the inclusion of fillers, more on that later):</p>
+        <div><span class="trialCenter">
+            <div> <span class="filler"> Item # </span><span class="filler">
+                Cond A1 </span><span class="filler"> Cond B1 </span><span class="filler">
+                Cond A2 </span><span class="filler"> Cond B2 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 1 </span><span class="condON"> X </span><span
+                class="condOFF">
+              </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 2 </span><span class="condOFF"> </span><span
+                class="condON">
+                X </span><span class="condOFF"> </span><span class="condOFF">
+              </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 3 </span><span class="condOFF"> </span><span
+                class="condOFF">
+              </span><span class="condON"> X </span> <span class="condOFF"> </span></div>
+            <div><span class="NewLine"></span></div>
+            <div><span class="item"> Item 4 </span><span class="condOFF"> </span><span
+                class="condOFF">
+              </span><span class="condOFF"> </span><span class="condON"> X </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 5 </span><span class="condON"> X </span><span
+                class="condOFF">
+              </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 6 </span><span class="condOFF"> </span><span
+                class="condON">
+                X </span><span class="condOFF"> </span><span class="condOFF">
+              </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item ... </span><span class="condOFF"> </span><span
+                class="condOFF">
+              </span><span class="condON"> X </span><span class="condOFF"> </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 32 </span><span class="condOFF"> </span><span
+                class="condOFF">
+              </span><span class="condOFF"> </span><span class="condON"> X </span></div>
+            <div><span class="NewLine"></span></div>
+          </span></div>
+        <p> </p>
+        <h3>Full Latin Square Design</h3>
+        So, List1 contains each item only once, and each condition (a1, b1, a2,
+        b2) occurs equally often (8 times). Now we want a second list that
+        fulfills these constraints and brings us closer to the third constraints
+        stated above, that --across lists-- each item should be seen equally
+        often in all its conditions. To achieve this, we construct List2 by
+        simply shifting the condition one up. So the condition of Item1 in List2
+        will be the one of Item2 in List1, etc. The last item of List2 will
+        occur in the same condition as the first item of List1.<br>
+        <br>
+        If we repeat this for List3 and List4 (see below), you will see that
+        --across lists-- each item occurs exactly once in each of its
+        conditions, and --within lists-- each item occurs once and all
+        conditions occur equally often across items. That's what we want. (Latin
+        square designs are most powerful, if each item is seen equally often in
+        each condition across all participants. That is, we want each list to be
+        seen by equally many participants, but that is a matter to be kept track
+        of later when we run the experiment).<br>
+        <br>
+        <div><span class="trialCenter">
+            <div> <span class="filler"> Item # </span><span class="filler">
+                Cond A1 </span><span class="filler"> Cond B1 </span><span class="filler">
+                Cond A2 </span><span class="filler"> Cond B2 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 1 </span><span class="condON"> List
+                1 </span><span class="list2"> List 2 </span><span class="list3">
+                List 3 </span><span class="list4"> List 4 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 2 </span><span class="list4">List 4</span><span
+                class="condON">
+                List 1 </span><span class="list2"> List 2 </span><span class="list3">List
+                3 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 3 </span><span class="list3"> List
+                3</span><span class="list4"> List 4 </span><span class="condON">
+                List 1 </span> <span class="list2"> List 2 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div><span class="item"> Item 4 </span><span class="list2"> List 2
+              </span><span class="list3"> List 3 </span><span class="list4">
+                List 4</span><span class="condON"> List 1 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 5 </span><span class="condON"> List
+                1 </span><span class="list2"> List 2 </span><span class="list3">
+                List 3 </span><span class="list4"> List 4 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item 6 </span><span class="list4">List 4</span><span
+                class="condON">
+                List 1 </span><span class="list2"> List 2 </span><span class="list3">List
+                3 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div> <span class="item"> Item ... </span><span class="list3">
+                List 3</span><span class="list4"> List 4 </span><span class="condON">
+                List 1 </span> <span class="list2"> List 2 </span></div>
+            <div><span class="NewLine"></span></div>
+            <div><span class="item"> Item 32 </span><span class="list2"> List 2
+              </span><span class="list3"> List 3 </span><span class="list4">
+                List 4</span><span class="condON"> List 1 </span></div>
+            <div><span class="NewLine"></span></div>
+          </span></div>
+        <br>
+        Here is an example of stimuli from a 2x2 design with a box around the
+        critical words:<br>
+        <br>
+        <img title="Example Condition" alt="SPR Example Condition" src="SPRexample_condition_75.png"><br>
+        <br>
+        In this design the experimenters are manipulating the verb ('saw',
+        'ate') and final noun ('apple', 'kiwi'). This is an example of one item
+        with four conditions:<br>
+        <br>
+        <ul>
+          <li>I saw the apple</li>
+          <li>I saw the kiwi</li>
+          <li>I ate the apple</li>
+          <li>I ate the kiwi</li>
+        </ul>
+        In a within-participant Latin square design (which is what you will be
+        running), participants see this item once in one and only one of its
+        conditions. The first manipulation is to make the verb either
+        uninformative unconstraining (e.g. 'saw'; you can see many things and it
+        doesn't cause you to generate any constraining expectations) or
+        informative constraining ('ate'; there is a much more constrained set of
+        edible things in the world, generating an expectation of an edible
+        noun). The second manipulation is to make the final noun either high
+        frequency (e.g. 'apple') or low frequency (e.g. 'kiwi'). In this design
+        the experimenters are interested in reading times of the final noun (RT
+        = reading time); you can have a different region of interest in your own
+        study.<br>
+        <h3>Some notes on critical items</h3>
+        The sentences here are only different as it relates to the
+        manipulations. That is everything is held constant except for the
+        portions that are part of the experimental design: I __ the __. Design
+        your items to be like this too (for another example see the stimuli
+        below). Notice that the manipulations are also very controlled. In the
+        example above the verbs are both one syllable and equally frequent, the
+        difference between them is minimized as much as possible to how
+        constraining they are. The final nouns are also very similar: both have
+        two syllables. The region of interest is held constant too, the final
+        noun is the same distance from both the start and end of the sentence.<br>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-warning" href="BCSSPRProcedure.html">←SPR
+                        Procedure</a></div>
+                  </td>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-warning" href="BCSSPRItems.html">SPR
+                        Items and Lists →</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="jumbotron">
-      <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Quiz</button>
+      <div class="jumbotron"> <button type="button" class="btn btn-block btn-lg btn-danger"
+          data-toggle="collapse"
+          data-target="#demo">Test Your Understanding</button>
         <div id="demo" class="collapse">
-      <p class="question">1. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label></li>
-        <li><input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label></li>
-        <li><input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label></li>
-        <li><input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">2. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Answer 1</label></li>
-        <li><input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Answer 2</label></li>
-        <li><input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Answer 3</label></li>
-        <li><input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Answer 4</label></li>
-      </ul>
-      <p class="question">3. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Answer 1</label></li>
-        <li><input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Answer 2</label></li>
-        <li><input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Answer 3</label></li>
-        <li><input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">4. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Answer 1</label></li>
-        <li><input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Answer 2</label></li>
-        <li><input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Answer 3</label></li>
-        <li><input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">5. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Answer 1</label></li>
-        <li><input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Answer 2</label></li>
-        <li><input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Answer 3</label></li>
-        <li><input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">6. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Answer 1</label></li>
-        <li><input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Answer 2</label></li>
-        <li><input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Answer 3</label></li>
-        <li><input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">7. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Answer 1</label></li>
-        <li><input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Answer 2</label></li>
-        <li><input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Answer 3</label></li>
-        <li><input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">8. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Answer 1</label></li>
-        <li><input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Answer 2</label></li>
-        <li><input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Answer 3</label></li>
-        <li><input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">9. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Answer 1</label></li>
-        <li><input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Answer 2</label></li>
-        <li><input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Answer 3</label></li>
-        <li><input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Answer 4</label></li>
-      </ul>
-
-      <p class="question">10. What is the answer to this question?</p>
-      <ul class="answers">
-        <li><input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Answer 1</label></li>
-        <li><input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Answer 2</label></li>
-        <li><input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Answer 3</label></li>
-        <li><input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Answer 4</label></li>
-      </ul>
-      <div id="results">
-        Check
+          <p class="question">1. How many items would you need with this design
+            if you want to have 20 items per condition?</p>
+          <ul class="answers">
+            <li><input name="q1" value="a" id="q1a" type="radio"><label for="q1a">72</label></li>
+            <li><input name="q1" value="b" id="q1b" type="radio"><label for="q1b">80</label></li>
+            <li><input name="q1" value="c" id="q1c" type="radio"><label for="q1c">64<br>
+              </label></li>
+            <li><input name="q1" value="d" id="q1d" type="radio"><label for="q1d">88<br>
+              </label></li>
+          </ul>
+          <p class="question">2. If List 1 is: A1, A2, B1, B2, A1, A2, B1, B2,
+            which of the following lists is incorrect (would not complete the
+            Latin square design)?</p>
+          <ul class="answers">
+            <li><input name="q2" value="a" id="q2a" type="radio"><label for="q2a">A2,
+                B1, B2, A1, A2, B1, B2, A1 <br>
+              </label></li>
+            <li><input name="q2" value="b" id="q2b" type="radio"><label for="q2b">B2,
+                A1, A2, B1, B2, A1, A2, B1<br>
+              </label></li>
+            <li><input name="q2" value="c" id="q2c" type="radio"><label for="q2c">B1,
+                A1, B2, A2, B1, A1, B2, A2<br>
+              </label></li>
+            <li><input name="q2" value="d" id="q2d" type="radio"><label for="q2d">B1,
+                B2, A1, A2, B1, B2, A1, A2<br>
+              </label></li>
+          </ul>
+          <div id="results"> Check </div>
+          <div id="alerts"></div>
+        </div>
       </div>
-      <div id="alerts"></div>
-
-  </div>
-    </div>
-
-  <!--[if lt IE 9]>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <![endif]-->
-  <!--[if gte IE 9]><!-->
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!--<![endif]-->
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-  <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="testnav.js"></script>
-  <script type="text/javascript" src="quiz-1.js"></script>
-  <script type="text/javascript">
+      <!--[if lt IE 9]>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <![endif]-->
+      <!--[if gte IE 9]><!-->
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <!--<![endif]-->
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+      <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="testnav.js"></script>
+      <script type="text/javascript" src="quiz-items.js"></script>
+      <script type="text/javascript">
     $(document).ready(function() {
       $('li#createstim').addClass('active');
     });
-  </script>
+  </script> </div>
+
   </body>
 </html>
