@@ -56,6 +56,7 @@ $('#nav').html(
         '<li><a href="BCSSPRVSReport.html" style="color:#f39c12">SPR Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
+    '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="interpret">'+
     '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSParticipants.html">Interpretation' +
     '<span class="caret"></span></a>' +
