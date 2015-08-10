@@ -1,17 +1,115 @@
+.NewLine {
+  clear: both;
+  float: left;
+  display: block;
+  position: relative;
+  }
+
 .filler {
   background-color:#34495e;
   color:#ecf0f1;
   padding:20px;
-  height:100px;
-  width:100px;
+  width:72px;
+  float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    text-align: center;
 }
 
 .trial {
   background-color:#1abc9c;
   color:#ecf0f1;
   padding:20px;
-  height:100px;
-  width:100px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.item {
+  background-color: #638CA6;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.condON {
+  background-color: #17A697;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.condOFF {
+  background-color:#dddada;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.list2 {
+  background-color: #1abcab;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.list3 {
+  background-color: #1dd3c0;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.list4 {
+  background-color: #28e1ce;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+
+.trialCenter {
+  display: block;
+  display: inline-block;
+align: center;
+width: 600px;
+}
+
+
+.clr{
+clear:both;
 }
 
 .navspr{
