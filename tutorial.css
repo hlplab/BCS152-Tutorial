@@ -29,7 +29,7 @@
 }
 
 .item {
-  background-color: #638CA6;
+  background-color: black;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -65,7 +65,7 @@
 }
 
 .list2 {
-  background-color: #1abcab;
+  background-color: #e74c3c;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -77,7 +77,7 @@
 }
 
 .list3 {
-  background-color: #1dd3c0;
+  background-color: #f1c40f;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -89,7 +89,7 @@
 }
 
 .list4 {
-  background-color: #28e1ce;
+  background-color: #2ecc71;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -177,11 +177,6 @@ body {
 
 .jumbotron p {
   font-size: medium;
-}
-
-.jumbotron ul {
-  font-size: medium;
-  font-weight: 200;
 }
 
 .jumbotron h1 {
