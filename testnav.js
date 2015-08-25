@@ -4,7 +4,7 @@ $('#nav').html(
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="BCSFrontpage.html">Home</a></li>' +
-    '<li><a href="#"></a></li>' +
+    '<li><a href="HDIS"></a></li>' +
     '<li id="start" ><a href="BCSHDIStart.html">How Do I Start?</a></li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="design">'+

@@ -1,3 +1,16 @@
+/*For tooltip text*/
+.red {
+  color:#c0392b;
+  font-weight: bold
+}
+/*fix*/
+.red a:hover, a:active {
+    color: #c0392b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Boxes for the filler and trial pages*/
 .NewLine {
   clear: both;
   float: left;
@@ -182,7 +195,9 @@ body {
 .jumbotron h1 {
   font-size: xx-large;
 }
-
+.jumbotron.ex {
+    background-color: #A1CAF1;
+}
 .jumbotron.ex h1 {
     color: #2980b9;
 }
@@ -192,7 +207,9 @@ body {
 .jumbotron.spr h1 {
     color: #f39c12;
 }
-
+.jumbotron.spr {
+    background-color: #FDFD96;
+}
 .jumbotron.R h1 {
     color: #c0392b;
 }
