@@ -14,7 +14,6 @@ $('#nav').html(
       '<li><a href="BCSDesign.html" style="color:#2980b9">Design</a></li>' +
       '<li><a href="BCSParticipants.html" style="color:#2980b9">Participants</a></li>' +
       '<li><a href="BCSSPRDesign.html" style="color:#f39c12">SPR Design</a></li>' +
-      '<li><a href="BCSSPRParticipants.html" style="color:#f39c12">SPR Participants</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +

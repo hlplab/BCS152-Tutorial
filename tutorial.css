@@ -1,3 +1,8 @@
+/*Resize the window and cap it*/
+html, body {
+  min-width: 1000px;
+  max-width: 1500px;
+}
 /*For tooltip text*/
 .red {
   color:#c0392b;
