@@ -4,7 +4,7 @@ $('#nav').html(
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="BCSFrontpage.html">Home</a></li>' +
-    '<li><a href="HDIS"></a></li>' +
+    '<li><a href="#"></a></li>' +
     '<li id="start" ><a href="BCSHDIStart.html">How Do I Start?</a></li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="design">'+
@@ -18,15 +18,6 @@ $('#nav').html(
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
-    '<li class="dropdown" id="procedure">'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSProcedure.html">Procedure' +
-    '<span class="caret"></span></a>' +
-    '<ul class="dropdown-menu">' +
-      '<li><a href="BCSProcedure.html" style="color:#2980b9">Procedure</a></li>' +
-      '<li><a href="BCSSPRProcedure.html" style="color:#f39c12">SPR Procedure</a></li>' +
-      '</ul>' +
-    '</li>' +
-    '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="createstim">'+
       '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSItems.html">Materials' +
       '<span class="caret"></span></a>' +
@@ -34,10 +25,21 @@ $('#nav').html(
         '<li><a href="BCSItems.html" style="color:#2980b9">Items & Lists</a></li>' +
         '<li><a href="BCSFillers.html" style="color:#2980b9">Fillers</a></li>' +
         '<li><a href="BCSCritical.html" style="color:#2980b9">Critical Items</a></li>' +
+        '<li><a href="BCSConfounds.html" style="color:#2980b9">Confounds</a></li>' +
         '<li><a href="BCSSPRItems.html" style="color:#f39c12">SPR Items & Lists</a></li>' +
         '<li><a href="BCSSPRFillers.html" style="color:#f39c12">SPR Fillers</a></li>' +
         '<li><a href="BCSSPRCritical.html" style="color:#f39c12">SPR Crticial Items</a></li>' +
+        '<li><a href="BCSSPRGoodStimuli.html" style="color:#f39c12">SPR Making Good Stimuli</a></li>' +
         '</ul>' +
+    '</li>' +
+    '<li><a href="#"></a></li>' +
+    '<li class="dropdown" id="procedure">'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="BCSProcedure.html">Procedure' +
+    '<span class="caret"></span></a>' +
+    '<ul class="dropdown-menu">' +
+      '<li><a href="BCSProcedure.html" style="color:#2980b9">Procedure</a></li>' +
+      '<li><a href="BCSSPRProcedure.html" style="color:#f39c12">SPR Procedure</a></li>' +
+      '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="analysis">'+
