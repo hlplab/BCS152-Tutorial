@@ -1,3 +1,62 @@
+/*To create the mouse over for the condtions*/
+span.dropt {
+  border-bottom: thin dotted;}
+span.dropt:hover {
+  text-decoration: none;
+  z-index: 6;
+}
+span.dropt span {
+  position: absolute;
+  /*I'm not positive what this is doing or how it's doing it and why*/
+  left: -9999px;
+  margin: 20px 0 0 0px;
+  padding: 3px 3px 3px 3px;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  z-index: 6;
+}
+
+span.dropt:hover span {
+  margin: 20px 0 0 170px;
+  background: #3366CC;
+  z-index:6;
+  left: 2%;
+}
+/* Must be a way to consolidate these two*/
+span.dropt2 {
+  border-bottom: thin dotted;}
+span.dropt2:hover {
+  text-decoration: none;
+  z-index: 6;
+}
+span.dropt2 span {
+  position: absolute;
+  left: -9999px;
+  margin: 20px 0 0 0px;
+  padding: 3px 3px 3px 3px;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+  z-index: 6;
+}
+span.dropt2:hover span {
+  left: 2%;
+}
+span.dropt2 span {
+  position: absolute;
+  left: -9999px;
+  margin: 4px 0 0 0px;
+  padding: 3px 3px 3px 3px;
+  border-style:solid;
+  border-color:black;
+  border-width:1px;
+}
+span.dropt2:hover span {
+  margin: 20px 0 0 170px;
+  background: #c0392b;
+  z-index:6;
+}
 /*Resize the window and cap it*/
 html, body {
   min-width: 1000px;
