@@ -43,15 +43,7 @@ span.dropt2 span {
 span.dropt2:hover span {
   left: 2%;
 }
-span.dropt2 span {
-  position: absolute;
-  left: -9999px;
-  margin: 4px 0 0 0px;
-  padding: 3px 3px 3px 3px;
-  border-style:solid;
-  border-color:black;
-  border-width:1px;
-}
+
 span.dropt2:hover span {
   margin: 20px 0 0 170px;
   background: #c0392b;
@@ -128,7 +120,7 @@ html, body {
 }
 
 .condON {
-  background-color: #17A697;
+  background-color: #2980b9;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -152,6 +144,17 @@ html, body {
 }
 
 .list2 {
+  background-color: #A1CAF1;
+  color:#ecf0f1;
+  padding:20px;
+  width:72px;
+  float: left;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  text-align: center;
+}
+.list3 {
   background-color: #e74c3c;
   color:#ecf0f1;
   padding:20px;
@@ -163,8 +166,8 @@ html, body {
   text-align: center;
 }
 
-.list3 {
-  background-color: #f1c40f;
+.list4 {
+  background-color: #A1CAF1;
   color:#ecf0f1;
   padding:20px;
   width:72px;
@@ -174,17 +177,15 @@ html, body {
   border: 1px;
   text-align: center;
 }
-
-.list4 {
-  background-color: #2ecc71;
-  color:#ecf0f1;
-  padding:20px;
-  width:72px;
-  float: left;
-  margin-right: 1px;
-  margin-bottom: 1px;
-  border: 1px;
-  text-align: center;
+.box {
+  border-style:dashed;
+  border-width:3px;
+}
+.box.red{
+  border-color:#c0392b;
+}
+.box.blue{
+  border-color:#2980b9;
 }
 
 .trialCenter {
