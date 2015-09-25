@@ -1,4 +1,9 @@
+/*so not just white background*/
+.bckgrnd {
+  background-color: #ecf0f1;
+}
 /*To create the mouse over for the condtions*/
+
 span.dropt {
   border-bottom: thin dotted;}
 span.dropt:hover {

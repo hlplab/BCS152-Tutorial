@@ -1,6 +1,6 @@
 
 $('#nav').html(
-'<div class="collapse navbar-collapse">' +
+'<div class="collapse navbar-collapse bckgrnd">' +
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="BCSFrontpage.html">Home</a></li>' +
