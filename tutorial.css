@@ -56,7 +56,7 @@ span.dropt2:hover span {
 }
 /*Resize the window and cap it*/
 html, body {
-  min-width: 1000px;
+  min-width: 1300px;
   max-width: 1500px;
 }
 /*For tooltip text*/
