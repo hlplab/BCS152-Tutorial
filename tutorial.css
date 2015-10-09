@@ -1,3 +1,8 @@
+/*To link paper*/
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+}
 /*so not just white background*/
 .bckgrnd {
   background-color: #ecf0f1;
