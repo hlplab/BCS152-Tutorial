@@ -286,47 +286,63 @@
               </tbody>
             </table>
             <br class="Apple-interchange-newline">
-            <p> There are six (6) required columns: <b>Experiment,
-                ItemName, Condition, Sentence, Question, and Answer.</b></p>
+            <p> There are six (6) required columns: <b>Experiment</b>,
+                <b>ItemName</b>, <b>Condition</b>, <b>Sentence</b>, <b>Question</b>, and <b>Answer</b>. </p>
 
-            <p> <b>Experiment</b> distinguishes between critical items and fillers.
-            </p>
+            <ul>
+              <li><b>Experiment</b> distinguishes between critical items and fillers.
+                You can also distinguish several mini-experiments that are embedded
+                within the same experiment. For your first experiment, however, we
+                highly recommend you keep it simple. Just use "critical" for all your
+                critical items and "filler" for all your filler items.</p>
 
-            <p> <b>ItemName</b> is to identify an individual item within an
-              experiment. This should be a number. For items this will be the same
+              <li><b>ItemName</b> is to identify an individual item within an
+              experiment. This should be a number. For critical items this will be the same
               across all conditions. In the example above there are four rows
-              for item 1, one for each condition in the experiment. You <em>must
-              have as many rows per item as conditions</em>, except for fillers.
-              Each item must have a unique number.</p>
+              for item 1, one for each of the 2x2 = 4 conditions in the experiment.
+              You <em>must have as many rows per critical item as conditions</em>.
+              ItemNames <em>must be unique</em>. The easiest solution to this is
+              to number your items from 1 to N (where N is the number of items in
+              your experiment).
+              This will allow CrowdExp to automatically create Latin Square Designed
+              lists for you. Filler items, on the other hand, are identical across
+              lists. So you only need one row per filler.</p>
 
-            <p> <b>Condition</b> is to identify which condition the item is in
-              within the experiment. Condition names should not contain any spaces
+            <li><b>Condition</b> is to identify the condition of a critical item.
+              Only critical items have conditions. So <em>for fillers, Condition
+              names must be be "-".</em>
+              For critical items, Condition names should not contain any spaces
               or special symbols, except for "." like in the example above.
               The condition column needs to follow a specific format. Each
               manipulation needs to be separated by a ".", and each condition
-              within a manipulation needs a unique label. </p>
+              within a manipulation needs a unique label. In our 2x2 example
+              design, there are two manipulations (contextual predictability and
+              word frequency). So, the Condition names have one ".", separating
+              the value for contextual predictability manipulation from the value
+              for the word frequency manipulation. This gives us the four possible
+              Condition names, shown in the table.</p>
 
-            <p> You can name your conditions what you like but, it is useful to use
-              descriptive names. In the above 2x2 design, the first manipulation is
-              whether the sentence is or is not temporarily ambiguous (the first 2 of
-              the 2x2). For clarity the labels are Ambiguous and Unambiguous. The
-              second maniuplation is whether the ambiguity involves the main verb or
-              relative clause (the second 2 of the 2x2). Again, for clarity the
-              labels are MainVerb and RelativeClause. Filler items all have the same
-              condition and it is marked as "-". </p>
+              You can name your conditions what you like but, it is useful to use
+              descriptive names. In our 2x2 example design, we have chosen
+              LOW_PRED vs. HIGH_PRED for the contextual predictability
+              manipulation and LOW_FREQ vs. HIGH.FRED for the word frequency
+              manipulation.</p>
 
-            <p> We will be randomizing the lists for you so the order you put items
-               or fillers in does not matter. But remember that we are using a latin
-               square design so participants will only see each item in one of its
-               possible conditions (e.g. the first sentence of item 1, the second
-               sentence of item 2, etc.). Participants will see all the fillers.  </p>
-            <p> <b>Sentence</b> is the stimulus item that will be self-pace read.
+              CrowdExp will be creating the Latin Square design and randomize the
+              item and filler order\for you so the order you put items
+              or fillers in does not matter. But remember that we are using a Latin
+              Dquare Fesign so participants will only see each item in one of its
+              possible conditions (e.g. the first sentence of item 1, the second
+              sentence of item 2, etc.). All participants will see all the fillers.</p>
+
+            <li><b>Sentence</b> is the stimulus item that will be self-pace read.
               Within an item, you should use minimally different sentences. In the
               example above you can see that the differences between Ambiguous and
               Unambiguous stimuli is one word. The difference between the MainVerb
               and RelativeClause stimuli is larger but as much of the sentence is
               kept as similar as possible. Avoid characters other than "," and "."
-              in your stimuli. </p>
+              in your stimuli.</p>
+            </ul>
 
             <p> The experimentally important regions of the sentences need to be
               marked using a specific syntax. For readability of the stimuli, the
