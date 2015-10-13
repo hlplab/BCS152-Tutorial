@@ -12,8 +12,7 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="Design.html" style="color:#2980b9">Design</a></li>' +
-      '<li><a href="Participants.html" style="color:#2980b9">Participants</a></li>' +
-      '<li><a href="SPRDesign.html" style="color:#f39c12">SPR Design</a></li>' +
+      '<li><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -21,14 +20,15 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Items.html">Materials' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="Items.html" style="color:#2980b9">Critical Items</a></li>' +
+        '<li><a href="Items.html" style="color:#2980b9">Critical Item</a></li>' +
+        '<li><a href="SPRItems.html" style="color:#f39c12">SPR Example: Critical Items</a></li>' +
+        '<li><a href="SPRExample.html" style="color:#f39c12">SPR Example: Defining Sentence Regions</a></li>' +
+        '<li><a href="SPRItems.html" style="color:#f39c12">SPR Example: How to make a Good Critical Items</a></li>' +
+        '<li><a href="SPRFillers.html" style="color:#f39c12">SPR Example: How to make good Filler Items</a></li>' +
         '<li><a href="GenLists.html" style="color:#2980b9">Lists</a></li>' +
-        '<li><a href="Fillers.html" style="color:#2980b9">Fillers</a></li>' +
-        '<li><a href="Confounds.html" style="color:#2980b9">Confounds</a></li>' +
-        '<li><a href="SPRItems.html" style="color:#f39c12">SPR Critical Items</a></li>' +
-        '<li><a href="SPRFormat.html" style="color:#f39c12">SPR List Creation</a></li>' +
         '<li><a href="SPRFillers.html" style="color:#f39c12">SPR Fillers</a></li>' +
-        '<li><a href="SPRGoodStimuli.html" style="color:#f39c12">SPR Making Good Stimuli</a></li>' +
+        '<li><a href="SPRItems.html" style="color:#f39c12">SPR Example: Lists</a></li>' +
+        '<li><a href="SPRFormat.html" style="color:#f39c12">SPR List Creation</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
