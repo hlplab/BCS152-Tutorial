@@ -59,14 +59,11 @@
             frequency (high vs. low frequency) with contextual predictability (high
             vs. low predictability). This design is illustrated by Figure 1, which
             shows an example of a critical item in its four (2x2) conditions.
-
-            <img title="Example 2x2 Design" alt="Example 2x2 Design" src="Example.png"><br>
-            <!--ON: can we please 1) have the left lines point to the verb; 2) call it "high predictability context" vs.
-            "low predictability context" and "high frequency target word" and "low frequency target word"? thanks. We
-            also talked about adding a few more words after the target word to allow for spill-over reading times to
-            be captured. So please let's add "on the table" to both sentences !-->
-            <!--ON: can we please add a caption to this figure "Figure 1: A 2x2 design, crossing contextual
-            predictability (high vs. low) with word frequency (high vs. low)."!-->
+            <figure>
+              <img title="Example 2x2 Design" alt="Example 2x2 Design" src="Example.png">
+              <figcaption style="text-align:center;">Figure 1: A 2x2 design, crossing contextual predictability (high vs. low) with word frequency (high vs. low).</figcaption>
+            </figure>
+            <br>
 
           <p>This design allows us to test the expectation-based hypothesis in two ways.
             First, if a word is in a high predictability context (e.g., "apple" or
@@ -103,7 +100,7 @@
 
 
 
-        <div class="jumbotron ex">
+        <div class="jumbotron">
           <div class="container">
             <div class="row">
               <table>
@@ -141,23 +138,17 @@
                 Check
               </div>
               <div id="alerts"></div>
-
-      </div>
+            </div>
         </div>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <![endif]-->
-    <!--[if gte IE 9]><!-->
+
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!--<![endif]-->
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- need to make this so it only appears as scrolling or as a definition appears-->
     <script type="text/javascript" src="testnav.js"></script>
     <script type="text/javascript" src="sprdesign.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('li#design').addClass('active');
-      });
-    </script>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('li#design').addClass('active');
+        });
+      </script>
   </body>
 </html>

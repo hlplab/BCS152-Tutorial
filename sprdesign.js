@@ -12,9 +12,9 @@ $(document).ready(function() {
     $('#alerts').empty();
 
     var questions = [
-      { number: 1, answer: 'c', tip: 'Be smarter!'},
-      { number: 2, answer: 'a', tip: 'Be smarter!'},
-      { number: 3, answer: 'a', tip: 'Be smarter!'},
+      { number: 1, answer: 'a', tip: 'Be smarter!'},
+      { number: 2, answer: 'b', tip: 'Be smarter!'},
+      { number: 3, answer: 'c', tip: 'Be smarter!'},
     ];
 
     var all_answered = function() {
