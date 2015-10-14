@@ -11,14 +11,23 @@
     <nav id="nav" class="navbar navbar-default"></nav>
     <div>
       <div class="jumbotron spr">
-        <h1>List Creation</h1>
-            <h1>What your stimuli file should look like</h1>
-            <p> Creating lists for latin square design with a good mix of fillers
-              between critical items can be done automatically. However, items need
-              to follow a specific excel sheet format. Here is an example from a real
-              experiment run in Professor Jaeger's lab on what a sheet should look
-              like:
-              <a href="ExampleLists-2.xlsx">ExampleLists-2.xlsx</a>.<!--link needs to pop up to something-->
+        <h1>Self-paced reading example: Formatting the stimulus file</h1>
+        <p>
+          Here is the good news. CrowdExp will create a Latin Square Design for
+          you, create the Latin Square Designed lists, and randomize the stimuli
+          order.
+        </p>
+
+        <p>CrowdExp also helps you to create the stimulus file. Use the
+          <a href="https://www.hlp.rochester.edu/CrowdExp" target = "_blank">CrowdExp</a>
+          interface to specify your design, number
+          of critical items, and numbers of fillers. After your design has been
+          approved, CrowdExp will then let you download a template stimulus
+          file (an Excel file) that contains many of the necessary variables.
+        </p>
+
+        <h2>Format of stimulus file</h2>
+
               Below are some representative rows from the example file: </p>
             <table style="margin: 0.5em 0px 0px 0.5em; border-collapse: collapse; color: rgb(0, 0, 0); font-family: Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
               <tbody>
@@ -295,15 +304,16 @@
               You <em>must have as many rows per critical item as conditions</em>.
               ItemNames <em>must be unique</em>. The easiest solution to this is
               to number your items from 1 to N (where N is the number of items in
-              your experiment).
-              <p>This will allow CrowdExp to automatically create Latin Square Designed
+              your experiment). This will allow CrowdExp to automatically create Latin Square Designed
               lists for you. Filler items, on the other hand, are identical across
-              lists. So you only need one row per filler.</p></li>
+              lists. So you only need one row per filler.</li>
 
-            <li><b>Condition</b> is to identify the condition of a critical item.
-              Only critical items have conditions. So <em>for fillers, Condition
-              names must be be "-".</em>
-              <p>For critical items, Condition names should not contain any spaces
+              <li><b>Condition</b> is to identify the condition of a critical item.
+              Only critical items have conditions.
+              <ul><li><em>For fillers</em>, Condition
+              names must be be "-".</em></li>
+
+              <li><em>For critical items</em>, Condition names should not contain any spaces
               or special symbols, except for "." like in the example above.
               The condition column needs to follow a specific format. Each
               manipulation needs to be separated by a ".", and each condition
@@ -312,21 +322,22 @@
               word frequency). So, the Condition names have one ".", separating
               the value for contextual predictability manipulation from the value
               for the word frequency manipulation. This gives us the four possible
-              Condition names, shown in the table.</p>
+              Condition names, shown in the table.</li>
 
-              <p>You can name your conditions what you like but, it is useful to use
+              <li>You can name your conditions what you like but, it is useful to use
               descriptive names. In our 2x2 example design, we have chosen
               LOW_PRED vs. HIGH_PRED for the contextual predictability
               manipulation and LOW_FREQ vs. HIGH.FRED for the word frequency
-              manipulation.</p>
+              manipulation.</li>
 
-              <p>CrowdExp will be creating the Latin Square design and randomize the
+              <li>CrowdExp will be creating the Latin Square design and randomize the
               item and filler order\for you so the order you put items
               or fillers in does not matter. But remember that we are using a Latin
               Dquare Fesign so participants will only see each item in one of its
               possible conditions (e.g. the first sentence of item 1, the second
-              sentence of item 2, etc.). All participants will see all the fillers.</p>
+              sentence of item 2, etc.). All participants will see all the fillers.
               </li>
+            </ul>
 
             <li><b>Sentence</b> is the stimulus item that will be self-pace read.
               Within an item, you should use minimally different sentences. In the
@@ -337,6 +348,7 @@
               in your stimuli.</li>
             </ul>
 
+            <h2>Identifying sentence regions in your stimuli</h2>
             <p>The experimentally important regions of the sentences need to be
               marked using a specific syntax. For readability of the stimuli, the
               above table does not have this marking but we can reproduce the marking
