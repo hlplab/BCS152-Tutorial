@@ -294,7 +294,7 @@
                 You can also distinguish several mini-experiments that are embedded
                 within the same experiment. For your first experiment, however, we
                 highly recommend you keep it simple. Just use "critical" for all your
-                critical items and "filler" for all your filler items.</p>
+                critical items and "filler" for all your filler items.</li>
 
               <li><b>ItemName</b> is to identify an individual item within an
               experiment. This should be a number. For critical items this will be the same
@@ -304,14 +304,14 @@
               ItemNames <em>must be unique</em>. The easiest solution to this is
               to number your items from 1 to N (where N is the number of items in
               your experiment).
-              This will allow CrowdExp to automatically create Latin Square Designed
+              <p>This will allow CrowdExp to automatically create Latin Square Designed
               lists for you. Filler items, on the other hand, are identical across
-              lists. So you only need one row per filler.</p>
+              lists. So you only need one row per filler.</p></li>
 
             <li><b>Condition</b> is to identify the condition of a critical item.
               Only critical items have conditions. So <em>for fillers, Condition
               names must be be "-".</em>
-              For critical items, Condition names should not contain any spaces
+              <p>For critical items, Condition names should not contain any spaces
               or special symbols, except for "." like in the example above.
               The condition column needs to follow a specific format. Each
               manipulation needs to be separated by a ".", and each condition
@@ -322,18 +322,19 @@
               for the word frequency manipulation. This gives us the four possible
               Condition names, shown in the table.</p>
 
-              You can name your conditions what you like but, it is useful to use
+              <p>You can name your conditions what you like but, it is useful to use
               descriptive names. In our 2x2 example design, we have chosen
               LOW_PRED vs. HIGH_PRED for the contextual predictability
               manipulation and LOW_FREQ vs. HIGH.FRED for the word frequency
               manipulation.</p>
 
-              CrowdExp will be creating the Latin Square design and randomize the
+              <p>CrowdExp will be creating the Latin Square design and randomize the
               item and filler order\for you so the order you put items
               or fillers in does not matter. But remember that we are using a Latin
               Dquare Fesign so participants will only see each item in one of its
               possible conditions (e.g. the first sentence of item 1, the second
               sentence of item 2, etc.). All participants will see all the fillers.</p>
+              </li>
 
             <li><b>Sentence</b> is the stimulus item that will be self-pace read.
               Within an item, you should use minimally different sentences. In the
@@ -341,10 +342,10 @@
               Unambiguous stimuli is one word. The difference between the MainVerb
               and RelativeClause stimuli is larger but as much of the sentence is
               kept as similar as possible. Avoid characters other than "," and "."
-              in your stimuli.</p>
+              in your stimuli.</li>
             </ul>
 
-            <p> The experimentally important regions of the sentences need to be
+            <p>The experimentally important regions of the sentences need to be
               marked using a specific syntax. For readability of the stimuli, the
               above table does not have this marking but we can reproduce the marking
               that would go on the first four stimuli here:</p>
@@ -549,7 +550,7 @@
         </div>
       </div>
       <!--[if lt IE 9]>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <![endif]-->
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <![endif]-->
       <!--[if gte IE 9]><!-->
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <!--<![endif]-->
@@ -558,10 +559,10 @@
       <script type="text/javascript" src="testnav.js"></script>
       <script type="text/javascript" src="quiz-1.js"></script>
       <script type="text/javascript">
-    $(document).ready(function() {
-      $('li#createstim').addClass('active');
-    });
-  </script> </div>
+        $(document).ready(function() {
+          $('li#createstim').addClass('active');
+        });
+      </script>
 
   </body>
 </html>
