@@ -13,9 +13,9 @@
       <div class="jumbotron spr">
         <h1>Self-paced reading example: Formatting the stimulus file</h1>
         <p>
-          Here is the good news. CrowdExp will create a Latin Square Design for
+          CrowdExp will create a Latin Square Design for
           you, create the Latin Square Designed lists, and randomize the stimuli
-          order.
+          order. How's that for good news?!
         </p>
 
         <p>CrowdExp also helps you to create the stimulus file. Use the
@@ -313,7 +313,8 @@
               <ul><li><em>For fillers</em>, Condition
               names must be be "-".</em></li>
 
-              <li><em>For critical items</em>, Condition names should not contain any spaces
+              <li><em>For critical items</em>, Condition names should not contain
+                any SPACEs
               or special symbols, except for "." like in the example above.
               The condition column needs to follow a specific format. Each
               manipulation needs to be separated by a ".", and each condition
@@ -344,8 +345,9 @@
               field in which you will have to mark up the
               <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>
               of interest. We will talk more about <em>how</em> to do that below.
-
-              <br><br>
+              CrowdExp will collect
+              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
+              These reading times are typically the primary outcome variable of interest.
               If you're interested
               in running experiments on language with other writing systems, let us
               know. CrowdExp is unicode enabled, providing support for other writing
@@ -353,9 +355,10 @@
             </li>
 
             <li><b>Question</b> is the comprehension question to ensure that
-              subjects are actually paying attention and not just holding down the
-              space bar. Within an item, you want the same question, or a minimally
-              different question and the questions should lead to the same answer.
+              participants are reading and understanding the sentence. Within an
+              item, you typically want the same question for all conditions,
+              or (if it is impossible to have the same question) a minimally different
+              question and the questions should lead to the same answer.
               For critical items, you often want to probe a specific part of the
               stimulus to make sure that that part was indeed processed correctly.
               Across all stimuli, however, it is advisable to probe different parts
@@ -367,93 +370,207 @@
 
             <li><b>Answer</b> is the correct answer for the comprehension question.
               Within an item, correct answers should be the same. In the example
-              above all the answers for item 1 is N. Across the experiment you should
-              make sure to have equally many Y and N answers. This will reduce any
-              bias and increase the likelihood of participants paying attention.</li>
+              above all the answers for Item 1 are N. Across the experiment you should
+              make sure to have equally many Y and N answers, so as to avoid biases
+              towards Y or N answers. It will also increase the likelihood that
+              participants pay attention.
+
+              CrowdExp will record both the reaction time and the answer provided
+              by the participant, providing two additional outcome variables for
+              each sentence. Although these are not typically the outcome variables
+              of primary interest, effects of conditions on
+              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer time</a>
+              and
+              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer
+              accuracy</a> are sometimes analyzed as part of an experiment.
+            </li>
+            </ul>
+          </div>
+
+
+          <div class="jumbotron spr">
+            <h2>Identifying sentence regions in your stimuli</h2>
+            <p>
+              To analyze the reading data, the word-by-word reading times are
+              often aggregated into sentence regions, based on the predictions
+              for the experiment. It is thus <em>very important</em> to mark up
+              the sentence regions of interest in the <b>Sentence</b> field of
+              your stimulus file.
+            </p>
+
+            <p>
+              This is done with the {...}@REGIONNAME syntax, as shown in the table
+              above. Simply put the word or words that you want to later analyze
+              as one sentence region into one set of curly parentheses {...}. Don't
+              worry: the words will still be displayed word-by-word to the participant
+              and participants also won't see the {...}@REGIONAME mark-up. CrowdExp
+              will remove this information before displaying the sentences.
+            </p>
+
+            <h3>An example</h3>
+            <p>In the example table above, we only marked the TARGET region and
+              a SPILLOVER region (the two following words). The TARGET region is
+              the word that we hypothesize to be read more or less slowly
+              depending on its frequency and contextual predictability. The SPILLOVER
+              region are the two words following the TARGET word. We marked them
+              since processing difficulty often 'spills over' on to subsequent
+              words.
+            </p>
+
+            <p>
+              This shows that we don't have to mark all regions in a sentence. It
+              is, however, often a good idea to also mark some other regions, even
+              if there are not of primary interest. That's because we want to make
+              sure that those regions for which we do <em>not</em> predict any
+              differences by condition indeed do not exhibit any differences. The
+              following is an example of an alternative region coding that we
+              could use for all items in our example experiment.
+            <ul>
+                <li>{I}@SUBJECT {saw}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+                <li>{I}@SUBJECT {saw}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+                <li>{I}@SUBJECT {ate}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+                <li>{I}@SUBJECT {ate}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
             </ul>
 
-            <h2>Identifying sentence regions in your stimuli</h2>
-            <p>The experimentally important regions of the sentences need to be
-              marked using a specific syntax. For readability of the stimuli, the
-              above table does not have this marking but we can reproduce the marking
-              that would go on the first four stimuli here:</p>
+            <h3>Format requirements</h3>
+            <p>
+              In most designs, <em>all critical items should have the same regions</em>
+              (filler items do not require sentence regions).
+              Region names also typically (though not necessarily) occur in the
+              same order across all critical items, regardless of the condition.
+              It is, however, possible that your design
+              requires you to have some sentence regions that only occur in a
+              subset of the conditions of your experiment.
+            </p>
 
-            <blockquote> The excited fans {moved}@Verb through {the crowd}@PreDisambiguation {and}@Disambiguation {sauntered to}@PostDisambiguation front stage.</blockquote>
-            <blockquote>The excited fans {moved}@Verb through {the crowd}@PreDisambiguation {broke}@Disambiguation {apart from}@PostDisambiguation Jane accidentally.</blockquote>
-            <blockquote>The excited fans {flew}@Verb through {the crowd}@PreDisambiguation {and}@Disambiguation {sauntered to}@PostDisambiguation front stage.</blockquote>
-            <blockquote>The excited fans that {moved}@Verb through {the crowd}@PreDisambiguation {broke}@Disambiguation {apart from}@PostDisambiguation Jane accidentally.</blockquote>
-
-            <p> In the example experiment above, the interest is in how reading times
-              are affected at the point of disambiguation. So the main region to mark
-              is the disambiguating word. We mark that word by surrounding it with
-              curly braces and labeling the region (e.g. {broke}@Disambiguation).
-              This marking is not included in what the participants see, it is just
-              to help mark up the data for analysis. The region label can only be
-              upper case and lower case letters (e.g. no "."). You can put more than
-              one word in a region. <em>All items should have the same regions and in
-              the same order.</em> </p>
-
-             <p> In the example above there are multiple regions marked. Because
-              effects on reading can "spill over" into later words, it is important
-              to mark the words after the disambiguation point as well (e.g. {apart
-              from}@PostDisambiguation). In the example above, there is a
-              manipulation of parts of the sentence before the disambiguation point,
-              specifically the verb or the sentence complementizer "that".
-              Because of these changes, it is important to also mark those regions.
-              Lastly, it may be important to know if there are changes in reading
-              before the point of disambiguation, so that region should also be
-              marked. How many and which regions are marked depend on your
-              experimental design, think carefully about it. Generally, marking more
-              regions is better than marking fewer. </p>
-
-
-            <h4>Important points about the format</h4>
-            <p> Condition names should only be upper and lowercase letters and
-              periods (see example above). <b> Do not include spaces, numbers or
-               other characters.</b> </p>
-            <p> Remove blank/empty rows between stimuli. </p>
-            <p> Every stimulus needs a question and answer. </p>
-            <p> The sentences and questions will be displayed as-is (once region
-               marking is removed) so do not include extra characters unless you want
-               those characters to be displayed. For example, if your design uses a
-               comma to disambiguate an ambiguous sentence make sure you include
-               commas and be careful with stray spaces (e.g. "this, that" and
-               "this , that" will be displayed differently). </p>
-
-            <p> Regions should be indicated with an {words}@Name, e.g.</p>
-            <p> </p>
+            <p>
+              Regions should be indicated using the following syntax {bli bla
+              blub}@Name, e.g.:
+            </p>
             <ul>
               <li>{word}@regionname</li>
               <li>{several words here}@anotherregionname</li>
-              <li>{This sentence}@subject {has}@verb {multiple regions}@object</li>
-            </ul>
-            <p>Every item (except fillers) should have the same regions and in the same order. If it is necessary, the same region can have a different number of words within an item or across items.</p>
-            <h4>Entering Items</h4>
-            <p> </p>
-            <ul>
-              <li>Enter each of your items (make sure each item has a different
-                ItemName and the same number of conditions, one per row)</li>
-              <li>Enter your fillers on the same sheet</li>
-              <li>Make sure that within an item questions are similar and the answers are the same.</li>
-              <li>Make sure you have an even number of Y and N question answers.</li>
-              <li>Make sure all items have proper condition names that are sensible.</li>
-              <li>Make sure all items (except fillers) have marked regions.</li>
-              <li>n.b. the program that generates the lists for the applet based on
-                your Excel sheet will ignore any column other than the ones
-                described above, so feel free to have some extra columns if they
-                help you when making your stimuli, but also keep in mind that if you
-                screw up the spelling of your required columns they will be ignored
-                too.</li>
-              <li>Save the file and send it to us.</li>
+              <li>{This sentence}@subject {has}@verb {multiple regions.}@object</li>
             </ul>
 
-            <h2>Balancing Y/N answers within and across conditions</h2>
-            <p> To make sure this happens, make half the filler items have a Y answer
+            <p>
+              Make sure to always include punctuation (e.g., "!", "?", ",", ".")
+              right after the words. <em>Never have an open or closing parenthesis
+              intervene between a word and punctuation</em>. That is, use
+            </p>
+            <blockquote>{bli bla blub,}@NAME</blockquote>
+            <p>
+              rather than
+            </p>
+            <blockquote>{bli bla blub}@NAME,</blockquote>
+            <p>
+              which would result in the region be named "NAME,". Also avoid
+            </p>
+            <blockquote>{bli bla blub}@NAME ,</blockquote>
+            <p>
+              which would result in the intended region name, but also would
+              result in the comma being displayed only after an <em>additional
+              </em> SPACE-bar press after "blub".
+            </p>
+          </div>
+
+
+          <div class="jumbotron spr">
+          <h2>Balancing Y/N answers within and across conditions</h2>
+            <p>
+              To avoid response biases in the answer to the comprehension question,
+              it is good practice to have equally many Y and N answers within the
+              experiment.
+            </p>
+
+            <p>
+              To make sure this happens, make half the filler items have a Y answer
               and the other half have a N answer. Then make sure half your critical
               items have a Y answer and the other half have an N answer. This works
               because participants will see all fillers and only 1 of the conditions
-              of critical item. So ensuring each type of item has a 50/50 split will
-              ensure each participant sees a 50/50 split. </p>
+              of critical item. So ensuring each type of item has a 50/50 split of
+              Y/N answers will ensure each participant sees a 50/50 split of Y/N
+              answers. </p>
+          </div>
+
+
+          <div class="jumbotron spr">
+            <h2>Validating your stimulus file</h2>
+            <p>
+              CrowdExp will automatically
+              parse your stimulus file for errors. CrowdExp won't find all types of
+              errors though, so be sure to try your best to avoid them. We recap
+              some of the more common error here and recommend that you check these
+              points before uploading your stimulus file to CrowdExp.
+            </p>
+            <ul>
+              <li>
+                All <b>ItemName</b>s have to be unique across items. It is best
+                not to change the ItemNames provided by CrowdExp.
+              <li>
+                <b>Condition</b>s:
+                <ul>
+                  <li>
+                    Should only be upper and lowercase letters and
+                    periods (see example above). <b> Do not include SPACEs, numbers or
+                    other characters.</b> Generally, it's best not to change the
+                    Condition names that were auto-generated by CrowdExp.
+                  </li>
+                  <li>
+                    Make Sure that the condition names are sensible and sufficiently
+                    transparent so that you can later understand the output of the
+                    analysis. Take a note in your lab notebook about what the different
+                    condition names mean.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Remove blank/empty rows between stimuli. If you use the auto-
+                generated template there shouldn't be any such blank/empty rows.
+                But you might have accidently created some.
+              </li>
+              <li>
+                <b>Sentence</b> fields:
+                <ul>
+                  <li>
+                    Chek that all critical items have <b>sentence regions</b> defined and
+                    that these regions are consistent within and across items.
+                    Fillers should not have sentence regions marked up.
+                  </li>
+                  <li>
+                    Except for the mark-up for the sentence regions, sentences and questions will
+                    be displayed to participants as-is. So do not include extra
+                    characters unless you want those characters to be displayed.
+                  </li>
+                  <li>
+                    <b>Be particularly careful with stray SPACEs</b> (e.g. "this, that" and
+                    "this , that" will be displayed differently). CrowdExp will assume
+                    that each space defines a word boundary. Since CrowdExp displays
+                    word by word, extra SPACEs will thus require additional key presses
+                    to go through the sentences. That will make your reading time measures
+                    very difficult or impossible to interpret.
+                  </ul>
+              </li>
+              <li>
+                All <b>Sentence</b> and <b>Question</b> fields need to be non-empty.
+              </li>
+              <li><b>Question</b>s:
+                <ul>
+                   <li>
+                     Make sure that within an item questions are similar and the
+                     answers are the same.
+                   </li>
+                  <li>
+                    Make sure you have an even number of Y and N answers.
+                    Ideally Y and N answers should also be balanced a) within
+                    condition, and b) across all critical items.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Upload the stimulus file to CrowdExp.
+              </li>
+            </ul>
 
           </div>
         </div>
