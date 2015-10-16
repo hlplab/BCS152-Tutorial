@@ -38,15 +38,14 @@ p{
 }
 /*To create the mouse over for the condtions*/
 
-span.dropt {
+td.dropt {
   border-bottom: thin dotted;}
-span.dropt:hover {
+td.dropt:hover {
   text-decoration: none;
   z-index: 6;
 }
-span.dropt span {
+td.dropt span {
   position: absolute;
-  /*I'm not positive what this is doing or how it's doing it and why*/
   left: -9999px;
   margin: 20px 0 0 0px;
   padding: 3px 3px 3px 3px;
@@ -56,20 +55,20 @@ span.dropt span {
   z-index: 6;
 }
 
-span.dropt:hover span {
+td.dropt:hover span {
   margin: 20px 0 0 170px;
-  background: #3366CC;
+  background: #2980b9;
   z-index:6;
-  left: 2%;
+  left: 30%;
 }
 /* Must be a way to consolidate these two*/
-span.dropt2 {
+td.dropt2 {
   border-bottom: thin dotted;}
-span.dropt2:hover {
+td.dropt2:hover {
   text-decoration: none;
   z-index: 6;
 }
-span.dropt2 span {
+td.dropt2 span {
   position: absolute;
   left: -9999px;
   margin: 20px 0 0 0px;
@@ -79,13 +78,11 @@ span.dropt2 span {
   border-width:1px;
   z-index: 6;
 }
-span.dropt2:hover span {
-  left: 2%;
-}
 
-span.dropt2:hover span {
+td.dropt2:hover span {
   margin: 20px 0 0 170px;
-  background: #c0392b;
+  background: #e74c3c;
+  left: 30%;
   z-index:6;
 }
 
