@@ -51,47 +51,86 @@
             that we use 8-times more items than condition (a.k.a. 8 items per
             condition) and that List1 looks like this (prior to sorting and prior
             to the inclusion of fillers, more on that later):</p>
-          <div><span class="trialCenter">
-              <div> <span class="item"> Item # </span><span class="item">
-                  List 1 </span><span class="item"> List 2 </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 1 </span><span class="condON">Cond A </span><span
-                  class="condOFF"></span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 2 </span><span class="condOFF"> </span><span
-                  class="condON">
-                  Cond A </span><span class="condOFF"> </span><span class="condOFF">
-                </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 3 </span><span class="condON"> Cond A </span><span
-                  class="condOFF">
-                </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
+          <div>
+            <div><span class="trialCenter">
+              <table>
+              <tr>
+                <div>
+                <td><span class="filler"> Item # </span></td>
+                <td><span class="filler">List A </span></td>
+                <td><span class="filler"> List B </span></td>
+              </div>
+                    </tr>
                 <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 4 </span><span class="condOFF"> </span><span
-                  class="condON">
-                  Cond A </span><span class="condOFF"> </span><span class="condOFF">
-                </span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 1 </td>
+                  <td class="condON">Cond A </td>
+                  <td class="condOFF"> </td>
+                </div>
+              </tr>
                 <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 5 </span><span class="condON"> Cond A </span><span
-                  class="condOFF">
-                </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 6 </span><span class="condOFF"> </span><span
-                  class="condON">
-                  Cond A </span><span class="condOFF"> </span><span class="condOFF">
-                </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item ... </span><span class="condOFF"> </span><span
-                  class="condOFF">
-                </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 32 </span><span class="condOFF"> </span><span
-                  class="condON"> Cond A
-                </span><span class="condOFF"> </span><span class="condOFF"> </span></div>
-              <div><span class="NewLine"></span></div>
-            </span>
+              <tr>
+                <div>
+                  <td class="item"> Item 2 </td>
+                  <td class="condOFF"> </td>
+                  <td class="condON"> Cond A </td>
+                </div>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 3 </td>
+                  <td class="condON">Cond A</td>
+                  <td class="condOFF"> </td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 4 </span></td>
+                  <td class="condOFF"> </td>
+                  <td class="condON">Cond A </td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                <tr>
+                  <td class="item"> Item 5 </span></td>
+                  <td class="condON">Cond A </td>
+                  <td class="condOFF"> </td>
+                </tr>
+                </div>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 6 </td>
+                  <td class="condOFF"> </td>
+                  <td class="condON"> Cond A </td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td><span class="item"> Item ... </span></td>
+                  <td><span class="item">... ...</span></td>
+                  <td><span class="item">... ...</span></td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 32 </td>
+                  <td class="condON"> Cond A </td>
+                  <td class="condOFF"> </td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              </span>
+
+            </table>
             </div>
-            <br>
+            </div>
           <p> </p>
           <h3>Full Latin Square Design</h3>
             <p>So, List1 contains each item only once, and each condition (a1, b1, a2,
@@ -112,45 +151,87 @@
             seen by equally many participants, but that is a matter to be kept track
             of later when we run the experiment).</p>
           <br>
-          <div><span class="trialCenter">
-              <div> <span class="item"> Item # </span><span class="item">
-                  List 1 </span><span class="item"> List 2 </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 1 </span>
-                <span class="condON dropt">Cond A<span style="width:500px;">They read the book right on the desk</span> </span>
-                <span class="list dropt2"> Cond B<span style="width:500px;">They found the book right on the desk</span> </span>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 2 </span>
-                <span class="list dropt2"> Cond B<span style="width:500px;">He wrote the story in the newspaper</span> </span>
-                <span class="condON dropt">Cond A<span style="width:500px;">He saw the story in the newspaper</span> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 3 </span>
-              <span class="condON dropt">Cond A<span style="width:500px;">She fried the potatoes for the party tonight</span> </span>
-              <span class="list dropt2"> Cond B<span style="width:500px;">She made the potatoes for the party tonight</span> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div><span class="item"> Item 4 </span>
-              <span class="list dropt2"> Cond B<span style="width:500px;">I painted that picture up on the wall</span> </span>
-              <span class="condON dropt">Cond A<span style="width:500px;">I placed that picture up on the wall</span> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 5 </span>
-              <span class="condON dropt">Cond A<span style="width:500px;">I wore my jeans just yesterday</span></span>
-              <span class="list dropt2"> Cond B<span style="width:500px;">I bought my jeans just yesterday</span> </span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item 6 </span>
-                <span class="list dropt2"> Cond B<span style="width:500px;">I rode a bicycle on my way over here</span> </span>
-                <span class="condON dropt">Cond A<span style="width:500px;">I saw a bicycle on my way over here</span></span></div>
-              <div><span class="NewLine"></span></div>
-              <div> <span class="item"> Item ... </span><span class="item">
-                  Cond ...</span><span class="item"> Cond ...</span></div>
-              <div><span class="NewLine"></span></div>
-              <div><span class="item"> Item 32 </span>
-              <span class="condON dropt">Cond A<span style="width:500px;">He chopped the tomato and put it in the soup</span> </span>
-              <span class="list dropt2"> Cond B<span style="width:500px;">He prepared the tomato and put it in the soup</span> </span></div>
-              <div><span class="NewLine"></span></div>
-            </span></div>
+          <div>
+            <div><span class="trialCenter">
+              <table>
+              <tr>
+                <div>
+                <td><span class="filler"> Item # </span></td>
+                <td><span class="filler">List A</span></td>
+                <td><span class="filler">List B</span></td>
+              </div>
+                    </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 1 </td>
+                  <td class="condON dropt">Cond A</td>
+                  <td class="list3 dropt2">Cond B</td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 2 </td>
+                  <td class="list3">Cond B</td>
+                  <td class="condON"> Cond A</td>
+                </div>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 3 </td>
+                  <td class="condON">Cond A</td>
+                  <td class="list3">Cond B</td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 4</td>
+                  <td class="list3">Cond B</td>
+                  <td class="condON">Cond A</td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                <tr>
+                  <td class="item"> Item 5 </span></td>
+                  <td class="condON">Cond A</td>
+                  <td class="list3">Cond B</td>
+                </tr>
+                </div>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 6 </td>
+                  <td class="list3">Cond B</td>
+                  <td class="condON">Cond A</td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td><span class="item"> Item ... </span></td>
+                  <td><span class="item">... ...</span></td>
+                  <td><span class="item">... ...</span></td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              <tr>
+                <div>
+                  <td class="item"> Item 32 </td>
+                  <td class="condON">Cond A</td>
+                  <td class="list3">Cond B</td>
+                </div>
+              </tr>
+                <div><span class="NewLine"></span></div>
+              </span>
 
-      </div>
+            </table>
+            </div>
     </div>
+  </div>
 
       <div class="jumbotron">
         <div class="container">

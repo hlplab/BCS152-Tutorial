@@ -46,20 +46,20 @@ $('#nav').html(
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
         '<li><a href="GenAnalysis.html" style="color:#2980b9">Overview</a></li>' +
-        '<li><a href="Annotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
-        '<li><a href="Exclusion.html" style="color:#2980b9">Exclusion</a></li>' +
-        '<li><a href="Results.html" style="color:#2980b9">Results</a></li>' +
-        '<li><a href="VSReport.html" style="color:#2980b9">Visual Report</a></li>' +
         '<li><a href="SPRAnalysis.html" style="color:#f39c12">SPR Overview</a></li>' +
+        '<li><a href="Annotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
         '<li><a href="SPRAnnotation.html" style="color:#f39c12">SPR Annotation & Scoring</a></li>' +
+        '<li><a href="Exclusion.html" style="color:#2980b9">Exclusion</a></li>' +
         '<li><a href="SPRExclusion.html" style="color:#f39c12">SPR Exclusion</a></li>' +
+        '<li><a href="Results.html" style="color:#2980b9">Results</a></li>' +
         '<li><a href="SPRResults.html" style="color:#f39c12">SPR Results</a></li>' +
+        '<li><a href="VSReport.html" style="color:#2980b9">Visual Report</a></li>' +
         '<li><a href="SPRVSReport.html" style="color:#f39c12">SPR Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="interpret">'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="Participants.html">Interpretation' +
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="Interpretation.html">Interpretation' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="Interpretation.html" style="color:#2980b9">Interpretation</a></li>' +

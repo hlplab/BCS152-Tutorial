@@ -155,8 +155,8 @@ a:hover{
 .condON {
   background-color: #2980b9;
   color:#ecf0f1;
-  padding:40px;
-  width:100px;
+  padding:10px;
+  width:72px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -166,8 +166,8 @@ a:hover{
 .condOFF {
   background-color: #A1CAF1;
   color:#ecf0f1;
-  padding:40px;
-  width:100px;
+  padding:20px;
+  width:72px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -176,8 +176,8 @@ a:hover{
 .list {
   background-color: #f39c12;
   color:#ecf0f1;
-  padding:40px;
-  width:100px;
+  padding:20px;
+  width:72px;
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
@@ -185,8 +185,8 @@ a:hover{
 }
 .list2 {
   color:#2c3e50;
-  padding:40px;
-  width:100px;
+  padding:10px;
+  width:72px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -194,8 +194,8 @@ a:hover{
 .list3 {
   background-color: #e74c3c;
   color:#ecf0f1;
-  padding:40px;
-  width:100px;
+  padding:10px;
+  width:72px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -203,8 +203,8 @@ a:hover{
 
 .list4 {
   color:#2c3e50;
-  padding:40px;
-  width:100px;
+  padding:10px;
+  width:72px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
