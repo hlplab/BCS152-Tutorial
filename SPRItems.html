@@ -38,32 +38,72 @@
            this is the case? Think about it for a moment and then quiz yourself.
         </p>
 
-        <p>[ON: QUIZ HERE; four questions] Question 1: Why do you think the recommended number of
-          critical items is function of the number of conditions? A) Because the
-          number of conditions determines how motivated our participants will be.
-          B-CORRECT) Because more conditions means that, for the same number of items, we
-          will have fewer observation per condition. C) More critical items mean more
-          statistical power. Question 2: How many critical items should our example experiment have?
-          A) 18-24, B-CORRECT) 24-32, C)32-40, D) More than 40.
-          Question 3: Can you think of a reason why it might be better to have 8 times as many items as conditions,
-          rather than 6 times as many items as conditions? A) Participants can enjoy the experiment for a longer time.
-          B) We will need fewer filler items. C-CORRECT) More items means more statistical power to detect an effect.
-          Question 4:
-          Can you think of a reason why it might be better to have 6 times as many items as conditions,
-          rather than 8 times as many items as conditions? A-CORRECT) More items usually
-          mean that a participant will see more stimuli. The longer our experiment
-          will get, the higher the chance that participants will get tired or bored.
-          B) Fewer items means more statistical power to detect an effect.
-          C) Six is a prime number.
-        </p>
       </div>
+      <!--Create the quiz answers and see if you can have two quizzes on one page... -->
+      <div class="jumbotron"> <button type="button" class="btn btn-block btn-lg btn-danger"
+          data-toggle="collapse"
+          data-target="#demo">Test Your Understanding</button>
+        <div id="demo" class="collapse">
+          <p class="question">1. Why do you think the recommended number of
+            critical items is function of the number of conditions? </p>
+          <ul class="answers">
+            <li><input name="q1" value="a" id="q1a" type="radio"><label for="q1a">Because the
+              number of conditions determines how motivated our participants will be.</label></li>
+            <li><input name="q1" value="b" id="q1b" type="radio"><label for="q1b"><!--CORRECT)--> Because more conditions means that, for the same number of items, we
+            will have fewer observation per condition.</label></li>
+            <li><input name="q1" value="c" id="q1c" type="radio"><label for="q1c"> More critical items mean more
+              statistical power.
+              </label></li>
+          </ul>
+          <p class="question">2. How many critical items should our example experiment have?</p>
+          <ul class="answers">
+            <li><input name="q2" value="a" id="q2a" type="radio"><label for="q2a">18-24
+              </label></li>
+            <li><input name="q2" value="b" id="q2b" type="radio"><label for="q2b"><!--CORRECT)--> 24-32
+              </label></li>
+            <li><input name="q2" value="c" id="q2c" type="radio"><label for="q2c">32-40
+              </label></li>
+            <li><input name="q2" value="d" id="q2d" type="radio"><label for="q2d">More than 40
+              </label></li>
+          </ul>
+          <p class="question">3. Can you think of a reason why it might be better to have 8 times as many items as conditions,
+          rather than 6 times as many items as conditions?</p>
+          <ul class="answers">
+            <li><input name="q2" value="a" id="q2a" type="radio"><label for="q2a">Participants can enjoy the experiment for a longer time.
+              </label></li>
+            <li><input name="q2" value="b" id="q2b" type="radio"><label for="q2b">We will need fewer filler items.
+              </label></li>
+            <li><input name="q2" value="c" id="q2c" type="radio"><label for="q2c"><!--CORRECT)--> More items means more statistical power to detect an effect.
+              </label></li>
+            <li><input name="q2" value="d" id="q2d" type="radio"><label for="q2d">More than 40
+              </label></li>
+          </ul>
+          <p class="question">4. Can you think of a reason why it might be better to have 6 times as many items as conditions,
+          rather than 8 times as many items as conditions?</p>
+          <ul class="answers">
+            <li><input name="q2" value="a" id="q2a" type="radio"><label for="q2a"><!--CORRECT)--> More items usually
+            mean that a participant will see more stimuli. The longer our experiment
+            will get, the higher the chance that participants will get tired or bored.
+              </label></li>
+            <li><input name="q2" value="b" id="q2b" type="radio"><label for="q2b">Fewer items means more statistical power to detect an effect.
+              </label></li>
+            <li><input name="q2" value="c" id="q2c" type="radio"><label for="q2c">Six is a prime number.
+              </label></li>
+            <li><input name="q2" value="d" id="q2d" type="radio"><label for="q2d">More than 40
+              </label></li>
+          </ul>
+          <div id="results"> Check </div>
+          <div id="alerts"></div>
+        </div>
+      </div>
+
 
       <div class="jumbotron spr">
       <h1>Self-paced Reading: How to make good Critical Items</h1>
       <h2>Avoiding confounds</h2>
         <p>
           Recall how we said that we should try to
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">balance</a>
+          <a href="Glossary.html#B" target="_blank" class="red" data-toggle="tooltip" title="">balance</a>
           all differences between (the critical items in the different) conditions,
           <em>except</em> for the differences that are intended by our manipulation?
         </p>
@@ -80,7 +120,7 @@
           (within any critical item) or at least balance (across all critical
           items) any differences across conditions. Have a look at
           the example critical item in Figure 1. Think of some
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">plausible confounds</a>?
+          <a href="Glossary.html#P" target="_blank" class="red" data-toggle="tooltip" title="">plausible confounds</a>?
           Are they held constant within this item? After you've thought
           a bit about this read on.
         </p>
@@ -96,8 +136,8 @@
           predictability, the item is manipulating the verb ("ate" vs. "saw"). Can you
           think of a reason why we didn't use "devoured" instead of "ate"? "Devoured"
           is much longer than "saw", whereas both "ate" and "saw" are
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">mono-syllabic</a>.
-          Both verbs also have exactly three letters. Word legnth is a strong
+          <a href="Glossary.html#M" target="_blank" class="red" data-toggle="tooltip" title="">mono-syllabic</a>.
+          Both verbs also have exactly three letters. Word length is a strong
           predictor of reading times, with longer words taking longer to read.
           Another reason why we don't want to use "devoured" is that "devoured"
           is much less frequent than "saw". Like word length, word frequency
@@ -106,14 +146,14 @@
           "kiwi", so we don't want another region in the sentence that might create
           an additional frequency effect. Failing to do so would mean that the
           effects blend together (processing difficulty with a word often
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="Spill-over means that the processing difficulty associated with a word leads to slower reading times on the immediately subsequent words.">spills over</a>),
+          <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="Spill-over means that the processing difficulty associated with a word leads to slower reading times on the immediately subsequent words.">spills over</a>),
           which might make them harder to tease apart.
         </p>
 
         <p>
           Note that similar, though slightly different, considerations apply to
           "apple" and "kiwi". For example, both words are
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">bi-syllabic</a>.
+          <a href="Glossary.html#B" target="_blank" class="red" data-toggle="tooltip" title="">bi-syllabic</a>.
           They do differ in frequency, but that's ok: That's one of our <em>
           intended</em> manipulations.
         </p>
@@ -125,7 +165,7 @@
           are known to speed up throughout sentences, but then slow down at the
           boundary of
           <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">clauses</a> or
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">sentences</a>,
+          <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="">sentences</a>,
           as well as at line breaks, paragraph breaks, etc. The example item also
           holds constant the syntactic structure (and with it syntactic complexity,
           locality, etc.) and the position of the target word relative to that structure.
@@ -141,10 +181,9 @@
         <p>
           Still there are a few properties that are not held constant. For example,
           "saw" and "ate" might differ slighlty in frequency
-          (feel free to <a>look up their frequency</a>).<!--ON: please make this a link to
-            the resource page and specifically the Frequency section.!-->
+          (feel free to <a href="Resources.html#A">look up their frequency</a>).
           This is the type of difference that we might want to try to
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">balance</a>
+          <a href="Glossary.html#B" target="_blank" class="red" data-toggle="tooltip" title="">balance</a>
           across items.
         </p>
 
@@ -152,7 +191,7 @@
           There are many many other differences between the conditions of the example
           critical item, but
           only care about those that are
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">plausible confounds</a>.
+          <a href="Glossary.html#P" target="_blank" class="red" data-toggle="tooltip" title="">plausible confounds</a>.
           For example, "apple" and "kiwi" differ in more subtle aspects of their phonological structure.
           Whereas "apple" consists of a VCVC (vowel-consonant-vowel-consontant)
           sequence, "kiwi" consists of a CVCV sequence.
@@ -183,7 +222,7 @@
           For example, we might vary the length the subject in our sentences from
           1 to, say, 3 words. But we might also want to keep all verbs in all
           critical items
-          <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">transitive</a>.
+          <a href="Glossary.html#T" target="_blank" class="red" data-toggle="tooltip" title="">transitive</a>.
           Additionally, it is often a good idea to not have critical items of
           widely varying syntactic complexity or length.
         </p>
@@ -252,45 +291,100 @@
 
     <!-- FIXME: this **really** should be a table -->
     <div><span class="trialCenter">
-        <div> <span class="filler"> Item # </span><span class="filler">
-            List A </span><span class="filler"> List B </span><span class="filler">
-            List C </span><span class="filler"> List D </span></div>
+      <table>
+      <tr>
+        <div>
+        <td><span class="filler"> Item # </span></td>
+        <td><span class="filler">List A </span></td>
+        <td><span class="filler"> List B </span></td>
+        <td><span class="filler">List C </span></td>
+        <td><span class="filler"> List D </span></td>
+      </div>
+            </tr>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 1 </span><span class="condON"> LOW_PRED<br/>HIGH_FREQ </span><span
-            class="list2 box blue"> LOW_PRED<br/>LOW_FREQ
-          </span><span class="list3">HIGH_PRED<br/>HIGH_FREQ </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 1 </span></td>
+          <td><span class="condON">LOW_PRED HIGH_FREQ </span></td>
+          <td><span class="list2 box blue">LOW_PRED LOW_FREQ</span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ </span>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td></div>
+      </tr>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 2 </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span><span
-            class="condON">
-            LOW_PRED<br/>HIGH_FREQ </span><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ</span><span class="list3">HIGH_PRED<br/>HIGH_FREQ
-          </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 2 </span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="condON"> LOW_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ</span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ</span></td>
+        </div>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 3 </span><span class="list3">HIGH_PRED<br/>HIGH_FREQ</span><span
-            class="list4 box red">HIGH_PRED<br/>LOW_FREQ
-          </span><span class="condON"> LOW_PRED<br/>HIGH_FREQ </span> <span class="list2 box blue"> LOW_PRED<br/>LOW_FREQ </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 3 </span></td>
+          <td><span class="list3">HIGH_PRED HIGH_FREQ</span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="condON"> LOW_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list2 box blue"> LOW_PRED<br/>LOW_FREQ </span></td>
+        </div>
+      </tr>
         <div><span class="NewLine"></span></div>
-        <div><span class="item"> Item 4 </span><span class="list2 box blue"> LOW_PRED<br/>LOW_FREQ</span><span
-            class="list3">HIGH_PRED<br/>HIGH_FREQ
-          </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 4 </span></td>
+          <td><span class="list2 box blue"> LOW_PRED<br/>LOW_FREQ</span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></td>
+        </div>
+      </tr>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 5 </span><span class="condON">LOW_PRED<br/>HIGH_FREQ </span><span
-            class="list2 box blue"> LOW_PRED<br/>LOW_FREQ
-          </span><span class="list3">HIGH_PRED<br/>HIGH_FREQ </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></div>
+      <tr>
+        <div>
+        <tr>
+          <td><span class="item"> Item 5 </span></td>
+          <td><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list2 box blue"> LOW_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+        </tr>
+        </div>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 6 </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span><span
-            class="condON">
-            LOW_PRED<br/>HIGH_FREQ </span><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ </span><span class="list3">HIGH_PRED<br/>HIGH_FREQ
-          </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 6 </span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></td>
+          <td><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ</span></td>
+        </div>
+      </tr>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item ... </span><span class="list3">...</span><span
-            class="list4 box red">...
-          </span><span class="condON">...</span><span class="list2 box blue">...</span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item ... </span></td>
+          <td><span class="item">...</span></td>
+          <td><span class="item">...</span></td>
+          <td><span class="item">...</span></td>
+          <td><span class="item">...</span></td>
+        </div>
+      </tr>
         <div><span class="NewLine"></span></div>
-        <div> <span class="item"> Item 32 </span><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ </span><span
-            class="list3">HIGH_PRED<br/>HIGH_FREQ
-          </span><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></div>
+      <tr>
+        <div>
+          <td><span class="item"> Item 32 </span></td>
+          <td><span class="list2 box blue">LOW_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="list3">HIGH_PRED<br/>HIGH_FREQ</span></td>
+          <td><span class="list4 box red">HIGH_PRED<br/>LOW_FREQ </span></td>
+          <td><span class="condON">LOW_PRED<br/>HIGH_FREQ </span></td>
+        </div>
+      </tr>
         <div><span class="NewLine"></span></div>
-      </span></div>
+      </span>
+
+    </table>
+    </div>
     </div>
   </div>
 

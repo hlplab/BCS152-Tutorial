@@ -3,6 +3,10 @@
     width: 60%;
     padding: 10px;
 }
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 .figure {
   text-align:justify;
 }
@@ -106,8 +110,8 @@ a:hover{
 .filler {
   background-color:#34495e;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
+  padding:40px;
+  width:100px;
   float: left;
     margin-right: 1px;
     margin-bottom: 1px;
@@ -117,8 +121,8 @@ a:hover{
 .trial {
   background-color:#1abc9c;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
+  padding:40px;
+  width:100px;
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
@@ -129,8 +133,8 @@ a:hover{
 .item {
   background-color: black;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
+  padding:40px;
+  width:100px;
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
@@ -140,7 +144,7 @@ a:hover{
 
 .blank {
   padding:10px;
-  width:30px;
+  width:40px;
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
@@ -151,9 +155,8 @@ a:hover{
 .condON {
   background-color: #2980b9;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
-  float: left;
+  padding:40px;
+  width:100px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -163,9 +166,8 @@ a:hover{
 .condOFF {
   background-color: #A1CAF1;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
-  float: left;
+  padding:40px;
+  width:100px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
@@ -174,45 +176,38 @@ a:hover{
 .list {
   background-color: #f39c12;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
+  padding:40px;
+  width:100px;
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
-  text-align: center;
 }
 .list2 {
   color:#2c3e50;
-  padding:20px;
-  width:72px;
-  float: left;
+  padding:40px;
+  width:100px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
-  text-align: center;
 }
 .list3 {
   background-color: #e74c3c;
   color:#ecf0f1;
-  padding:20px;
-  width:72px;
-  float: left;
+  padding:40px;
+  width:100px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
-  text-align: center;
 }
 
 .list4 {
   color:#2c3e50;
-  padding:20px;
-  width:72px;
-  float: left;
+  padding:40px;
+  width:100px;
   margin-right: 1px;
   margin-bottom: 1px;
   border: 1px;
-  text-align: center;
 }
 .box {
   border-style:dashed;
