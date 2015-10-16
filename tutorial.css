@@ -59,7 +59,9 @@ td.dropt:hover span {
   margin: 20px 0 0 170px;
   background: #2980b9;
   z-index:6;
-  left: 30%;
+  left: 40%;
+  color:#ecf0f1;
+  font-weight: bold
 }
 /* Must be a way to consolidate these two*/
 td.dropt2 {
@@ -82,8 +84,10 @@ td.dropt2 span {
 td.dropt2:hover span {
   margin: 20px 0 0 170px;
   background: #e74c3c;
-  left: 30%;
+  left: 40%;
   z-index:6;
+  color:#ecf0f1;
+  font-weight: bold
 }
 
 /*For tooltip text*/
