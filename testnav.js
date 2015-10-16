@@ -26,7 +26,7 @@ $('#nav').html(
         '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to make a Good Critical Items</a></li>' +
         '<li><a href="Fillers.html" style="color:#2980b9">Filler Items</a></li>' +
         '<li><a href="SPRFillers.html" style="color:#f39c12">SPR Example: How to make good Filler Items</a></li>' +
-        '<li><a href="GenLists.html" style="color:#2980b9">Lists & Latin Square Design</a></li>' +
+        '<li><a href="Lists.html" style="color:#2980b9">Lists & Latin Square Design</a></li>' +
         '<li><a href="SPRLists.html" style="color:#f39c12">SPR Example: Lists</a></li>' +
         '<li><a href="SPRFormat.html" style="color:#f39c12">SPR Example: List Creation for CrowdExp</a></li>' +
         '</ul>' +
@@ -45,7 +45,7 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Analysis.html">Analysis' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="GenAnalysis.html" style="color:#2980b9">Overview</a></li>' +
+        '<li><a href="Analysis.html" style="color:#2980b9">Overview</a></li>' +
         '<li><a href="SPRAnalysis.html" style="color:#f39c12">SPR Overview</a></li>' +
         '<li><a href="Annotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
         '<li><a href="SPRAnnotation.html" style="color:#f39c12">SPR Annotation & Scoring</a></li>' +
