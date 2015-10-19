@@ -28,7 +28,7 @@
 
         <h2>Format of stimulus file</h2>
 
-              Below are some representative rows from the example file: </p>
+              <p>Below are some representative rows from the example file: </p>
             <table style="margin: 0.5em 0px 0px 0.5em; border-collapse: collapse; color: rgb(0, 0, 0); font-family: Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
               <tbody>
                 <tr>
@@ -89,8 +89,7 @@
                     <p class="line862" style="margin: 0px; padding: 0px;">I saw the kiwi on the table</p>
                   </td>
                   <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Was the
-                      kiwi seen?</p>
+                    <p class="line862" style="margin: 0px; padding: 0px;">Did they see the kiwi?</p>
                   </td>
                   <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
                     <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
@@ -319,7 +318,7 @@
               <li>CrowdExp will be creating the Latin Square design and randomize the
               item and filler order\for you so the order you put items
               or fillers in does not matter. But remember that we are using a Latin
-              Dquare Fesign so participants will only see each item in one of its
+              Square Design so participants will only see each item in one of its
               possible conditions (e.g. the first sentence of item 1, the second
               sentence of item 2, etc.). All participants will see all the fillers.
               </li>
@@ -328,10 +327,10 @@
             <li><b>Sentence</b> is the stimulus item that participants will read.
               Avoid special characters other than "," and "." This is also the
               field in which you will have to mark up the
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>
+              <a href="BCSGlossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>
               of interest. We will talk more about <em>how</em> to do that below.
               CrowdExp will collect
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
+              <a href="BCSGlossary.html#W" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
               These reading times are typically the primary outcome variable of interest.
               If you're interested
               in running experiments on language with other writing systems, let us
@@ -364,9 +363,9 @@
               by the participant, providing two additional outcome variables for
               each sentence. Although these are not typically the outcome variables
               of primary interest, effects of conditions on
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer time</a>
+              <a href="BCSGlossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer time</a>
               and
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer
+              <a href="BCSGlossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer
               accuracy</a> are sometimes analyzed as part of an experiment.
             </li>
             </ul>
@@ -492,7 +491,7 @@
               <li>
                 All <b>ItemName</b>s have to be unique across items. It is best
                 not to change the ItemNames provided by CrowdExp.
-              <li>
+              </li>
                 <b>Condition</b>s:
                 <ul>
                   <li>
@@ -508,17 +507,15 @@
                     condition names mean.
                   </li>
                 </ul>
-              </li>
               <li>
                 Remove blank/empty rows between stimuli. If you use the auto-
                 generated template there shouldn't be any such blank/empty rows.
                 But you might have accidently created some.
               </li>
-              <li>
                 <b>Sentence</b> fields:
                 <ul>
                   <li>
-                    Chek that all critical items have <b>sentence regions</b> defined and
+                    Check that all critical items have <b>sentence regions</b> defined and
                     that these regions are consistent within and across items.
                     Fillers should not have sentence regions marked up.
                   </li>
@@ -534,8 +531,8 @@
                     word by word, extra SPACEs will thus require additional key presses
                     to go through the sentences. That will make your reading time measures
                     very difficult or impossible to interpret.
+                  </li>
                   </ul>
-              </li>
               <li>
                 All <b>Sentence</b> and <b>Question</b> fields need to be non-empty.
               </li>
@@ -555,7 +552,6 @@
               <li>
                 Upload the stimulus file to CrowdExp.
               </li>
-            </ul>
 
           </div>
         </div>
@@ -566,7 +562,7 @@
               <tbody>
                 <tr>
                   <td class="col-md-12">
-                    <div><a class="btn btn-primary" href="GenLists.html">←Lists and Latin Square Design</a></div>
+                    <div><a class="btn btn-warning" href="SPRLists.html">←SPR Example: Lists</a></div>
                   </td>
                   <td class="col-md-12">
                     <div><a class="btn btn-primary" href="Procedure.html">Procedure →</a></div>
