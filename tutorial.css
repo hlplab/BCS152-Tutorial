@@ -49,9 +49,6 @@ td.dropt span {
   left: -9999px;
   margin: 20px 0 0 0px;
   padding: 3px 3px 3px 3px;
-  border-style:solid;
-  border-color:black;
-  border-width:1px;
   z-index: 6;
 }
 
@@ -75,9 +72,6 @@ td.dropt2 span {
   left: -9999px;
   margin: 20px 0 0 0px;
   padding: 3px 3px 3px 3px;
-  border-style:solid;
-  border-color:black;
-  border-width:1px;
   z-index: 6;
 }
 
@@ -89,7 +83,55 @@ td.dropt2:hover span {
   color:#ecf0f1;
   font-weight: bold
 }
+/* dashed */
+td.dropt3 {
+  border-bottom: thin dotted;}
+td.dropt3:hover {
+  text-decoration: none;
+  z-index: 6;
+}
+td.dropt3 span {
+  position: absolute;
+  left: -9999px;
+  margin: 20px 0 0 0px;
+  padding: 3px 3px 3px 3px;
+  border-style:dashed;
+  border-color:#2980B9;
+  border-width:3px;
+  z-index: 6;
+}
 
+td.dropt3:hover span {
+  margin: 20px 0 0 170px;
+  left: 40%;
+  z-index:6;
+  color:#2c3e50;
+  font-weight: bold
+}
+td.dropt4 {
+  border-bottom: thin dotted;}
+td.dropt4:hover {
+  text-decoration: none;
+  z-index: 6;
+}
+td.dropt4 span {
+  position: absolute;
+  left: -9999px;
+  margin: 20px 0 0 0px;
+  padding: 3px 3px 3px 3px;
+  border-style:dashed;
+  border-color:#C0392B;
+  border-width:3px;
+  z-index: 6;
+}
+
+td.dropt4:hover span {
+  margin: 20px 0 0 170px;
+  left: 40%;
+  z-index:6;
+  color:#2c3e50;
+  font-weight: bold
+}
 /*For tooltip text*/
 .red {
   color:#c0392b;
@@ -214,9 +256,10 @@ a:hover{
   border-style:dashed;
   border-width:3px;
 }
-.box.red{
+.box.rd{
   border-color:#c0392b;
 }
+
 .box.blue{
   border-color:#2980b9;
 }
