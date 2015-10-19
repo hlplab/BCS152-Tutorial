@@ -23,7 +23,7 @@ $('#nav').html(
         '<li><a href="Items.html" style="color:#2980b9">Critical Item</a></li>' +
         '<li><a href="SPRItems.html" style="color:#f39c12">SPR Example: Critical Items</a></li>' +
         '<li><a href="SPRExample.html" style="color:#f39c12">SPR Example: Defining Sentence Regions</a></li>' +
-        '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to make a Good Critical Items</a></li>' +
+        '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to Make Good Critical Items</a></li>' +
         '<li><a href="Fillers.html" style="color:#2980b9">Filler Items</a></li>' +
         '<li><a href="SPRFillers.html" style="color:#f39c12">SPR Example: How to make good Filler Items</a></li>' +
         '<li><a href="Lists.html" style="color:#2980b9">Lists & Latin Square Design</a></li>' +
@@ -37,7 +37,7 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="Procedure.html" style="color:#2980b9">Procedure</a></li>' +
-      '<li><a href="SPRProcedure.html" style="color:#f39c12">SPR Procedure</a></li>' +
+      '<li><a href="SPRProcedure.html" style="color:#f39c12">SPR Example: Procedure</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -45,16 +45,16 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Analysis.html">Analysis' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="Analysis.html" style="color:#2980b9">Overview</a></li>' +
-        '<li><a href="SPRAnalysis.html" style="color:#f39c12">SPR Overview</a></li>' +
+        '<li><a href="Analysis.html" style="color:#2980b9">Analysis</a></li>' +
+        '<li><a href="SPRAnalysis.html" style="color:#f39c12">SPR Example: Analysis</a></li>' +
         '<li><a href="Annotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
-        '<li><a href="SPRAnnotation.html" style="color:#f39c12">SPR Annotation & Scoring</a></li>' +
+        '<li><a href="SPRAnnotation.html" style="color:#f39c12">SPR Example: Annotation & Scoring</a></li>' +
         '<li><a href="Exclusion.html" style="color:#2980b9">Exclusion</a></li>' +
-        '<li><a href="SPRExclusion.html" style="color:#f39c12">SPR Exclusion</a></li>' +
+        '<li><a href="SPRExclusion.html" style="color:#f39c12">SPR Example: Exclusion</a></li>' +
         '<li><a href="Results.html" style="color:#2980b9">Results</a></li>' +
-        '<li><a href="SPRResults.html" style="color:#f39c12">SPR Results</a></li>' +
+        '<li><a href="SPRResults.html" style="color:#f39c12">SPR Example: Results</a></li>' +
         '<li><a href="VSReport.html" style="color:#2980b9">Visual Report</a></li>' +
-        '<li><a href="SPRVSReport.html" style="color:#f39c12">SPR Visual Report</a></li>' +
+        '<li><a href="SPRVSReport.html" style="color:#f39c12">SPR Example: Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -63,7 +63,7 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="Interpretation.html" style="color:#2980b9">Interpretation</a></li>' +
-      '<li><a href="SPRInterpretation.html" style="color:#f39c12">SPR Interpretation</a></li>' +
+      '<li><a href="SPRInterpretation.html" style="color:#f39c12">SPR Example: Interpretation</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
