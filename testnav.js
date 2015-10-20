@@ -12,7 +12,18 @@ $('#nav').html(
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
       '<li><a href="Design.html" style="color:#2980b9">Design</a></li>' +
+      '<li><a href="Participants.html" style="color:#2980b9">Participants</a></li>' +
+      '<li><a href="Items.html" style="color:#2980b9">Critical Items</a></li>' +
+      '<li><a href="Types.html" style="color:#2980b9">Types of Design</a></li>' +
       '<li><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
+      '</ul>' +
+    '</li>' +
+    '<li><a href="#"></a></li>' +
+    '<li class="dropdown" id="procedure">'+
+    '<a class="dropdown-toggle" data-toggle="dropdown" href="Procedure.html">Procedure' +
+    '<span class="caret"></span></a>' +
+    '<ul class="dropdown-menu">' +
+      '<li><a href="SPRProcedure.html" style="color:#f39c12">SPR: Procedure</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -20,7 +31,6 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Items.html">Materials' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="Items.html" style="color:#2980b9">Critical Item</a></li>' +
         '<li><a href="SPRItems.html" style="color:#f39c12">SPR Example: Critical Items</a></li>' +
         '<li><a href="SPRExample.html" style="color:#f39c12">SPR Example: Defining Sentence Regions</a></li>' +
         '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to Make Good Critical Items</a></li>' +
@@ -30,15 +40,6 @@ $('#nav').html(
         '<li><a href="SPRLists.html" style="color:#f39c12">SPR Example: Lists</a></li>' +
         '<li><a href="SPRFormat.html" style="color:#f39c12">SPR Example: List Creation for CrowdExp</a></li>' +
         '</ul>' +
-    '</li>' +
-    '<li><a href="#"></a></li>' +
-    '<li class="dropdown" id="procedure">'+
-    '<a class="dropdown-toggle" data-toggle="dropdown" href="Procedure.html">Procedure' +
-    '<span class="caret"></span></a>' +
-    '<ul class="dropdown-menu">' +
-      '<li><a href="Procedure.html" style="color:#2980b9">Procedure</a></li>' +
-      '<li><a href="SPRProcedure.html" style="color:#f39c12">SPR Example: Procedure</a></li>' +
-      '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="analysis">'+
