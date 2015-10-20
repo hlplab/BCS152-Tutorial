@@ -338,7 +338,14 @@ body {
     padding: 20px 20px 20px 20px;
     margin: 50px 100px 50px 100px;
 }
-
+.jumbotron.top {
+    /*position:relative;
+    float:left;*/
+    background-color:#dddada;
+    overflow-y: scroll;
+    padding: 40px 20px 20px 20px;
+    margin: 100px 100px 50px 100px;
+}
 .jumbotron p {
   font-size: 1.5rem;
 }
