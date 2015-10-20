@@ -23,29 +23,13 @@
         </p>
 
         <p>
-          Don't worry, you don't need to program the experimental procedure yourself
-
-          In the specific procedure
-          that you will be using
-          (available through <a href="https://www.hlp.rochester.edu/CrowdExp" target = "_blank">CrowdExp</a>)
-          reading advances word by word. Participants press the SPACE key to
-          advance from word to word and
-          <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">CrowdExp-SPR<a/>
-          measures the time between button presses. This provides
-          <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
-          These reading times will be your primary
-          <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">outcome variable</a>.
-        </p>
-
-        <p>
-          That is, your experiment will use reading times to test the predictions
-          of theories about language processing.
-          Any effect that leads to changes in processing speed, and thus
-          word-by-word reading times, can in theory be detected in the self-paced
-          reading paradigm. For example,
-          it typically takes between 150-450msecs to read a word (and press the
-          SPACE key). Words will be read more or less quickly, depending on their
-          length, frequency, etc., or because they are surprising in context.
+          Don't worry, you don't need to program the experimental procedure yourself.
+          We (or specifically, Hal Tily, now at Nuance Technology) have programmed a
+          web-based self-paced reading app. This app, CrowdExp-SPR will display your
+          stimuli, randomize their presentation, create a
+          <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">Latin Square Design</a>
+          (we'll learn more about what this later), record reading times and more.
+          More about that ... now.
         </p>
       </div>
 
@@ -56,9 +40,18 @@
             experiment (this particular display is specific to CrowdExp-SPR). For
             the participants the sentence would advance word-by-word with each
             press of the SPACE button.
+          </p>
 
+          <p>
             <img title="SPR Window" src="spranim_small.gif" width="479" height="300" alt="" />
+          </p>
 
+          <p>
+            CrowdExp-SPR will record the times between button presses. Those are
+            the reading times that we will analyze to test our predictions.
+          </p>
+
+          <p>
             This particular type of self-paced reading is called <em>moving-window</em>
             word-by-word self-paced reading. The  <em>moving-window</em>
             part refers to the fact that only one word is shown
@@ -74,19 +67,75 @@
             how many more sentences they still have to read before the experiment
             is over.
           </p>
+      </div>
 
-      <h2>What the web experiment applet will do</h2>
-      <ul>
-        <li>Your stimuli file will be converted into lists that follow a latin square design
-          (one list for the total number of conditions)</li>
-        <li>Items and fillers will be pseudo-randomly ordered (so don't expect Item 1 to be presented after Item 2)</li>
-        <li>n.b. All participants will see the fillers and items in the <i>same</i> pseudo-random order</li>
-        <li>Each participant will only see one list</li>
-        <li>Each <b>Sentence</b> will be presented via word by word moving window self paced reading
-        <img title="SPR Window" src="spranim_small.gif" width="479" height="300" alt="" /></li>
-        <li>Each <b>Question</b> will appear after participants finish reading the <b>Sentence</b>
-        <img title="SPR Question" src="spr_question.png" width="479" height="302" alt="" /></li>
-      </ul>
+      <div class="jumbotron spr">
+        <h2>Speed vs. Accuracy</h2>
+          <p>
+            One challenge whenever experimenters want to measure how <em>fast</em>
+            we can do something (like how fast we can read) is that participants
+            might get carried away. For example, someone might just keep pressing
+            the SPACE bar as fast as they can. That will lead to maximally fast
+            reading times and make it impossible to detect any effects on those
+            reading times.
+          </p>
+
+          <p>
+            So, to prevent this problem, we want to make sure that participants
+            in our experiment actually <em>read and understand</em> the sentences
+            we show them. This is achieved by
+            <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">comprehension questions</a>.
+            By default, CrowdExp-SPR will ask one yes/no comprehension questions after
+            each stimulus. For the example stimulus given above, we might ask
+            the following question:
+          </p>
+
+          <p>
+            <img title="SPR Question" src="spr_question.png" width="479" height="302" alt="" />
+          </p>
+
+          <p>
+            CrowdExp-SPR will record both the answer (yes/no)--and thus its accuracy
+            (correct/incorrect)--and the reaction time it took to answer the
+            question.
+          </p>
+      </div>
+
+      <div class="jumbotron spr">
+        <h2>What behavior (outcome variables) will CrowdExp-SPR record?</h2>
+          <p>
+            CrowdExp-SPR will return word-by-word reading times, as well as the
+            reaction time and accuracy of the comprehension question for each
+            sentence. The word-by-word reading times will be your primary
+            <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">outcome variable</a>.
+          </p>
+
+          <p>
+            That is, your experiment will use reading times to test the predictions
+            of theories about language processing.
+            Any effect that leads to changes in processing speed, and thus
+            word-by-word reading times, can in theory be detected in the self-paced
+            reading paradigm. For example,
+            it typically takes between 150-450msecs to read a word (and press the
+            SPACE key). Words will be read more or less quickly, depending on their
+            length, frequency, etc., or because they are surprising in context.
+          </p>
+
+          <p>
+            Beyond the reading times, some hypotheses also make predictions about
+            the answer reaction time or accuracy. But even if we don't directly
+            test predictions about these alternative outcome variables, answer
+            accuracy is standardly used in order to exclude participants who did
+            not read the sentences carefully. For example, a common exclusion
+            criterion is to exclude from the analysis all data from any participant
+            who did not answer at least 85% of the questions correctly.
+          </p>
+
+          <p>
+            Now that you have a bit of an idea of the procedure we will be employing,
+            it's time to learn more about the structure of experiments and
+            important constraints on the stimuli materials.
+          </p>
     </div>
     <div class="jumbotron">
       <div class="container">
