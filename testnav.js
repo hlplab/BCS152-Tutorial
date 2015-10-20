@@ -36,6 +36,7 @@ $('#nav').html(
         '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to Make Good Critical Items</a></li>' +
         '<li><a href="Fillers.html" style="color:#2980b9">Filler Items</a></li>' +
         '<li><a href="SPRFillers.html" style="color:#f39c12">SPR Example: How to make good Filler Items</a></li>' +
+        '<li><a href="SPRComprehension.html" style="color:#f39c12">SPR Example: Comprehension Questions</a></li>' +
         '<li><a href="Lists.html" style="color:#2980b9">Lists & Latin Square Design</a></li>' +
         '<li><a href="SPRLists.html" style="color:#f39c12">SPR Example: Lists</a></li>' +
         '<li><a href="SPRFormat.html" style="color:#f39c12">SPR Example: List Creation for CrowdExp</a></li>' +
