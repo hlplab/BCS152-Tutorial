@@ -11,7 +11,7 @@
   <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
   <div>
     <div class="jumbotron spr top">
-      <h1>Self Paced Reading example: List Creation for CrowdExp</h1>
+      <h1>Self Paced Reading Example: Preparing your Experiment for CrowdExp</h1>
       <p>
         CrowdExp will create a Latin Square Design for
         you, create the Latin Square Designed lists, and randomize the stimuli
@@ -330,41 +330,22 @@
               CrowdExp will collect
               <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
               These reading times are typically the primary outcome variable of interest.
-              If you're interested
+              <!--If you're interested
               in running experiments on language with other writing systems, let us
               know. CrowdExp is unicode enabled, providing support for other writing
-              systems.
+              systems.!-->
             </li>
 
             <li><b>Question</b> is the comprehension question to ensure that
-              participants are reading and understanding the sentence. Within an
-              item, you typically want the same question for all conditions,
-              or (if it is impossible to have the same question) a minimally different
-              question and the questions should lead to the same answer.
-              For critical items, you often want to probe a specific part of the
-              stimulus to make sure that that part was indeed processed correctly.
-              Across all stimuli, however, it is advisable to probe different parts
-              of the sentences to roughly equal extents. For example, if you only
-              asked questions about the first word of all sentences, participants
-              might pick up on that and stop paying attention to the remainder of
-              sentences.
+              participants are reading and understanding the sentence.
             </li>
 
             <li><b>Answer</b> is the correct answer for the comprehension question.
-              Within an item, correct answers should be the same. In the example
-              above all the answers for Item 1 are N. Across the experiment you should
-              make sure to have equally many Y and N answers, so as to avoid biases
-              towards Y or N answers. It will also increase the likelihood that
-              participants pay attention.
+              In the example above all the answers for Item 1 are N.
 
               CrowdExp will record both the reaction time and the answer provided
               by the participant, providing two additional outcome variables for
-              each sentence. Although these are not typically the outcome variables
-              of primary interest, effects of conditions on
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer time</a>
-              and
-              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">answer
-              accuracy</a> are sometimes analyzed as part of an experiment.
+              each sentence. 
             </li>
             </ul>
           </div>
@@ -374,7 +355,9 @@
             <h2>Identifying sentence regions in your stimuli</h2>
             <p>
               To analyze the reading data, the word-by-word reading times are
-              often aggregated into sentence regions, based on the predictions
+              often aggregated into
+              <a href="BCSGlossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>,
+              based on the predictions
               for the experiment. It is thus <em>very important</em> to mark up
               the sentence regions of interest in the <b>Sentence</b> field of
               your stimulus file.
@@ -456,27 +439,6 @@
             </p>
           </div>
 
-
-          <div class="jumbotron spr">
-          <h2>Balancing Y/N answers within and across conditions</h2>
-            <p>
-              To avoid response biases in the answer to the comprehension question,
-              it is good practice to have equally many Y and N answers within the
-              experiment.
-            </p>
-
-            <p>
-              To make sure this happens, make half the filler items have a Y answer
-              and the other half have a N answer. Then make sure half your critical
-              items have a Y answer and the other half have an N answer. This works
-              because participants will see all fillers and only 1 of the conditions
-              of critical item. So ensuring each type of item has a 50/50 split of
-              Y/N answers will ensure each participant sees a 50/50 split of Y/N
-              answers.
-          </p>
-          </div>
-
-
           <div class="jumbotron spr">
             <h2>Validating your stimulus file</h2>
             <p>
@@ -545,8 +507,8 @@
                    </li>
                   <li>
                     Make sure you have an even number of Y and N answers.
-                    Ideally Y and N answers should also be balanced a) within
-                    condition, and b) across all critical items.
+                    Ideally <a href="SPRComprehension.html">Y and N answers should also be balanced</a>
+                    a) within condition, and b) across all critical items.
                   </li>
                 </ul>
               </li>
