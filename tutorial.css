@@ -325,22 +325,17 @@ clear:both;
 }
 
 /*Start to the css of the body */
-body {
-    background-color: white;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ul li {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .jumbotron {
-    /*position:relative;
-    float:left;*/
     background-color:#dddada;
     overflow-y: scroll;
     padding: 20px 20px 20px 20px;
     margin: 50px 100px 50px 100px;
 }
 .jumbotron.top {
-    /*position:relative;
-    float:left;*/
     background-color:#dddada;
     overflow-y: scroll;
     padding: 40px 20px 20px 20px;
@@ -385,23 +380,6 @@ body {
 }
 .jumbotron.O h1 {
     color: #9b59b6;
-}
-
-
-/* Pop up css */
-
-.popup {
-  display:none;
-  font: italic 23px/30px "OFL Sorts Mill Goudy","OFL Sorts Mill Goudy TT",serif;
-  position: absolute;
-  word-wrap: break-word;
-  padding: 1em;
-  text-align: right;
-  margin-top:-75px;   /* To get the popup to center correctly we need */
-  margin-left:-225px;   /* To displace the the top/left margins by half of the width/height */
-  width: 200px;
-  border:2px solid #000;  /* And give it a border */
-  z-index:100000;      /* Set z-index to 1 more than that of the overlay so the popup is over the overlay */
 }
 
 .answers li {
