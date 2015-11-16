@@ -160,7 +160,6 @@ a:hover{
     margin-bottom: 1px;
     text-align: center;
 }
-
 .trial {
   background-color:#1abc9c;
   color:#ecf0f1;
@@ -185,6 +184,10 @@ a:hover{
   text-align: center;
 }
 
+.small{
+  padding:15px;
+  width:50px;
+}
 .blank {
   padding:10px;
   width:40px;
