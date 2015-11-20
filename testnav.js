@@ -13,8 +13,8 @@ $('#nav').html(
     '<ul class="dropdown-menu">' +
       '<li><a href="Design.html" style="color:#2980b9">Design</a></li>' +
       '<li><a href="Participants.html" style="color:#2980b9">Participants</a></li>' +
-      '<li><a href="Items.html" style="color:#2980b9">Critical Items</a></li>' +
-      '<li><a href="Types.html" style="color:#2980b9">Types of Design</a></li>' +
+      '<li><a href="CriticalItems.html" style="color:#2980b9">Critical Items</a></li>' +
+      '<li><a href="DesignTypes.html" style="color:#2980b9">Types of Design</a></li>' +
       '<li><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
       '</ul>' +
     '</li>' +
@@ -91,15 +91,3 @@ $(document).ready(function() {
 
   $('[data-toggle="tooltip"]').tooltip();
 });
-
-
-/* Just a cool script! No idea for a practical use yet
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#div1").fadeIn();
-        $("#div2").fadeIn("slow");
-        $("#div3").fadeIn(3000);
-    });
-});
-</script> */
