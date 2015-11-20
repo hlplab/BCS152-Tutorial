@@ -69,6 +69,8 @@ $('#nav').html(
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
+    '<li><a href="#"></a></li>' +
+    '<li id="about"><a href="About.html">About</a></li>' +
     '<li id="resource"><a href="Resources.html">Resources</a></li>' +
     '<li id="glossary"><a href="Glossary.html">Glossary</a></li>' +
   '</ul>' +
