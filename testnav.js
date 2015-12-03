@@ -5,17 +5,17 @@ $('#nav').html(
   '<ul class="nav navbar-nav">' +
     '<li id="home" ><a href="index.html">Home</a></li>' +
     '<li><a href="#"></a></li>' +
-    '<li id="start" ><a href="HDIStart.html">How Do I Start?</a></li>' +
+    '<li id="start" ><a href="Start.html">How Do I Start?</a></li>' +
     '<li><a href="#"></a></li>' +
     '<li class="dropdown" id="design">'+
     '<a class="dropdown-toggle" data-toggle="dropdown" href="Design.html">Design' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li><a href="Design.html" style="color:#2980b9">Design</a></li>' +
+      '<li id="des"><a href="Design.html" style="color:#2980b9">Design</a></li>' +
       '<li><a href="Participants.html" style="color:#2980b9">Participants</a></li>' +
       '<li><a href="CriticalItems.html" style="color:#2980b9">Critical Items</a></li>' +
       '<li><a href="DesignTypes.html" style="color:#2980b9">Types of Design</a></li>' +
-      '<li><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
+      '<li id="sprdes"><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +

@@ -1,3 +1,11 @@
+ul {
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*Change the color of the active text in menu*/
+.ccolor li{
+  color: white;
+}
+/* for images */
 .center {
     margin: auto;
     width: 60%;
@@ -308,29 +316,9 @@ clear:both;
     box-shadow: none;
 }
 
-/* make the button have an outline */
-.btn.outline {
-    background: none;
-}
-.btn-primary.outline {
-    border: 2px solid #0099cc;
-    color: #0099cc;
-}
-
-.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
-    color: #33a6cc;
-    border-color: #33a6cc;
-}
-.btn-primary.outline:active, .btn-primary.outline.active {
-    border-color: #007299;
-    color: #007299;
-    box-shadow: none;
-}
 
 /*Start to the css of the body */
-ul li {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+
 
 .jumbotron {
     background-color:#dddada;
