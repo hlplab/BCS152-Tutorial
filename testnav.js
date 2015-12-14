@@ -47,16 +47,16 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Analysis.html">Analysis' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="Analysis.html">Analysis</a></li>' +
-        '<li><a href="SPRAnalysis.html">SPR Example: Analysis</a></li>' +
-        '<li><a href="Annotation.html">Annotation & Scoring</a></li>' +
-        '<li><a href="SPRAnnotation.html">SPR Example: Annotation & Scoring</a></li>' +
-        '<li><a href="Exclusion.html">Exclusion</a></li>' +
-        '<li><a href="SPRExclusion.html">SPR Example: Exclusion</a></li>' +
-        '<li><a href="Results.html">Results</a></li>' +
-        '<li><a href="SPRResults.html">SPR Example: Results</a></li>' +
-        '<li><a href="VSReport.html">Visual Report</a></li>' +
-        '<li><a href="SPRVSReport.html">SPR Example: Visual Report</a></li>' +
+        '<li id="an"><a href="Analysis.html">Analysis</a></li>' +
+        '<li id="spran"><a href="SPRAnalysis.html">SPR Example: Analysis</a></li>' +
+        '<li id="ansco"><a href="Annotation.html">Annotation & Scoring</a></li>' +
+        '<li id="spransco"><a href="SPRAnnotation.html">SPR Example: Annotation & Scoring</a></li>' +
+        '<li id="excl"><a href="Exclusion.html">Exclusion</a></li>' +
+        '<li id="sprexcl"><a href="SPRExclusion.html">SPR Example: Exclusion</a></li>' +
+        '<li id="resu"><a href="Results.html">Results</a></li>' +
+        '<li id="sprresu"><a href="SPRResults.html">SPR Example: Results</a></li>' +
+        '<li id="vsrep"><a href="VSReport.html">Visual Report</a></li>' +
+        '<li id="sprvsrep"><a href="SPRVSReport.html">SPR Example: Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -64,8 +64,8 @@ $('#nav').html(
     '<a class="dropdown-toggle" data-toggle="dropdown" href="Interpretation.html">Interpretation' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li><a href="Interpretation.html">Interpretation</a></li>' +
-      '<li><a href="SPRInterpretation.html">SPR Example: Interpretation</a></li>' +
+      '<li id="inte"><a href="Interpretation.html">Interpretation</a></li>' +
+      '<li id="sprinte"><a href="SPRInterpretation.html">SPR Example: Interpretation</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
