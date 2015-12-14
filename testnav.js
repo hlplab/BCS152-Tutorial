@@ -11,11 +11,11 @@ $('#nav').html(
     '<a class="dropdown-toggle" data-toggle="dropdown" href="Design.html">Design' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li id="des"><a href="Design.html" style="color:#2980b9">Design</a></li>' +
-      '<li><a href="Participants.html" style="color:#2980b9">Participants</a></li>' +
-      '<li><a href="CriticalItems.html" style="color:#2980b9">Critical Items</a></li>' +
-      '<li><a href="DesignTypes.html" style="color:#2980b9">Types of Design</a></li>' +
-      '<li id="sprdes"><a href="SPRDesign.html" style="color:#f39c12">SPR Example: Design</a></li>' +
+      '<li id="des"><a href="Design.html">Design</a></li>' +
+      '<li id="des2"><a href="Participants.html">Participants</a></li>' +
+      '<li id="des3"><a href="CriticalItems.html">Critical Items</a></li>' +
+      '<li id="des4"><a href="DesignTypes.html">Types of Design</a></li>' +
+      '<li id="sprdes"><a href="SPRDesign.html">SPR Example: Design</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -23,7 +23,7 @@ $('#nav').html(
     '<a class="dropdown-toggle" data-toggle="dropdown" href="Procedure.html">Procedure' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li><a href="SPRProcedure.html" style="color:#f39c12">SPR: Procedure</a></li>' +
+      '<li id="sprpro"><a href="SPRProcedure.html">SPR: Procedure</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -31,15 +31,15 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Items.html">Materials' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="SPRCriticalItems.html" style="color:#f39c12">SPR Example: Critical Items</a></li>' +
-        '<li><a href="SPRRegion.html" style="color:#f39c12">SPR Example: Defining Sentence Regions</a></li>' +
-        '<li><a href="SPRGoodItems.html" style="color:#f39c12">SPR Example: How to Make Good Critical Items</a></li>' +
-        '<li><a href="Fillers.html" style="color:#2980b9">Filler Items</a></li>' +
-        '<li><a href="SPRGoodFillers.html" style="color:#f39c12">SPR Example: How To Make Good Filler Items</a></li>' +
-        '<li><a href="SPRComprehension.html" style="color:#f39c12">SPR Example: Comprehension Questions</a></li>' +
-        '<li><a href="Lists.html" style="color:#2980b9">Lists & Latin Square Design</a></li>' +
-        '<li><a href="SPRLists.html" style="color:#f39c12">SPR Example: Lists</a></li>' +
-        '<li><a href="SPRFormat.html" style="color:#f39c12">SPR Example: Preparing your Experiment for CrowdExp</a></li>' +
+        '<li id="crit"><a href="SPRCriticalItems.html">SPR Example: Critical Items</a></li>' +
+        '<li id="regi"><a href="SPRRegion.html">SPR Example: Defining Sentence Regions</a></li>' +
+        '<li id="good"><a href="SPRGoodItems.html">SPR Example: How to Make Good Critical Items</a></li>' +
+        '<li id="fill"><a href="Fillers.html">Filler Items</a></li>' +
+        '<li id="sprfill"><a href="SPRGoodFillers.html">SPR Example: How To Make Good Filler Items</a></li>' +
+        '<li id="sprcomp"><a href="SPRComprehension.html">SPR Example: Comprehension Questions</a></li>' +
+        '<li id="list"><a href="Lists.html">Lists & Latin Square Design</a></li>' +
+        '<li id="sprlist"><a href="SPRLists.html">SPR Example: Lists</a></li>' +
+        '<li id="sprform"><a href="SPRFormat.html">SPR Example: Preparing your Experiment for CrowdExp</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -47,16 +47,16 @@ $('#nav').html(
       '<a class="dropdown-toggle" data-toggle="dropdown" href="Analysis.html">Analysis' +
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
-        '<li><a href="Analysis.html" style="color:#2980b9">Analysis</a></li>' +
-        '<li><a href="SPRAnalysis.html" style="color:#f39c12">SPR Example: Analysis</a></li>' +
-        '<li><a href="Annotation.html" style="color:#2980b9">Annotation & Scoring</a></li>' +
-        '<li><a href="SPRAnnotation.html" style="color:#f39c12">SPR Example: Annotation & Scoring</a></li>' +
-        '<li><a href="Exclusion.html" style="color:#2980b9">Exclusion</a></li>' +
-        '<li><a href="SPRExclusion.html" style="color:#f39c12">SPR Example: Exclusion</a></li>' +
-        '<li><a href="Results.html" style="color:#2980b9">Results</a></li>' +
-        '<li><a href="SPRResults.html" style="color:#f39c12">SPR Example: Results</a></li>' +
-        '<li><a href="VSReport.html" style="color:#2980b9">Visual Report</a></li>' +
-        '<li><a href="SPRVSReport.html" style="color:#f39c12">SPR Example: Visual Report</a></li>' +
+        '<li><a href="Analysis.html">Analysis</a></li>' +
+        '<li><a href="SPRAnalysis.html">SPR Example: Analysis</a></li>' +
+        '<li><a href="Annotation.html">Annotation & Scoring</a></li>' +
+        '<li><a href="SPRAnnotation.html">SPR Example: Annotation & Scoring</a></li>' +
+        '<li><a href="Exclusion.html">Exclusion</a></li>' +
+        '<li><a href="SPRExclusion.html">SPR Example: Exclusion</a></li>' +
+        '<li><a href="Results.html">Results</a></li>' +
+        '<li><a href="SPRResults.html">SPR Example: Results</a></li>' +
+        '<li><a href="VSReport.html">Visual Report</a></li>' +
+        '<li><a href="SPRVSReport.html">SPR Example: Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
@@ -64,8 +64,8 @@ $('#nav').html(
     '<a class="dropdown-toggle" data-toggle="dropdown" href="Interpretation.html">Interpretation' +
     '<span class="caret"></span></a>' +
     '<ul class="dropdown-menu">' +
-      '<li><a href="Interpretation.html" style="color:#2980b9">Interpretation</a></li>' +
-      '<li><a href="SPRInterpretation.html" style="color:#f39c12">SPR Example: Interpretation</a></li>' +
+      '<li><a href="Interpretation.html">Interpretation</a></li>' +
+      '<li><a href="SPRInterpretation.html">SPR Example: Interpretation</a></li>' +
       '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +

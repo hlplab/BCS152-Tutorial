@@ -1,157 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BCS 152 Tutorial</title>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="tutorial.css">
-</head>
-<body class="bckgrnd">
-  <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
-  <div>
-    <div class="jumbotron ex top">
-      <h1>Lists &amp; Latin Square Design</h1>
-      <p>Recall that we conduct experiments to test hypotheses we hold about
-        the world&mdash;or in our case, about the brain. The behavioral data
-        we collect from the participants in an experiment constitute a small
-        <em>sample</em> of the world. So, to be able to reliably generalize
-        from our results, we need to make sure that the sample is likely to
-        be <em>representative</em>&mdash;specifically, we want the participants
-        to be a representative example of the population we're interested in
-        and we want the sentence stimuli to be a representative example of the
-        <em>types</em> of sentences we're interested in.
-      </p>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BCS 152 Tutorial</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="tutorial.css">
+  </head>
+  <body class="bckgrnd">
+    <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
+      <div>
+        <div class="jumbotron ex top">
+          <h1>Lists &amp; Latin Square Design</h1>
+            <p>
+              Recall that we conduct experiments to test hypotheses we hold about
+              the world&mdash;or in our case, about the brain. The behavioral data
+              we collect from the participants in an experiment constitute a small
+              <em>sample</em> of the world. So, to be able to reliably generalize
+              from our results, we need to make sure that the sample is likely to
+              be <em>representative</em>&mdash;specifically, we want the participants
+              to be a representative example of the population we're interested in
+              and we want the sentence stimuli to be a representative example of the
+              <em>types</em> of sentences we're interested in.
+            </p>
 
-      <p>
-        This is one of the reasons why experiments contain many critical items, rather
-        than one. However, this also comes with a problem. We want each participant
-        to see all items. We also typically want each participant to see each
-        condition equally often. One possibility would be to have each participant
-        read all stimuli, including all conditions of all critical items.
-        However, we don't want participants to become aware of the purpose of the
-        experiment. Imagine reading all four conditions of the example item:
-      </p>
-      <ul>
-        <li>I saw the apple on the table.</li>
-        <li>I saw the kiwi on the table.</li>
-        <li>I ate the apple on the table.</li>
-        <li>I ate the kiwi on the table.</li>
-      </ul>
-      <p>
-        You'd probably figure that this experiment has something to do with the
-        words "saw" vs. "ate" and "apple" vs. "kiwi".
-      </p>
+            <p>
+              This is one of the reasons why experiments contain many critical items, rather
+              than one. However, this also comes with a problem. We want each participant
+              to see all items. We also typically want each participant to see each
+              condition equally often. One possibility would be to have each participant
+              read all stimuli, including all conditions of all critical items.
+              However, we don't want participants to become aware of the purpose of the
+              experiment. Imagine reading all four conditions of the example item:
+            </p>
+            <p>
+              <ul>
+                <li>I saw the apple on the table.</li>
+                <li>I saw the kiwi on the table.</li>
+                <li>I ate the apple on the table.</li>
+                <li>I ate the kiwi on the table.</li>
+              </ul>
+            </p>
+            <p>
+              You'd probably figure that this experiment has something to do with the
+              words "saw" vs. "ate" and "apple" vs. "kiwi".
+            </p>
 
-      <p>
-        One way around this problem is a <em>Latin Square Design</em>, which
-        describes a way to distribute critical items across experimental lists.
-        An experimental list specifies the sentence stimuli that a participants
-        sees and in which order the participant sees the stimuli. Each participant
-        sees only one experimental list. Specifically, Latin Square design makes
-        sure that:
-      </p>
-      <ul>
-          <li>Each participant sees each critical item exactly once</li>
-          <li>Each participant sees all conditions equally often, across critical
-            items (for this, the number of
-              critical items needs to be a multiple of the number of conditions)</li>
-          <li>Across participants (and experimental lists) each critical item
-            is seen equally often in all its conditions</li>
-      </ul>
+            <p>
+              One way around this problem is a <em>Latin Square Design</em>, which
+              describes a way to distribute critical items across experimental lists.
+              An experimental list specifies the sentence stimuli that a participants
+              sees and in which order the participant sees the stimuli. Each participant
+              sees only one experimental list. Specifically, Latin Square design makes
+              sure that:
+            </p>
+            <p>
+              <ul>
+                <li>Each participant sees each critical item exactly once</li>
+                <li>Each participant sees all conditions equally often, across critical
+                  items (for this, the number of
+                  critical items needs to be a multiple of the number of conditions)</li>
+                <li>Across participants (and experimental lists) each critical item
+                  is seen equally often in all its conditions</li>
+              </ul>
+            </p>
 
-      <p>
-        How should the items and conditions be distributed across lists?
-        Let's consider a by-2 design, with two the conditions A and B.
-        The minimum number of experimental lists we will need is two. Let's say
-        that we use 8-times more critical items than condition (=16 critical
-        items). In that case, a Latin Square Design would create two experimental
-        lists 1 and 2 that would look like this (prior to determining the <em>
-        order</em> of critical items and prior to the inclusion of fillers;
-        more on that later):
-      </p>
-                  <div>
-                      <div class="trialCenter">
-                        <table>
-                          <tr>
-                            <td><span class="filler"> Item # </span></td>
-                            <td><span class="filler">List A </span></td>
-                            <td><span class="filler"> List B </span></td>
-                          </tr>
+            <p>
+              How should the items and conditions be distributed across lists?
+              Let's consider a by-2 design, with two the conditions A and B.
+              The minimum number of experimental lists we will need is two. Let's say
+              that we use 8-times more critical items than condition (=16 critical
+              items). In that case, a Latin Square Design would create two experimental
+              lists 1 and 2 that would look like this (prior to determining the <em>
+              order</em> of critical items and prior to the inclusion of fillers;
+              more on that later):
+            </p>
+        </div>
 
-                          <tr>
-                            <td class="item"> Item 1 </td>
-                            <td class="condON">Cond A </td>
-                            <td class="list3">Cond B</td>
-                          </tr>
+        <div class="trialCenter">
+          <table>
+            <tr>
+              <td><span class="filler"> Item # </span></td>
+              <td><span class="filler">List A </span></td>
+              <td><span class="filler"> List B </span></td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 2 </td>
-                            <td class="list3">Cond B </td>
-                            <td class="condON">Cond A</td>
-                          </tr>
+            <tr>
+              <td class="item"> Item 1 </td>
+              <td class="condON">Cond A </td>
+              <td class="list3">Cond B</td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 3 </td>
-                            <td class="condON">Cond A</td>
-                            <td class="list3">Cond B</td>
-                          </tr>
+            <tr>
+              <td class="item"> Item 2 </td>
+              <td class="list3">Cond B </td>
+              <td class="condON">Cond A</td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 4</td>
-                            <td class="list3">Cond B </td>
-                            <td class="condON">Cond A</td>
-                          </tr>
+            <tr>
+              <td class="item"> Item 3 </td>
+              <td class="condON">Cond A</td>
+              <td class="list3">Cond B</td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 5</td>
-                            <td class="condON">Cond A</td>
-                            <td class="list3">Cond B</td>
-                          </tr>
+            <tr>
+              <td class="item"></td>
+              <td class="list3"></td>
+              <td class="condON"</td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 6 </td>
-                            <td class="list3">Cond B</td>
-                            <td class="condON">Cond A</td>
-                          </tr>
+            <tr>
+              <td class="item"> Item 5</td>
+              <td class="condON">Cond A</td>
+              <td class="list3">Cond B</td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item ...</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                          </tr>
+            <tr>
+              <td class="item"> </td>
+              <td class="list3">< /td>
+              <td class="condON"> </td>
+            </tr>
 
-                          <tr>
-                            <td class="item"> Item 16 </td>
-                            <td class="list3">Cond B</td>
-                            <td class="condON">Cond A</td>
-                          </tr>
-                        </table>
-                      </div>
-                    </div>
-                </div>
+            <tr>
+              <td class="item"> Item ...</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
 
-                <div class="jumbotron">
-                  <div class="container">
-                    <div class="row">
-                      <table>
-                        <tbody>
-                          <tr>
-                            <td class="col-md-12">
-                              <div><a class="btn btn-warning" href="SPRComprehension.html">←SPR Example: Comprehension Questions</a></div>
-                            </td>
-                            <td class="col-md-12">
-                              <div><a class="btn btn-warning" href="SPRLists.html">SPR Example: Lists→</a></div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="jumbotron">
+            <tr>
+              <td class="item"> Item 16 </td>
+              <td class="list3">Cond B</td>
+              <td class="condON">Cond A</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-warning" href="SPRComprehension.html">←SPR Example: Comprehension Questions</a></div>
+                  </td>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-warning" href="SPRLists.html">SPR Example: Lists→</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+              <!--  <div class="jumbotron">
                   <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Test Your Understanding</button>
                   <div id="demo" class="collapse">
                     <p class="question">1. What is the answer to this question?</p>
@@ -237,18 +242,19 @@
                     </div>
                     <div id="alerts"></div>
                   </div>
-                </div>
+                </div> -->
 
-                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-                <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-                <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-                <script type="text/javascript" src="testnav.js"></script>
-                <script type="text/javascript" src="quiz-1.js"></script>
-                <script type="text/javascript">
-                $(document).ready(function() {
-                  $('li#createstim').addClass('active');
-                });
-                </script> </div>
-
-              </body>
-              </html>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+      <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="testnav.js"></script>
+      <!--<script type="text/javascript" src="quiz-1.js"></script>-->
+      <script type="text/javascript">
+        $(document).ready(function() {
+        $('li#createstim').addClass('active');
+        $('li#list').addClass('active');
+          });
+      </script>
+    </div>
+  </body>
+</html>
