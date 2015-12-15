@@ -13,36 +13,34 @@
   <body class="bckgrnd">
     <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
 
-      <div class="jumbotron ex">
-        <h1>Analysis</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor
-          at metus vel pellentesque. Mauris vel eros in urna fringilla malesuada.
-          Aliquam vestibulum rhoncus felis commodo faucibus. Nunc at posuere ipsum.
-          Aenean commodo lorem feugiat leo efficitur, non gravida erat dapibus.
-          Proin varius est quis eros facilisis, sed imperdiet eros vestibulum.
-          Nunc eleifend turpis sapien, sed feugiat sapien consequat vitae. Donec
-          at quam in augue vestibulum ultrices eget ut urna. Maecenas velit orci,
-          semper eu ipsum quis, viverra tristique orci. Integer fermentum elit purus,
-          non scelerisque sem ultrices vitae. Morbi egestas odio quis ligula elementum
-          fermentum. Donec vel auctor nibh, blandit dictum felis. Sed ornare odio vitae
-          lectus blandit semper. Morbi ut porttitor augue, quis luctus risus.
-         </p>
+
+      <div class="jumbotron spr top">
+        <h1>Self Paced Reading Analysis Overview</h1>
+          <p>
+            This guide will help you understand the SPR report you received with
+            your data. The report outlines what we did to clean up the data and how
+            much data was excluded in the process of cleaning, a calculation of
+            the mean question accuracy from your experiment, an analysis of the
+            accuracy by condition to see if some of your conditions had different
+            accuracy as compared to others, and finally an analysis of the residual
+            reading times for each region of interest.
+          </p>
+
     </div>
     <div class="jumbotron">
       <div class="container">
         <div class="row">
           <table>
             <tr>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="SPRFormat.html">&larr;SPR Example: Preparing your Experiment for CrowdExp</a></div></td>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="SPRAnalysisOverview.html">SPR Analysis Overview &rarr;</a></div></td>
+              <td class="col-md-12"><div><a class="btn btn-primary" href="Analysis.html">&larr;Analysis Overview</a></div></td>
+              <td class="col-md-12"><div><a class="btn btn-primary" href="Annotation.html"> Annotation and Scoring&rarr;</a></div></td>
             </tr>
           </table>
         </div>
       </div>
     </div>
 
-  <!--  <div class="jumbotron">
+    <!--<div class="jumbotron">
       <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Test Your Understanding</button>
         <div id="demo" class="collapse">
       <p class="question">1. What is the answer to this question?</p>
@@ -127,9 +125,8 @@
         Check
       </div>
       <div id="alerts"></div>
-
-      </div>
-    </div> -->
+  </div>
+</div> -->
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
@@ -139,7 +136,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('li#analysis').addClass('active');
-      $('li#an').addClass('active');
+      $('li#spran').addClass('active');
     });
   </script>
   </body>

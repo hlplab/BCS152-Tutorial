@@ -48,7 +48,7 @@ $('#nav').html(
       '<span class="caret"></span></a>' +
       '<ul class="dropdown-menu">' +
         '<li id="an"><a href="Analysis.html">Analysis</a></li>' +
-        '<li id="spran"><a href="SPRAnalysis.html">SPR Example: Analysis</a></li>' +
+        '<li id="spran"><a href="SPRAnalysisOverview.html">SPR Example: Analysis Overview</a></li>' +
         '<li id="ansco"><a href="Annotation.html">Annotation & Scoring</a></li>' +
         '<li id="spransco"><a href="SPRAnnotation.html">SPR Example: Annotation & Scoring</a></li>' +
         '<li id="excl"><a href="Exclusion.html">Exclusion</a></li>' +
