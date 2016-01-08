@@ -12,78 +12,79 @@
   <body class="bckgrnd">
     <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
 
-
         <div class="jumbotron spr top">
           <h1>Self Paced Reading Example: Defining Sentence Regions</h1>
-          <p>
-            Sometimes we aim to test predictions about the total reading times of
-            sentences (or the speed or accuracy of answers to comprehension
-            questions following the sentences). Most of the time though, research
-            on sentence processing is interested in differences in reading speeds (and
-            thus reading times) between conditions at <em>specific</em> points in
-            the critical items.
-          </p>
+            <p>
+              Topic References :
+              [<a href="#red" class="bldspr">Region-by-region reading times</a>]
+            </p>
+            <p>
+              Sometimes we aim to test predictions about the total reading times of
+              sentences (or the speed or accuracy of answers to comprehension
+              questions following the sentences). Most of the time though, research
+              on sentence processing is interested in differences in reading speeds (and
+              thus reading times) between conditions at <em>specific</em> points in
+              the critical items.
+            </p>
 
-          <p>
-            For example, the example hypothesis that led to the 2x2 design
-            described in the previous sections (repeated in Figure 1 below),
-            would lead us to predict differences in reading speeds on the
-            target word (hence the name "target word") based on the contextual
-            predictability and frequency of the target word ("apple" or "kiwi").
-            These differences might show up on the target word itself or
-            <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="Often in self-paced reading studies differences in reading times can happen both on the sentence regions that are experimentally manipulated as well as several words later. For example, in a garden path sentence, reading times can slow down both at the disambiguating word and a few words after.">spill over</a>
-            onto the next words.
-          </p>
+            <p>
+              For example, the example hypothesis that led to the 2x2 design
+              described in the previous sections (repeated in Figure 1 below),
+              would lead us to predict differences in reading speeds on the
+              target word (hence the name "target word") based on the contextual
+              predictability and frequency of the target word ("apple" or "kiwi").
+              These differences might show up on the target word itself or
+              <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="Often in self-paced reading studies differences in reading times can happen both on the sentence regions that are experimentally manipulated as well as several words later. For example, in a garden path sentence, reading times can slow down both at the disambiguating word and a few words after.">spill over</a>
+              onto the next words.
+            </p>
 
-          <figure>
-            <img title="Example 2x2 Design" alt="Example 2x2 Design" src="Example.png">
-            <figcaption style="text-align:center;">Figure 1: A 2x2 design, crossing contextual predictability (high vs. low) with word frequency (high vs. low).</figcaption>
-          </figure>
-          <br>
+            <figure>
+              <img title="Example 2x2 Design" alt="Example 2x2 Design" src="Example.png">
+              <figcaption style="text-align:center;">Figure 1: A 2x2 design, crossing contextual predictability (high vs. low) with word frequency (high vs. low).</figcaption>
+            </figure>
+            <br>
 
-          <p>
-            Beyond the target word and the spill-over region, we wouldn't expect
-            the reading times to differ between the four conditions on any of the
-            other regions of the sentence.
-          </p>
+            <p id="reg">
+              Beyond the target word and the spill-over region, we wouldn't expect
+              the reading times to differ between the four conditions on any of the
+              other regions of the sentence.
+            </p>
         </div>
 
         <div class="jumbotron spr">
           <h2>Region-by-region reading times</h2>
-          <p>
-            To allow reseachers to test fine-grained predictions about differences
-            in reading times at different points in the sentence, CrowdExp-SPR
-            records word-by-word reading times. For analysis, these word-by-word
-            reading times will often be collapsed into region-by-region reading
-            times. This region-by-region averaging makes the reading time estimates
-            more reliable (since each data point for the analysis will be based
-            on more observations). Sometimes, though, regions consist of just one word.
-          </p>
+            <p>
+              To allow reseachers to test fine-grained predictions about differences
+              in reading times at different points in the sentence, CrowdExp-SPR
+              records word-by-word reading times. For analysis, these word-by-word
+              reading times will often be collapsed into region-by-region reading
+              times. This region-by-region averaging makes the reading time estimates
+              more reliable (since each data point for the analysis will be based
+              on more observations). Sometimes, though, regions consist of just one word.
+            </p>
 
-          <p>
-            For example, for the example design discussed above we might decide
-            to define two sentence regions, the target word ("apple/kiwi") and
-            a two-word spill-over region ("on the"). This definition would apply
-            across critical items. For example, we wouldn't usually have some
-            critical items with two-word spill-over regions and some critical
-            items with three-word spill-over regions. Additionally, the
-            <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">critical region</a>
-            should ideally be held constant across the conditions of an item.
-            Later we will learn more about
-            <a href="SPRFormat.html" class="bldspr">how to define sentence regions for
-              CrowdExp-SPR</a>.
-          </p>
+            <p>
+              For example, for the example design discussed above we might decide
+              to define two sentence regions, the target word ("apple/kiwi") and
+              a two-word spill-over region ("on the"). This definition would apply
+              across critical items. For example, we wouldn't usually have some
+              critical items with two-word spill-over regions and some critical
+              items with three-word spill-over regions. Additionally, the
+              <a href="Glossary.html#C" target="_blank" class="red" data-toggle="tooltip" title="">critical region</a>
+              should ideally be held constant across the conditions of an item.
+              Later we will learn more about
+              <a href="SPRFormat.html" class="bldspr">how to define sentence regions for
+                CrowdExp-SPR</a>.
+            </p>
 
-          <p>
-            Sentence regions are something that we usually only worry about for
-            the critical items. While we <em>can</em> define sentence regions for
-            filler items as well, we usually have no predictions for how filler items
-            will be read, and thus no reason to define sentence regions for filler
-            items.
-          </p>
+            <p>
+              Sentence regions are something that we usually only worry about for
+              the critical items. While we <em>can</em> define sentence regions for
+              filler items as well, we usually have no predictions for how filler items
+              will be read, and thus no reason to define sentence regions for filler
+              items.
+            </p>
         </div>
-
-
 
         <div class="jumbotron">
           <div class="container">

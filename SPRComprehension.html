@@ -13,56 +13,59 @@
   <body class="bckgrnd">
     <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
 
-    <div>
       <div class="jumbotron spr top">
         <h1>SPR Example: Comprehension Questions</h1>
-        <p>
-          Most predictions for self-paced reading experiments only hold under
-          the assumption that participants are actually processing and <em>understanding
-          </em> the sentences we display to them, rather than to just press the
-          SPACE bar repeatedly. To this end, each item is followed by a
-          comprehension question, which asks a Y/N question about the sentence
-          participants just read.
-        </p>
+          <p>
+            Topic References :
+            [<a href="#outcome" class="bldspr">What outcome variables CrowdExp-SPR will record</a>]
+          </p>
+          <p>
+            Most predictions for self-paced reading experiments only hold under
+            the assumption that participants are actually processing and <em>understanding
+            </em> the sentences we display to them, rather than to just press the
+            SPACE bar repeatedly. To this end, each item is followed by a
+            comprehension question, which asks a Y/N question about the sentence
+            participants just read.
+          </p>
 
-        <p>
-          Just like with the choice of critical and filler items, it is important
-          to put some care into how questions are designed. Here are some
-          considerations in designing comprehension questions for your experiment:
-        </p>
+          <p>
+            Just like with the choice of critical and filler items, it is important
+            to put some care into how questions are designed. Here are some
+            considerations in designing comprehension questions for your experiment:
+          </p>
 
-        <ol>
-          <li>
-            Within a critical item, you typically want the same question for
-            all conditions (the same holds for filler items, but since they
-            only have one 'condition', this constraint is trivially true for
-            all filler items). If it is impossible to have the same question,
-            a minimally different question is recommended. In any case, it
-            is recommended to keep the answer constant across the different
-            conditions of an item.
-            This will make it easier to have an equal number of Y and N responses
-            across items. If it's not possible to keep the question exactly
-            the same try to keep the questions as similar as possible while
-            still keeping the response the same.
-          </li>
-          <li>
-            For critical items, you often want to probe a specific part of the
-            stimulus to make sure that that part was indeed processed correctly.
-            Across all stimuli, however, it is advisable to probe different parts
-            of the sentences to roughly equal extents. For example, if you only
-            asked questions about the first word of all sentences, participants
-            might pick up on that and stop paying attention to the remainder of
-            sentences.
-          </li>
-          <li>
-            We typically want to balance the number of Y and N answers across
-            the entire experiment. This avoids response biases in the answer
-            to the comprehension question. It will also increase the likelihood that
-            participants pay attention (imagine the answer would be Y most of
-            the time; then a participant could get most answers right be simply
-            <em>always</em> answering Y). Specifically, we want to balance Y and N
-            answers:
-            <ul>
+          <ol>
+            <li>
+              Within a critical item, you typically want the same question for
+              all conditions (the same holds for filler items, but since they
+              only have one 'condition', this constraint is trivially true for
+              all filler items). If it is impossible to have the same question,
+              a minimally different question is recommended. In any case, it
+              is recommended to keep the answer constant across the different
+              conditions of an item.
+              This will make it easier to have an equal number of Y and N responses
+              across items. If it's not possible to keep the question exactly
+              the same try to keep the questions as similar as possible while
+              still keeping the response the same.
+            </li>
+            <li>
+              For critical items, you often want to probe a specific part of the
+              stimulus to make sure that that part was indeed processed correctly.
+              Across all stimuli, however, it is advisable to probe different parts
+              of the sentences to roughly equal extents. For example, if you only
+              asked questions about the first word of all sentences, participants
+              might pick up on that and stop paying attention to the remainder of
+              sentences.
+            </li>
+            <li>
+              We typically want to balance the number of Y and N answers across
+              the entire experiment. This avoids response biases in the answer
+              to the comprehension question. It will also increase the likelihood that
+              participants pay attention (imagine the answer would be Y most of
+              the time; then a participant could get most answers right be simply
+              <em>always</em> answering Y). Specifically, we want to balance Y and N
+              answers:
+            <ul id="outcome">
               <li>
                 Across all items.
               </li>
@@ -82,30 +85,30 @@
 
       <div class="jumbotron spr">
         <h2>What outcome variables CrowdExp-SPR will record</h2>
-        <p>
-          CrowdExp will record both the reaction time and the answer provided
-          by the participant, providing two additional outcome variables for
-          each sentence. Although these are not typically the outcome variables
-          of primary interest, effects of conditions on
-          <a href="Glossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer response time</a>
-          and
-          <a href="Glossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer
-          accuracy</a> are sometimes analyzed as part of an experiment.
-        </p>
-    </div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <table>
-            <tr>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="SPRGoodFillers.html">&larr;SPR Example: Filler Items</a></div></td>
-              <td class="col-md-12"><div><a class="btn btn-primary" href="Lists.html">Lists & Latin Square Design &rarr;</a></div></td>
-            </tr>
-          </table>
+          <p>
+            CrowdExp will record both the reaction time and the answer provided
+            by the participant, providing two additional outcome variables for
+            each sentence. Although these are not typically the outcome variables
+            of primary interest, effects of conditions on
+            <a href="Glossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer response time</a>
+            and
+            <a href="Glossary.html#A" target="_blank" class="red" data-toggle="tooltip" title="">answer
+              accuracy</a> are sometimes analyzed as part of an experiment.
+            </p>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <table>
+              <tr>
+                <td class="col-md-12"><div><a class="btn btn-warning" href="SPRGoodFillers.html">&larr;SPR Example: Filler Items</a></div></td>
+                <td class="col-md-12"><div><a class="btn btn-primary" href="Lists.html">Lists & Latin Square Design &rarr;</a></div></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="jumbotron">
+    <!--<div class="jumbotron">
       <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Test Your Understanding</button>
         <div id="demo" class="collapse">
           <p class="question">1. Which of the following is the best
@@ -193,8 +196,7 @@
       <div id="alerts"></div>
 
   </div>
-    </div>
-  </div>
+</div> -->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
