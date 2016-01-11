@@ -9,299 +9,302 @@
   </head>
   <body class="bckgrnd">
     <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
-      <div>
-        <div class="jumbotron spr top">
-          <h1>Self Paced Reading Example: Preparing your Experiment for CrowdExp</h1>
-            <p>
-              CrowdExp will create a Latin Square Design for
-              you, create the Latin Square Designed lists, and randomize the stimuli
-              order. How's that for good news?!
-            </p>
+      <div class="jumbotron spr top">
+        <h1>Self Paced Reading Example: Preparing your Experiment for CrowdExp</h1>
+        <p>
+          Topic References :
+          [<a href="#format" class="bldspr">Format of stimulus file</a>]
+          [<a href="#identify" class="bldspr">Identifying sentence regions in your stimuli</a>]
+          [<a href="#validate" class="bldspr">Validating your stimulus file</a>]
+        </p>
+        <p>
+          CrowdExp will create a Latin Square Design for
+          you, create the Latin Square Designed lists, and randomize the stimuli
+          order. How's that for good news?!
+        </p>
 
-            <p>CrowdExp also helps you to create the stimulus file. Use the
-              <a href="https://www.hlp.rochester.edu/CrowdExp" target = "_blank">CrowdExp</a>
-              interface to specify your design, number
-              of critical items, and numbers of fillers. After your design has been
-              approved, CrowdExp will then let you download a template stimulus
-              file (an Excel file) that contains many of the necessary variables.
-            </p>
-
-          <h2>Format of stimulus file</h2>
-
-            <p>Below are some representative rows from the example file: </p>
-              <table style="margin: 0.5em 0px 0px 0.5em; border-collapse: collapse; color: rgb(0, 0, 0); font-family: Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
-                <tbody>
-                  <tr>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>Experiment</strong></p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>ItemName</strong></p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>Condition</strong></p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>Sentence</strong></p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>Question</strong></p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line891" style="margin: 0px; padding: 0px;"><strong>Answer</strong></p>
-                    </td>
-                  </tr>
+        <p id="format">CrowdExp also helps you to create the stimulus file. Use the
+          <a href="https://www.hlp.rochester.edu/CrowdExp" target = "_blank">CrowdExp</a>
+          interface to specify your design, number
+          of critical items, and numbers of fillers. After your design has been
+          approved, CrowdExp will then let you download a template stimulus
+          file (an Excel file) that contains many of the necessary variables.
+        </p>
+      </div>
+      <div class="jumbotron spr">
+        <h2>Format of stimulus file</h2>
+          <p>Below are some representative rows from the example file: </p>
+            <table class="format1">
+              <tbody>
                 <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-140"></span>
+                  <td class="format2">
+                    <p class="line891" style="margin: 0px; padding: 0px;"><strong>Experiment</strong></p>
+                  </td>
+                  <td class="format2">
+                    <p class="line891" style="margin: 0px; padding: 0px;"><strong>ItemName</strong></p>
+                  </td>
+                  <td class="format2">
+                    <p class="line891" style="margin: 0px; padding: 0px;"><strong>Condition</strong></p>
+                </td>
+                <td class="format2">
+                  <p class="line891" style="margin: 0px; padding: 0px;"><strong>Sentence</strong></p>
+                </td>
+                <td class="format2">
+                  <p class="line891" style="margin: 0px; padding: 0px;"><strong>Question</strong></p>
+                </td>
+                <td class="format2">
+                  <p class="line891" style="margin: 0px; padding: 0px;"><strong>Answer</strong></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-140"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">1</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.HIGH_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">I saw the {apple}@TARGET {on the}SPILLOVER table</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they see the apple?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-141"></span>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">1</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.HIGH_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">I saw the {apple}@TARGET {on the}SPILLOVER table</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they see the apple?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-141"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">1</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.LOW_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">I saw the {kiwi}@TARGET {on the}SPILLOVER table</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they see the kiwi?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-142"></span>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">1</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.LOW_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">I saw the {kiwi}@TARGET {on the}SPILLOVER table</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they see the kiwi?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-142"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">1</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.HIGH_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">I ate the {apple}@TARGET {on the}SPILLOVER table</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they eat the apple?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-143"></span>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">1</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.HIGH_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">I ate the {apple}@TARGET {on the}SPILLOVER table</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they eat the apple?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-143"></span>
+                  <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">1</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.LOW_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">I ate the {kiwi}@TARGET {on the}SPILLOVER table.</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they eat the kiwi?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-144"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">1</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.LOW_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">I ate the {kiwi}@TARGET {on the}SPILLOVER table.</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they eat the kiwi?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-144"></span>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">2</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.LOW_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">She typed the {column}@TARGET {for the}SPILLOVER September issue.</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they read the column?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">N</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-145"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">2</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">HIGH_PRED.LOW_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">She typed the {column}@TARGET {for the}SPILLOVER September issue.</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they read the column?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">N</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-145"></span>
-                    <p class="line862" style="margin: 0px; padding: 0px;">critical</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">2</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.HIGH_FREQ</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">She did the {paper}@TARGET {for the}@SPILLOVER September issue.</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">Did they read the column?</p>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">N</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-146"></span>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">2</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">LOW_PRED.HIGH_FREQ</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">She did the {paper}@TARGET {for the}@SPILLOVER September issue.</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">Did they read the column?</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">N</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-146"></span>
                     <p class="line862" style="margin: 0px; padding: 0px;">...</p>
+                </td>
+                <td class="format2"><br>
+                </td>
+                <td class="format2"><br>
+                </td>
+                <td class="format2"><br>
+                </td>
+                <td class="format2"><br>
+                </td>
+                <td class="format2"><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="format2">
+                  <span class="anchor" id="line-147"></span>
+                    <p class="line862" style="margin: 0px; padding: 0px;">filler</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">41</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">-</p>
+                </td>
+                <td class="format2">
+                  <p class="line862" style="margin: 0px; padding: 0px;">The parcel
+                    arrived too late to be of any use.</p>
                   </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">Did the
+                      package arrive on time?</p>
                   </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                  </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">N</p>
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <span class="anchor" id="line-147"></span>
-                    <p class="line862" style="margin: 0px; padding: 0px;">filler</p>
+                  <td class="format2">
+                    <span class="anchor" id="line-148"></span>
+                      <p class="line862" style="margin: 0px; padding: 0px;">filler</p>
                   </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">41</p>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">42</p>
                   </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
+                  <td class="format2">
                     <p class="line862" style="margin: 0px; padding: 0px;">-</p>
                   </td>
-                  <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                    <p class="line862" style="margin: 0px; padding: 0px;">The parcel
-                      arrived too late to be of any use.</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">Did the
-                        package arrive on time?</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">N</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <span class="anchor" id="line-148"></span>
-                      <p class="line862" style="margin: 0px; padding: 0px;">filler</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">42</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">-</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">The
-                        espresso machine was broken for months before finally being
-                        fixed.</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">Was the
-                        espresso machine fixed?</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);">
-                      <span class="anchor" id="line-149"></span>
-                      <p class="line862" style="margin: 0px; padding: 0px;">...</p>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                    </td>
-                    <td style="padding: 0.25em 0.5em; border: 1px solid rgb(55,51,51);"><br>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">The
+                      espresso machine was broken for months before finally being
+                      fixed.</p>
+                  </td>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">Was the
+                      espresso machine fixed?</p>
+                  </td>
+                  <td class="format2">
+                    <p class="line862" style="margin: 0px; padding: 0px;">Y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="format2">
+                    <span class="anchor" id="line-149"></span>
+                    <p class="line862" style="margin: 0px; padding: 0px;">...</p>
+                  </td>
+                  <td class="format2"><br>
+                  </td>
+                  <td class="format2"><br>
+                  </td>
+                  <td class="format2"><br>
+                  </td>
+                  <td class="format2"><br>
+                  </td>
+                  <td class="format2"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
 
-            <br class="Apple-interchange-newline">
-              <p>There are six (6) required columns:
-                <b>Experiment</b>,
-                <b>ItemName</b>,
-                <b>Condition</b>,
-                <b>Sentence</b>,
-                <b>Question</b>, and
-                <b>Answer</b>.
-              </p>
-              <p>
-                <ul>
-                  <li>
-                    <b>Experiment</b> distinguishes between critical items and fillers.
-                    You can also distinguish several mini-experiments that are embedded
-                    within the same experiment. For your first experiment, however, we
-                    highly recommend you keep it simple. Just use "critical" for all your
-                    critical items and "filler" for all your filler items.
-                  </li>
-
-                  <li>
-                    <b>ItemName</b> is to identify an individual item within an
-                    experiment. This should be a number. For critical items this will be the same
-                    across all conditions. In the example above there are four rows
-                    for item 1, one for each of the 2x2 = 4 conditions in the experiment.
-                    You <em>must have as many rows per critical item as conditions</em>.
-                    ItemNames <em>must be unique</em>. The easiest solution to this is
-                    to number your items from 1 to N (where N is the number of items in
-                    your experiment). This will allow CrowdExp to automatically create Latin Square Designed
-                    lists for you. Filler items, on the other hand, are identical across
-                    lists. So you only need one row per filler.
-                  </li>
-
-                  <li>
-                    <b>Condition</b> is to identify the condition of a critical item.
-                    Only critical items have conditions.
-                  </li>
-                </ul>
-                <ul>
-                  <li><em>For fillers</em>, Conditionnames must be be "-".</li>
-
-                  <li><em>For critical items</em>, Condition names should not contain
-                      any SPACEs
+          <br class="Apple-interchange-newline">
+            <p>There are six (6) required columns:
+              <b>Experiment</b>,
+              <b>ItemName</b>,
+              <b>Condition</b>,
+              <b>Sentence</b>,
+              <b>Question</b>, and
+              <b>Answer</b>.
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <b>Experiment</b> distinguishes between critical items and fillers.
+                  You can also distinguish several mini-experiments that are embedded
+                  within the same experiment. For your first experiment, however, we
+                  highly recommend you keep it simple. Just use "critical" for all your
+                  critical items and "filler" for all your filler items.
+                </li>
+                <li>
+                  <b>ItemName</b> is to identify an individual item within an
+                  experiment. This should be a number. For critical items this will be the same
+                  across all conditions. In the example above there are four rows
+                  for item 1, one for each of the 2x2 = 4 conditions in the experiment.
+                  You <em>must have as many rows per critical item as conditions</em>.
+                  ItemNames <em>must be unique</em>. The easiest solution to this is
+                  to number your items from 1 to N (where N is the number of items in
+                  your experiment). This will allow CrowdExp to automatically create Latin Square Designed
+                  lists for you. Filler items, on the other hand, are identical across
+                  lists. So you only need one row per filler.
+                </li>
+                <li>
+                  <b>Condition</b> is to identify the condition of a critical item.
+                  Only critical items have conditions.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <em>For fillers</em>, Conditionnames must be be "-".
+                </li>
+                <li>
+                  <em>For critical items</em>, Condition names should not contain any SPACEs
                     or special symbols, except for "." like in the example above.
                     The condition column needs to follow a specific format. Each
                     manipulation needs to be separated by a ".", and each condition
@@ -311,27 +314,26 @@
                     the value for contextual predictability manipulation from the value
                     for the word frequency manipulation. This gives us the four possible
                     Condition names, shown in the table.
-                  </li>
-
-                  <li>
-                    You can name your conditions what you like but, it is useful to use
-                    descriptive names. In our 2x2 example design, we have chosen
-                    LOW_PRED vs. HIGH_PRED for the contextual predictability
-                    manipulation and LOW_FREQ vs. HIGH_FREQ for the word frequency
-                    manipulation.
-                  </li>
-
-                  <li>
-                    CrowdExp will be creating the Latin Square design and randomize the
-                    item and filler order for you so the order you put items
-                    or fillers in does not matter. But remember that we are using a Latin
-                    Square Design so participants will only see each item in one of its
-                    possible conditions (e.g. the first sentence of item 1, the second
-                    sentence of item 2, etc.). All participants will see all the fillers.
-                  </li>
-                </ul>
-                <ul>
-                  <li><b>Sentence</b> is the stimulus sentence that participants will read.
+                </li>
+                <li>
+                  You can name your conditions what you like but, it is useful to use
+                  descriptive names. In our 2x2 example design, we have chosen
+                  LOW_PRED vs. HIGH_PRED for the contextual predictability
+                  manipulation and LOW_FREQ vs. HIGH_FREQ for the word frequency
+                  manipulation.
+                </li>
+                <li>
+                  CrowdExp will be creating the Latin Square design and randomize the
+                  item and filler order for you so the order you put items
+                  or fillers in does not matter. But remember that we are using a Latin
+                  Square Design so participants will only see each item in one of its
+                  possible conditions (e.g. the first sentence of item 1, the second
+                  sentence of item 2, etc.). All participants will see all the fillers.
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <b>Sentence</b> is the stimulus sentence that participants will read.
                   Avoid special characters other than "," and "." This is also the
                   field in which you will have to mark up the
                   <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>
@@ -339,213 +341,202 @@
                   CrowdExp will collect
                   <a href="Glossary.html#W" target="_blank" class="red" data-toggle="tooltip" title="">word-by-word reading times</a>.
                   These reading times are typically the primary outcome variable of interest.
-                  <!--If you're interested
-                  in running experiments on language with other writing systems, let us
-                  know. CrowdExp is unicode enabled, providing support for other writing
-                  systems.!-->
-                  </li>
-
-                  <li><b>Question</b> is the comprehension question to ensure that
+                  (Note: If you're interested in running experiments on language with other
+                  writing systems, let us know. CrowdExp is unicode enabled, providing
+                  support for other writing systems.
+                </li>
+                <li>
+                  <b>Question</b> is the comprehension question to ensure that
                     participants are reading and understanding the sentence.
+                </li>
+                <li id="identify">
+                  <b>Answer</b> is the correct answer for the comprehension question.
+                  In the example above all the answers for Item 1 are N.
+                  CrowdExp will record both the reaction time and theanswer provided
+                  by the participant, providing two additional outcome variables for
+                  each sentence.
+                </li>
+              </ul>
+      </div>
+      <div class="jumbotron spr">
+        <h2>Identifying sentence regions in your stimuli</h2>
+          <p>
+            To analyze the reading data, the word-by-word reading times are
+            often aggregated into
+            <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>,
+            based on the predictions
+            for the experiment. It is thus <em>very important</em> to mark up
+            the sentence regions of interest in the <b>Sentence</b> field of
+            your stimulus file.
+          </p>
+          <p>
+            This is done with the {...}@REGIONNAME syntax, as shown in the table
+            above. Simply put the word or words that you want to later analyze
+            as one sentence region into one set of curly parentheses {...}. Don't
+            worry: the words will still be displayed word-by-word to the participant
+            and participants also won't see the {...}@REGIONAME mark-up. CrowdExp
+            will remove this information before displaying the sentences.
+          </p>
+        <h3>An example</h3>
+          <p>
+            In the example table above, we only marked the TARGET region and
+            a SPILLOVER region (the two following words). The TARGET region is
+            the word that we hypothesize to be read more or less slowly
+            depending on its frequency and contextual predictability. The SPILLOVER
+            region are the two words following the TARGET word. We marked them
+            since processing difficulty often '<a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="Often in self-paced reading studies differences in reading times can happen both on the sentence regions that are experimentally manipulated as well as several words later.">spills over</a>'
+            on to subsequent words.
+          </p>
+          <p>
+            This shows that we don't have to mark all regions in a sentence. It
+            is, however, often a good idea to also mark some other regions, even
+            if there are not of primary interest. That's because we want to make
+            sure that those regions for which we do <em>not</em> predict any
+            differences by condition indeed do not exhibit any differences. The
+            following is an example of an alternative region coding that we
+            could use for all items in our example experiment.</p>
+            <ul>
+              <li>{I}@SUBJECT {saw}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+              <li>{I}@SUBJECT {saw}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+              <li>{I}@SUBJECT {ate}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+              <li>{I}@SUBJECT {ate}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
+            </ul>
+        <h3>Format requirements</h3>
+          <p>
+            In most designs, <em>all critical items should have the same regions</em>
+            (filler items do not require sentence regions).
+            Region names also typically (though not necessarily) occur in the
+            same order across all critical items, regardless of the condition.
+            It is, however, possible that your design
+            requires you to have some sentence regions that only occur in a
+            subset of the conditions of your experiment.
+          </p>
+          <p>
+            Regions should be indicated using the following syntax {bli bla
+            blub}@Name, e.g.:
+          </p>
+            <ul>
+              <li>{word}@regionname</li>
+              <li>{several words here}@anotherregionname</li>
+              <li>{This sentence}@subject {has}@verb {multiple regions.}@object</li>
+            </ul>
+          <p>
+            Make sure to always include punctuation (e.g., "!", "?", ",", ".")
+            right after the words. <em>Never have an open or closing parenthesis
+            intervene between a word and punctuation</em>. That is, use
+          </p>
+            <blockquote>{bli bla blub,}@NAME</blockquote>
+          <p>
+            rather than
+          </p>
+            <blockquote>{bli bla blub}@NAME,</blockquote>
+          <p>
+            which would result in the region being named "NAME,". Also avoid
+          </p>
+            <blockquote>{bli bla blub}@NAME ,</blockquote>
+          <p id="validate">
+            which would result in the intended region name, but also would
+            result in the comma being displayed only after an <em>additional
+            </em> SPACE-bar press after "blub".
+          </p>
+      </div>
+
+      <div class="jumbotron spr">
+        <h2>Validating your stimulus file</h2>
+          <p>
+            CrowdExp will automatically parse your stimulus file for errors. CrowdExp
+            won't find all types of errors though, so be sure to try your best to avoid
+            them. We recap some of the more common error here and recommend that
+            you check these points before uploading your stimulus file to CrowdExp.
+          </p>
+            <ul>
+              <li>
+                All <b>ItemName</b>s have to be unique across items. It is best
+                not to change the ItemNames provided by CrowdExp.
+              </li>
+              <li>
+                <b>Condition</b>s:
+                <ul>
+                  <li>
+                    Should only be upper and lowercase letters and
+                    periods (see example above). <b> Do not include SPACEs, numbers or
+                    other characters.</b> Generally, it's best not to change the
+                    Condition names that were auto-generated by CrowdExp.
                   </li>
-
-                  <li><b>Answer</b> is the correct answer for the comprehension question.
-                    In the example above all the answers for Item 1 are N.
-
-                    CrowdExp will record both the reaction time and the answer provided
-                    by the participant, providing two additional outcome variables for
-                    each sentence.
+                  <li>
+                    Make sure that the condition names are sensible and sufficiently
+                    transparent so that you can later understand the output of the
+                    analysis. Take a note in your lab notebook about what the different
+                    condition names mean.
                   </li>
                 </ul>
-            </div>
-
-
-            <div class="jumbotron spr">
-              <h2>Identifying sentence regions in your stimuli</h2>
-              <p>
-                To analyze the reading data, the word-by-word reading times are
-                often aggregated into
-                <a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="">sentence regions</a>,
-                based on the predictions
-                for the experiment. It is thus <em>very important</em> to mark up
-                the sentence regions of interest in the <b>Sentence</b> field of
-                your stimulus file.
-              </p>
-
-              <p>
-                This is done with the {...}@REGIONNAME syntax, as shown in the table
-                above. Simply put the word or words that you want to later analyze
-                as one sentence region into one set of curly parentheses {...}. Don't
-                worry: the words will still be displayed word-by-word to the participant
-                and participants also won't see the {...}@REGIONAME mark-up. CrowdExp
-                will remove this information before displaying the sentences.
-              </p>
-
-              <h3>An example</h3>
-              <p>In the example table above, we only marked the TARGET region and
-                a SPILLOVER region (the two following words). The TARGET region is
-                the word that we hypothesize to be read more or less slowly
-                depending on its frequency and contextual predictability. The SPILLOVER
-                region are the two words following the TARGET word. We marked them
-                since processing difficulty often '<a href="Glossary.html#S" target="_blank" class="red" data-toggle="tooltip" title="Often in self-paced reading studies differences in reading times can happen both on the sentence regions that are experimentally manipulated as well as several words later.">spills over</a>'
-                on to subsequent words.
-              </p>
-
-              <p>
-                This shows that we don't have to mark all regions in a sentence. It
-                is, however, often a good idea to also mark some other regions, even
-                if there are not of primary interest. That's because we want to make
-                sure that those regions for which we do <em>not</em> predict any
-                differences by condition indeed do not exhibit any differences. The
-                following is an example of an alternative region coding that we
-                could use for all items in our example experiment.</p>
-              <ul>
-                  <li>{I}@SUBJECT {saw}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
-                  <li>{I}@SUBJECT {saw}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
-                  <li>{I}@SUBJECT {ate}@VERB the {apple}@TARGET {on the}@SPILLOVER {table.}@REST</li>
-                  <li>{I}@SUBJECT {ate}@VERB the {kiwi}@TARGET {on the}@SPILLOVER {table.}@REST</li>
-              </ul>
-
-              <h3>Format requirements</h3>
-              <p>
-                In most designs, <em>all critical items should have the same regions</em>
-                (filler items do not require sentence regions).
-                Region names also typically (though not necessarily) occur in the
-                same order across all critical items, regardless of the condition.
-                It is, however, possible that your design
-                requires you to have some sentence regions that only occur in a
-                subset of the conditions of your experiment.
-              </p>
-
-              <p>
-                Regions should be indicated using the following syntax {bli bla
-                blub}@Name, e.g.:
-              </p>
-              <ul>
-                <li>{word}@regionname</li>
-                <li>{several words here}@anotherregionname</li>
-                <li>{This sentence}@subject {has}@verb {multiple regions.}@object</li>
-              </ul>
-
-              <p>
-                Make sure to always include punctuation (e.g., "!", "?", ",", ".")
-                right after the words. <em>Never have an open or closing parenthesis
-                intervene between a word and punctuation</em>. That is, use
-              </p>
-              <blockquote>{bli bla blub,}@NAME</blockquote>
-              <p>
-                rather than
-              </p>
-              <blockquote>{bli bla blub}@NAME,</blockquote>
-              <p>
-                which would result in the region being named "NAME,". Also avoid
-              </p>
-              <blockquote>{bli bla blub}@NAME ,</blockquote>
-              <p>
-                which would result in the intended region name, but also would
-                result in the comma being displayed only after an <em>additional
-                </em> SPACE-bar press after "blub".
-              </p>
-            </div>
-
-            <div class="jumbotron spr">
-              <h2>Validating your stimulus file</h2>
-              <p>
-                CrowdExp will automatically
-                parse your stimulus file for errors. CrowdExp won't find all types of
-                errors though, so be sure to try your best to avoid them. We recap
-                some of the more common error here and recommend that you check these
-                points before uploading your stimulus file to CrowdExp.
-              </p>
-              <ul>
-                <li>
-                  All <b>ItemName</b>s have to be unique across items. It is best
-                  not to change the ItemNames provided by CrowdExp.</li>
-                <li>
-                  <b>Condition</b>s:
-                  <ul>
-                    <li>
-                      Should only be upper and lowercase letters and
-                      periods (see example above). <b> Do not include SPACEs, numbers or
-                      other characters.</b> Generally, it's best not to change the
-                      Condition names that were auto-generated by CrowdExp.
-                    </li>
-                    <li>
-                      Make sure that the condition names are sensible and sufficiently
-                      transparent so that you can later understand the output of the
-                      analysis. Take a note in your lab notebook about what the different
-                      condition names mean.
-                    </li>
+              </li>
+              <li>
+                Remove blank/empty rows between stimuli. If you use the auto-
+                generated template there shouldn't be any such blank/empty rows.
+                But you might have accidently created some.
+              </li>
+              <li>
+                <b>Sentence</b> fields:
+                <ul>
+                  <li>
+                    Check that all critical items have <b>sentence regions</b> defined and
+                    that these regions are consistent within and across items.
+                    Fillers should not have sentence regions marked up.
+                  </li>
+                  <li>
+                    Except for the mark-up for the sentence regions, sentences and questions will
+                    be displayed to participants as-is. So do not include extra
+                    characters unless you want those characters to be displayed.
+                  </li>
+                  <li>
+                    <b>Be particularly careful with stray SPACEs</b> (e.g. "this, that" and
+                    "this , that" will be displayed differently). CrowdExp will assume
+                    that each space defines a word boundary. Since CrowdExp displays
+                    word by word, extra SPACEs will thus require additional key presses
+                    to go through the sentences. That will make your reading time measures
+                    very difficult or impossible to interpret.</li>
                   </ul>
-                </li>
-                <li>
-                  Remove blank/empty rows between stimuli. If you use the auto-
-                  generated template there shouldn't be any such blank/empty rows.
-                  But you might have accidently created some.
-                </li>
-                <li>
-                  <b>Sentence</b> fields:
-                  <ul>
-                    <li>
-                      Check that all critical items have <b>sentence regions</b> defined and
-                      that these regions are consistent within and across items.
-                      Fillers should not have sentence regions marked up.
-                    </li>
-                    <li>
-                      Except for the mark-up for the sentence regions, sentences and questions will
-                      be displayed to participants as-is. So do not include extra
-                      characters unless you want those characters to be displayed.
-                    </li>
-                    <li>
-                      <b>Be particularly careful with stray SPACEs</b> (e.g. "this, that" and
-                      "this , that" will be displayed differently). CrowdExp will assume
-                      that each space defines a word boundary. Since CrowdExp displays
-                      word by word, extra SPACEs will thus require additional key presses
-                      to go through the sentences. That will make your reading time measures
-                      very difficult or impossible to interpret.</li>
-                    </ul>
-                </li>
-                <li>
-                  All <b>Sentence</b> and <b>Question</b> fields need to be non-empty.
-                </li>
-                <li><b>Question</b>s:
-                  <ul>
-                     <li>
-                       Make sure that within an item questions are similar and the
-                       answers are the same.
-                     </li>
-                    <li>
-                      Make sure you have an even number of Y and N answers.
-                      Ideally <a href="">Y and N answers should also be balanced</a>
-                      a) within condition, and b) across all critical items.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Upload the stimulus file to CrowdExp.
-                </li>
-              </ul>
-
-            </div>
+              </li>
+              <li>
+                All <b>Sentence</b> and <b>Question</b> fields need to be non-empty.
+              </li>
+              <li><b>Question</b>s:
+                <ul>
+                   <li>
+                     Make sure that within an item questions are similar and the
+                     answers are the same.
+                   </li>
+                  <li>
+                    Make sure you have an even number of Y and N answers.
+                    Ideally <a href="">Y and N answers should also be balanced</a>
+                    a) within condition, and b) across all critical items.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Upload the stimulus file to CrowdExp.
+              </li>
+            </ul>
+      </div>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-primary" href="SPRLists.html">←SPR Example: Lists</a></div>
+                  </td>
+                  <td class="col-md-12">
+                    <div><a class="btn btn-primary" href="Analysis.html">Analysis →</a></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="jumbotron">
-            <div class="container">
-              <div class="row">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="col-md-12">
-                        <div><a class="btn btn-primary" href="SPRLists.html">←SPR Example: Lists</a></div>
-                      </td>
-                      <td class="col-md-12">
-                        <div><a class="btn btn-primary" href="Analysis.html">Analysis →</a></div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
         <!--
         <div class="jumbotron">
           <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Test Your Understanding</button>
