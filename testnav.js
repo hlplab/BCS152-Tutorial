@@ -54,9 +54,9 @@ $('#nav').html(
         '<li id="excl"><a href="Exclusion.html">Exclusion</a></li>' +
         '<li id="sprexcl"><a href="SPRExclusion.html">SPR Example: Exclusion</a></li>' +
         '<li id="resu"><a href="Results.html">Results</a></li>' +
-        '<li id="sprresu"><a href="SPRResults.html">SPR Example: Results</a></li>' +
-        '<li id="vsrep"><a href="VSReport.html">Visual Report</a></li>' +
-        '<li id="sprvsrep"><a href="SPRVSReport.html">SPR Example: Visual Report</a></li>' +
+        '<li id="sprresu"><a href="SPRAnalysisResults.html">SPR Example: Results</a></li>' +
+        '<li id="vsrep"><a href="VisualReport.html">Visual Report</a></li>' +
+        '<li id="sprvsrep"><a href="SPRVisualReport.html">SPR Example: Visual Report</a></li>' +
         '</ul>' +
     '</li>' +
     '<li><a href="#"></a></li>' +
