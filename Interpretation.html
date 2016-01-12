@@ -14,19 +14,30 @@
     <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
       <div class="jumbotron ex top">
         <h1>Interpretation</h1>
-          <p>
+        <p>
+          Topic References :
+          [<a href="#pred" class="bldgn">Predictions</a>]
+          [<a href="#exc" class="bldgn">Exclusions</a>]
+          [<a href="#compQ" class="bldgn">Comprehension questions</a>]
+          [<a href="#readtime" class="bldgn">Reading time</a>]
+        </p>
+          <p id="pred">
             Once your data has been collected, it's time to begin the important
             and often harrowing task of interpretation.
           </p>
-        <h3>Predictions</h3>
-          <p>
+      </div>
+      <div class="jumbotron ex">
+        <h2>Predictions</h2>
+          <p id="exc">
             It is always a good practice before interpreting a pattern of data to
             clearly articulate your predictions for each dependent measure and their
             interactions. These should already have been established long before data
             was even collected, but it is important to revisit them before thinking
             about whether your data can be argued to support them.
           </p>
-        <h3>Exclusions</h3>
+      </div>
+      <div class="jumbotron ex">
+        <h2>Exclusions</h2>
           <p>
             Another critical step prior to evaluating data is determining whether
             any of it needs to be excluded from interpretation. Measurements of
@@ -42,37 +53,40 @@
             falling into a very dangerous pattern of sculpting your data to fit your
             desired outcome.
           </p>
-          <p>
+          <p id="compQ">
             Typically, any trials with reading times that exceed a certain threshold
-            (typically RTS above 2.5 standard deviations) can be excluded from the
+            <!--(typically RTS above 2.5 standard deviations)--> can be excluded from the
             final analysis, since they are likely not reflective of language processing.
-            These are usually referred to as outliers.
+            These are usually referred to as <a href="Glossary.html#O" target="_blank" class="red" data-toggle="tooltip" title="An observation point that is distant from other observations">outliers</a>.
           </p>
-        <h3>Comprehension Questions</h3>
+      </div>
+      <div class="jumbotron ex">
+        <h2>Comprehension questions</h2>
             <p>
               Each trial in your study should also have been paired with a comprehension
               question. These are an important tool for assessing whether the
               participant really processed the content of the trial as well as a
               built-in check on the quality of your materials. For example, it
-              is typical to exclude from analysis  items whose comprehension
-              questions were answered incorrectly. Although it is unlikely if your
-              items were well designed, you may also consider the cross-subject
+              is typical to exclude from the analysis items whose comprehension
+              questions were answered incorrectly. You may also consider the cross-subject
               accuracy and exclude items for which the comprehension questions
               were often incorrect. This could indicate that a particular item
-              was exceptionally confusing or difficult to interpret. In some cases,
+              was exceptionally confusing or difficult to interpret. <!--add example--> In some cases,
               the participant's accuracy can also be a dependent measure of
               interest in its own right. This will depend on your particular
               hypotheses.
             </p>
-            <p>
+            <p id="readtime">
               Under some circumstances, it might make sense to enclude an entire
               participant, if for example, they answered fewer than 80% of the
               comprehension questions correctly or a large proportion of their
-              trials had to be excluded due to outlier RTs. It is again a good
+              trials had to be excluded due to outlier reading times (RTs). It is good
               practice to establish exclusion criteria based on established
-              practices in the literature before evaluating at the data.
+              practices in the literature before evaluating the data.
             </p>
-          <h3>Reading Time</h3>
+        </div>
+        <div class="jumbotron ex">
+          <h2>Reading time</h2>
             <p>
               Our primary measure of interest is reading time (RT). It can become
               somewhat counterintutive when we start linking reading times to
@@ -98,7 +112,7 @@
               be lower than for low frequency items.
             </p>
             <p>
-              What about the interaction between these conditions?
+              <b>What about the interactions between these conditions?</b>
             </p>
             <p>
               We predicted that the effect of frequency should be weaker in the
@@ -107,19 +121,19 @@
               restrictive condition . Predictions are much stronger, and the
               effects of lexical frequency is diminished.
             </p>
-      </div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <table>
-            <tr>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="SPRVSReport.html">&larr;SPR Example: Visual Report</a></div></td>
-              <td class="col-md-12"><div><a class="btn btn-warning" href="SPRInterpretation.html">SPR Example: Interpretation&rarr;</a></div></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
+          </div>
+          <div class="jumbotron">
+            <div class="container">
+              <div class="row">
+                <table>
+                  <tr>
+                    <td class="col-md-12"><div><a class="btn btn-warning" href="SPRVSReport.html">&larr;SPR Example: Visual Report</a></div></td>
+                    <td class="col-md-12"><div><a class="btn btn-warning" href="SPRInterpretation.html">SPR Example: Interpretation&rarr;</a></div></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
 
   <!--  <div class="jumbotron">
       <button type="button" class="btn btn-block btn-lg btn-danger" data-toggle="collapse" data-target="#demo">Test Your Understanding</button>
@@ -219,7 +233,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('li#interpret').addClass('active');
-      $('li#sprinte').addClass('active');
+      $('li#inte').addClass('active');
     });
   </script>
   </body>
