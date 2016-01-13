@@ -54,16 +54,12 @@ img.displayed {
     font-weight: bold;
     color: #9b59b6;
 }
-/*fix */
-.sup a:hover{
-  text-decoration:none;
-}
 /*Resize the window and cap it*/
 html, body {
   min-width: 1200px;
   max-width: 1200px;
 }
-p{
+p {
   margin-left:20px;
   margin-right: 30px;
   text-align: justify;
@@ -120,7 +116,7 @@ td.dropt2:hover span {
   color:#ecf0f1;
   font-weight: bold
 }
-/* dashed */
+/* dashed border around the condition examples */
 td.dropt3 {
   border-bottom: thin dotted;}
 td.dropt3:hover {
@@ -174,38 +170,21 @@ td.dropt4:hover span {
   color:#c0392b;
   font-weight: bold
 }
+/* creates a black hover over on links, removes decoration */
 a:hover{
     color:inherit;
     text-decoration: none;
     font-weight: bold;
 }
 /*Boxes for the filler and trial pages*/
-.NewLine {
-  clear: both;
-  float: left;
-  display: block;
-  position: relative;
-  }
-
 .filler {
   background-color:#34495e;
   color:#ecf0f1;
   padding:40px;
   width:100px;
   float: left;
-    margin-right: 1px;
-    margin-bottom: 1px;
-    text-align: center;
-}
-.trial {
-  background-color:#1abc9c;
-  color:#ecf0f1;
-  padding:40px;
-  width:100px;
-  float: left;
   margin-right: 1px;
   margin-bottom: 1px;
-  border: 1px;
   text-align: center;
 }
 
@@ -217,7 +196,6 @@ a:hover{
   float: left;
   margin-right: 1px;
   margin-bottom: 1px;
-  border: 1px;
   text-align: center;
 }
 
@@ -307,15 +285,15 @@ a:hover{
 .trialCenter {
   display: block;
   display: inline-block;
-align: center;
-width: 600px;
+  align: center;
+  width: 600px;
 }
 
-
+/*??? delete */
 .clr{
-clear:both;
+  clear:both;
 }
-
+/**/
 .navspr{
   color:#f39c12
 }
