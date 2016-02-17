@@ -3,6 +3,11 @@ python:
  - "2.7"
 install:
  - "pip install html5validator"
+ # install Java 8 as required by vnu.jar
+before_install:
+ - sudo apt-get update
+ - sudo apt-get install oracle-java8-installer
+ - sudo update-java-alternatives -s java-8-oracle
 script: "html5validator --ignore Helpful_code.html"
 notifications:
   email:
