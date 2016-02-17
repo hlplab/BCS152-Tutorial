@@ -380,6 +380,10 @@ a:hover{
     color: #9b59b6;
 }
 
+.jumbotron ul {
+  font-weight: 200;
+}
+
 .answers li {
   list-style: upper-alpha;
 }
