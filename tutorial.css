@@ -1,4 +1,8 @@
-
+/*Change color of external links*/
+.bldxtrnl{
+  color: #4d4d4d;
+  font-weight: bold;
+}
 /*Change the color for internal links*/
 .bldspr{
   color: #f39c12;
@@ -379,11 +383,12 @@ a:hover{
 .jumbotron.O h1 {
     color: #9b59b6;
 }
-
 .jumbotron ul {
   font-weight: 200;
 }
-
+.jumbotron ol {
+  font-weight: 200;
+}
 .answers li {
   list-style: upper-alpha;
 }
