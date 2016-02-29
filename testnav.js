@@ -3,7 +3,14 @@ $('#nav').html(
 '<div class="collapse navbar-collapse bckgrnd">' +
   '<!-- Nav tabs -->' +
   '<ul class="nav navbar-nav">' +
-    '<li id="home" ><a href="index.html">Home</a></li>' +
+  '<li class="dropdown" id="home">'+
+  '<a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Home' +
+  '<span class="caret"></span></a>' +
+  '<ul class="dropdown-menu">' +
+    '<li id="home"><a href="index.html">Home</a></li>' +
+    '<li id="abt"><a href="About.html">About</a></li>' +
+    '<li id="fdbck"><a href="Feedback.html">Feedback</a></li>' +
+    '</ul>' +
     '<li><a href="#"></a></li>' +
     '<li id="start" ><a href="Start.html">How Do I Start?</a></li>' +
     '<li><a href="#"></a></li>' +
@@ -70,7 +77,6 @@ $('#nav').html(
     '</li>' +
     '<li><a href="#"></a></li>' +
     '<li><a href="#"></a></li>' +
-    '<li id="about"><a href="About.html">About</a></li>' +
     '<li id="resource"><a href="Resources.html">Resources</a></li>' +
     '<li id="glossary"><a href="Glossary.html">Glossary</a></li>' +
   '</ul>' +
