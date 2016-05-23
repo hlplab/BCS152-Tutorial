@@ -3,6 +3,13 @@
   color: #4d4d4d;
   font-weight: bold;
 }
+/*To link paper*/
+.sup {
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: bold;
+    color: #9b59b6;
+}
 /*Change the color for internal links*/
 .bldspr{
   color: #f39c12;
@@ -51,13 +58,11 @@ img.displayed {
 .figure {
   text-align:justify;
 }
-/*To link paper*/
-.sup {
-    vertical-align: super;
-    font-size: smaller;
-    font-weight: bold;
-    color: #9b59b6;
+/* Create border around an image*/
+.bord {
+    border: 3px solid #000;
 }
+
 /*Resize the window and cap it*/
 html, body {
   min-width: 1200px;
@@ -388,6 +393,9 @@ a:hover{
 }
 .jumbotron ol {
   font-weight: 200;
+}
+.jumbotron figcaption {
+  font-weight:200;
 }
 .answers li {
   list-style: upper-alpha;
