@@ -13,15 +13,27 @@
     <body class="bckgrnd">
         <nav id="nav" class="navbar navbar-default navbar-fixed-top"></nav>
 
-        <div>
-            <div class="jumbotron R top">
+        <div class="jumbotron R top">
+          <p>
+            [<a href="#wrd" class="bldgn">Word Stimuli</a>]
+            [<a href="#fre" class="bldgn">Frequency and Predictability</a>]
+            [<a href="#calc" class="bldgn">Calculations</a>]
+            [<a href="#vis" class="bldgn">Visual Stimuli</a>]
+            [<a href="#uni" class="bldgn">Writing Help Resources</a>]
+          </p>
+          <p>This page gives you relevant resources to creating a Self Paced Reading
+            Experiment and also University based resources to help with writing your
+            interpretation and results</p>
+        </div>
+
+            <div class="jumbotron R">
                 <h1> Get word stimuli by searching the English lexicon constrained by frequency, word length, syntactic class, phonetic transcription and much more: </h1>
                 <p><a href="http://websites.psychology.uwa.edu.au/school/MRCDatabase/uwa_mrc.htm" class="bldxtrnl">MRC Psycholinguistics Database</a></p>
                 <p><a href="http://ca.urlm.com/www.wordlistgenerator.net" class="bldxtrnl">Word List Generator</a></p>
                 <p><a href="http://www.sussex.ac.uk/wordlab/noun" class="bldxtrnl">Noun Database</a></p>
             </div>
 
-            <div class="jumbotron A">
+            <div class="jumbotron A" id="wrd">
                 <h1>Frequency and predictability estimates: </h1>
                 <p><a href="http://corpus.byu.edu/" class="bldxtrnl">The BYU corpus collection</a>A collection of Englishes (American,
                 British, and other) as well as other languages (e.g., Spanish and Portuguese),
@@ -36,7 +48,7 @@
 
             </div>
 
-            <div class="jumbotron I">
+            <div class="jumbotron I" id="fre">
                 <h1>Calculation phonotactic probabilities and phonological neighborhood density</h1>
                 <p><a href="http://www.bncdnet.ku.edu/cgi-bin/DEEC/post_ppc.vi" class="bldxtrnl">http://www.bncdnet.ku.edu/cgi-bin/DEEC/post_ppc.vi </a>
                 The Phonotactic probability calculator. On the first line it gives you the
@@ -44,7 +56,7 @@
                 Line 3 is the probability of the biphones in the word and line 4 has the sum
                 of line 2 followed by the sum of line 3. To use this calculator, you must
                 first convert your words to "Klattese." <!--Add guide from wiki later--></p>
-                <p><!-- broken link--><a href="" class="bldxtrnl">Neighborhood Density Calculator </a> Also an excellent resource for phonological studies. You
+                <p id="calc"><!-- broken link--><a href="" class="bldxtrnl">Neighborhood Density Calculator </a> Also an excellent resource for phonological studies. You
                 can type the words in orthographically and this calculator will convert
                 the orthographic word to the phonological word for you. It will also look
                 up neighborhood densities and frequencies for all the neighbors it finds.
@@ -64,13 +76,21 @@
                 by Snodgrass and Vanderwart. Useful in experiment design creation.
                 </p>
             </div>
-            <div class="jumbotron B">
+            <div class="jumbotron O" id="vis">
+                <h1>University of Rochester Writing Resources</h1>
+                <p>
+                <a href="http://writing.rochester.edu/" class="bldxtrnl">University of Rochester Writing Center</a> Get help with writing up your results.
+                </p>
+            </div>
+            <div class="jumbotron B" id="uni">
                 <h1>Other</h1>
+
                 <p>
                 <a href="http://yeroon.net/lme4/" class="bldxtrnl">http://yeroon.net/lme4/</a> Graphical user interface for R! Great for the less CS inclined among us.
                 </p>
             </div>
-        </div>
+
+
 
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
